@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { Fragment } from "react";
 import NodeCard from "./NodeCard";
 
 const VIBE_GRADIENTS = {
@@ -20,6 +20,108 @@ const VIBE_ICONS = {
   "Hope / Joy": "💉",
   "Conflict / Vindication": "⚖️",
 };
+
+// Fuzzy date parser — handles ISO dates, "Early January 2020",
+// "Circa April 2020", "Summer 2020", "Late December 2020", etc.
+function parseNodeDate(dateStr) {
+  if (!dateStr) return 0;
+
+  // Try direct ISO parse first (YYYY-MM-DD)
+  const iso = new Date(dateStr + "T00:00:00");
+  if (!isNaN(iso)) return iso.getTime();
+
+  const lower = dateStr.toLowerCase();
+
+  const MONTHS = {
+    january: 0, february: 1, march: 2, april: 3,
+    may: 4, june: 5, july: 6, august: 7,
+    september: 8, october: 9, november: 10, december: 11,
+  };
+
+  // Season → approximate mid-month
+  if (lower.includes("summer")) {
+    const y = dateStr.match(/\d{4}/)?.[0];
+    return y ? new Date(+y, 6, 1).getTime() : 0;
+  }
+  if (lower.includes("spring")) {
+    const y = dateStr.match(/\d{4}/)?.[0];
+    return y ? new Date(+y, 3, 1).getTime() : 0;
+  }
+  if (lower.includes("winter")) {
+    const y = dateStr.match(/\d{4}/)?.[0];
+    return y ? new Date(+y, 0, 1).getTime() : 0;
+  }
+  if (lower.includes("fall") || lower.includes("autumn")) {
+    const y = dateStr.match(/\d{4}/)?.[0];
+    return y ? new Date(+y, 9, 1).getTime() : 0;
+  }
+
+  // "Month Year" with optional qualifier (Early / Mid / Late / Circa / ~)
+  for (const [name, idx] of Object.entries(MONTHS)) {
+    if (lower.includes(name)) {
+      const y = dateStr.match(/\d{4}/)?.[0];
+      if (!y) continue;
+      let day = 15; // default mid-month
+      if (lower.includes("early")) day = 5;
+      else if (lower.includes("mid")) day = 15;
+      else if (lower.includes("late")) day = 25;
+      else if (lower.includes("circa") || lower.includes("~")) day = 15;
+      return new Date(+y, idx, day).getTime();
+    }
+  }
+
+  // Bare year
+  const yearOnly = dateStr.match(/^(\d{4})$/);
+  if (yearOnly) return new Date(+yearOnly[1], 6, 1).getTime();
+
+  return 0;
+}
+
+// Build chronologically-ordered rows for the split layout.
+// Each row has { clinical, personal } — either may be null.
+// Nodes with identical date strings share a row; otherwise one column is empty.
+function buildChronologicalRows(clinicalNodes, personalNodes) {
+  const clinical = clinicalNodes.map((n) => ({
+    ...n, type: "clinical", ts: parseNodeDate(n.date),
+  }));
+  const personal = personalNodes.map((n) => ({
+    ...n, type: "personal", ts: parseNodeDate(n.date),
+  }));
+
+  // Sort each column by timestamp (stable — preserve original order for ties)
+  clinical.sort((a, b) => a.ts - b.ts);
+  personal.sort((a, b) => a.ts - b.ts);
+
+  const rows = [];
+  let ci = 0;
+  let pi = 0;
+
+  while (ci < clinical.length || pi < personal.length) {
+    const c = clinical[ci];
+    const p = personal[pi];
+
+    if (!c) {
+      rows.push({ clinical: null, personal: p });
+      pi++;
+    } else if (!p) {
+      rows.push({ clinical: c, personal: null });
+      ci++;
+    } else if (c.ts === p.ts) {
+      // Same timestamp — place side by side
+      rows.push({ clinical: c, personal: p });
+      ci++;
+      pi++;
+    } else if (c.ts < p.ts) {
+      rows.push({ clinical: c, personal: null });
+      ci++;
+    } else {
+      rows.push({ clinical: null, personal: p });
+      pi++;
+    }
+  }
+
+  return rows;
+}
 
 export default function Chapter({ chapter, isVisible }) {
   const isSplit = chapter.layout === "split";
@@ -110,6 +212,11 @@ export default function Chapter({ chapter, isVisible }) {
 }
 
 function SplitLayout({ chapter, isVisible }) {
+  const rows = buildChronologicalRows(
+    chapter.clinical_nodes,
+    chapter.personal_nodes
+  );
+
   return (
     <div className="max-w-7xl mx-auto">
       {/* Column headers */}
@@ -130,32 +237,37 @@ function SplitLayout({ chapter, isVisible }) {
         </div>
       </div>
 
-      {/* Two-column grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
-        {/* Clinical column */}
-        <div className="flex flex-col gap-4">
-          {chapter.clinical_nodes.map((node, i) => (
-            <NodeCard key={i} node={node} type="clinical" index={i} />
-          ))}
-        </div>
-
-        {/* Personal column */}
-        <div className="flex flex-col gap-4">
-          {chapter.personal_nodes.map((node, i) => (
-            <NodeCard key={i} node={node} type="personal" index={i} />
-          ))}
-        </div>
+      {/* Chronological two-column grid.
+          Each row renders a paired (clinical, personal) slot.
+          Empty cells collapse to 0 height on mobile, leaving visible
+          white space on desktop to convey the time gap. */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-4">
+        {rows.map((row, i) => (
+          <Fragment key={i}>
+            {/* Clinical cell */}
+            <div>
+              {row.clinical && (
+                <NodeCard node={row.clinical} type="clinical" index={i} />
+              )}
+            </div>
+            {/* Personal cell */}
+            <div>
+              {row.personal && (
+                <NodeCard node={row.personal} type="personal" index={i} />
+              )}
+            </div>
+          </Fragment>
+        ))}
       </div>
     </div>
   );
 }
 
 function FullLayout({ chapter, isVisible }) {
-  // Interleave clinical and personal nodes for a unified timeline
   const allNodes = [
     ...chapter.clinical_nodes.map((n) => ({ ...n, type: "clinical" })),
     ...chapter.personal_nodes.map((n) => ({ ...n, type: "personal" })),
-  ];
+  ].sort((a, b) => parseNodeDate(a.date) - parseNodeDate(b.date));
 
   return (
     <div className="max-w-3xl mx-auto">
