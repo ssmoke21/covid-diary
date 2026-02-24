@@ -50,10 +50,6 @@ export default function HeroHeader({ meta }) {
         <div className="w-16 h-px bg-red-400 mx-auto mb-8" />
 
         <p className="text-sm text-stone-400 mb-1">by {meta.author}</p>
-
-        <p className="text-xs text-stone-300 max-w-lg mx-auto mt-4 leading-relaxed">
-          {meta.description}
-        </p>
       </div>
 
       {/* Scroll indicator */}
