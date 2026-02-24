@@ -44,7 +44,7 @@ export default function HeroHeader({ meta }) {
         </h1>
 
         <p className="font-serif text-xl md:text-2xl text-stone-500 italic mb-8">
-          A Pharmacist's Pandemic Chronicle
+          An Infectious Diseases Pharmacist's Pandemic Chronicle
         </p>
 
         <div className="w-16 h-px bg-red-400 mx-auto mb-8" />
