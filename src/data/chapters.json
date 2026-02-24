@@ -24,7 +24,7 @@
         {
           "date": "Early January 2020",
           "label": "WHO Bulletin",
-          "content": "Novel coronavirus (2019-nCoV) outbreak noted on Twitter / WHO. Author dismisses it, citing precedent of Zika, Ebola, SARS, MERS not spreading substantially."
+          "content": "Novel coronavirus (2019-nCoV) outbreak noted on Twitter / WHO. I dismiss it, citing precedent of Zika, Ebola, SARS, MERS not spreading substantially."
         },
         {
           "date": "2020-01-20",
@@ -33,18 +33,18 @@
         },
         {
           "date": "2020-01-24",
-          "label": "SBMC AMS Prep Meeting",
-          "content": "Dr. Miller mentions coronavirus might be a big deal. Author dismisses the idea as unlikely and unrelated to AMS agenda."
+          "label": "AMS Prep Meeting",
+          "content": "A colleague mentions coronavirus might be a big deal. I dismiss the idea as unlikely and unrelated to the AMS agenda."
         },
         {
           "date": "2020-02-12",
-          "label": "RWJBH ID / Infection Control Meeting",
+          "label": "ID / Infection Control Meeting",
           "content": "Novel coronavirus (nCoV-2019) officially renamed Covid-19. Topics: employee travel screening, mask shortage, testing protocols."
         },
         {
           "date": "2020-03-01",
           "label": "Puerto Rico Work Trip",
-          "content": "Extended discussion with Ernani (Population Health MD) during flight delay about openness to travel amid impending Covid-19 wave. He poses a hypothetical: would author travel in May?"
+          "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?"
         },
         {
           "date": "2020-03-04",
@@ -56,7 +56,7 @@
         {
           "date": "Early January 2020",
           "label": "Dismissal",
-          "content": "Author sees coronavirus news on Twitter and doesn't think much of it — mentally files it with prior outbreaks that 'never really spread.'"
+          "content": "I see coronavirus news on Twitter and don't think much of it — mentally file it with prior outbreaks that 'never really spread.'"
         },
         {
           "date": "2020-02-16",
@@ -65,8 +65,8 @@
         },
         {
           "date": "2020-03-01",
-          "label": "Amy Prepares",
-          "content": "While Steve is in Puerto Rico, Amy begins preparing for potential Covid-19 wave — first grocery haul and cleaning supplies."
+          "label": "My Wife Prepares",
+          "content": "While I'm in Puerto Rico, my wife begins preparing for a potential Covid-19 wave — first grocery haul and cleaning supplies."
         }
       ],
       "assets_wishlist": [
@@ -89,49 +89,49 @@
         {
           "date": "2020-03-09",
           "label": "First Remdesivir Email",
-          "content": "Indu (Chief Pharmacy Officer) sends first corporate email discussing remdesivir. Position: do not advocate without clinical trial data, but IND compassionate use is reasonable for highest-risk, critically ill patients."
+          "content": "The Chief Pharmacy Officer sends the first corporate email discussing remdesivir. Position: do not advocate without clinical trial data, but IND compassionate use is reasonable for highest-risk, critically ill patients."
         },
         {
           "date": "2020-03-11",
-          "label": "RWJBH ID / IC Meeting — Dr. Boruchoff's Warning",
-          "content": "Dr. Boruchoff argues the system is moving too slowly: 'We need to prepare for what transmission will be, not what it currently is. We will be overrun.' Next 3 meetings are canceled."
+          "label": "ID / IC Meeting — A Warning Issued",
+          "content": "An ID physician argues the system is moving too slowly: 'We need to prepare for what transmission will be, not what it currently is. We will be overrun.' The next 3 meetings are canceled."
         },
         {
           "date": "2020-03-11",
           "label": "First ID Pharmacy Collaborative Email",
-          "content": "Author sends inaugural email to ID Pharmacy Collaborative sharing a treatment Google doc. Key assessments: Tamiflu unlikely to work; Remdesivir under NIH study; Chloroquine shows 'promising but questionable' evidence from China; Lopinavir/ritonavir retrospective shows no efficacy. Anticipates 'constantly changing evidence.'"
+          "content": "I send the inaugural email to the ID Pharmacy Collaborative sharing a treatment Google doc. Key assessments: Tamiflu unlikely to work; Remdesivir under NIH study; Chloroquine shows 'promising but questionable' evidence from China; Lopinavir/ritonavir retrospective shows no efficacy. I anticipate 'constantly changing evidence.'"
         },
         {
           "date": "2020-03-12",
           "label": "Call for Standard Algorithm",
-          "content": "Author emails Christian (RWJBH AMS Chair), Indu (CPO), and Jen (Corporate Clinical Pharmacy): 'We need a standard treatment algorithm.'"
+          "content": "I email the AMS Chair, the Chief Pharmacy Officer, and Corporate Clinical Pharmacy leadership: 'We need a standard treatment algorithm.'"
         },
         {
           "date": "2020-03-13",
           "label": "First Draft Treatment Protocol",
-          "content": "Nav (NB ID PharmD) sends draft treatment protocol — revised 3-4 times in one day. Two pathways: one for ID-managed patients, one for surge overflow. Criteria: ICU / supplemental O2 / high-risk. Preferred: remdesivir compassionate use, then hydroxychloroquine. If ICU: sarilumab via trial or tocilizumab."
+          "content": "Our ID PharmD colleague sends a draft treatment protocol — revised 3-4 times in one day. Two pathways: one for ID-managed patients, one for surge overflow. Criteria: ICU / supplemental O2 / high-risk. Preferred: remdesivir compassionate use, then hydroxychloroquine. If ICU: sarilumab via trial or tocilizumab."
         },
         {
           "date": "2020-03-13",
-          "label": "Dr. Hasan Remdesivir Inquiry",
-          "content": "Dr. Hasan (CBMC Peds ID) asks about process to obtain remdesivir for pediatric use."
+          "label": "Pediatric ID Physician Remdesivir Inquiry",
+          "content": "The Pediatric ID physician asks about the process to obtain remdesivir for pediatric use."
         }
       ],
       "personal_nodes": [
         {
           "date": "2020-03-09",
           "label": "Distracted by Covid",
-          "content": "Author is supposed to be prepping for NJSID meeting presentation but can't focus — convinced this will be a major problem after seeing community transmission data from Washington State."
+          "content": "I'm supposed to be prepping for an ID society meeting presentation but can't focus — convinced this will be a major problem after seeing community transmission data from Washington State."
         },
         {
           "date": "2020-03-11",
-          "label": "NBA / Utah Jazz Positive Test",
-          "content": "Utah Jazz player tests positive; NBA season suspended."
+          "label": "NBA Positive Test",
+          "content": "An NBA player tests positive; the NBA season is suspended."
         },
         {
           "date": "2020-03-12",
           "label": "Big Ten Tournament Canceled",
-          "content": "B10 tournament canceled while Rutgers is on the court warming up. NHL season also suspended. The Rutgers tournament dream dies."
+          "content": "The B10 tournament is canceled while Rutgers is on the court warming up. The NHL season is also suspended. The Rutgers tournament dream dies."
         },
         {
           "date": "2020-03-13",
@@ -140,8 +140,8 @@
         },
         {
           "date": "2020-03-11",
-          "label": "NJSID Meeting Canceled",
-          "content": "New Jersey Society of Infectious Diseases cancels its meeting."
+          "label": "ID Society Meeting Canceled",
+          "content": "The state infectious diseases society cancels its meeting."
         }
       ],
       "assets_wishlist": [
@@ -162,27 +162,27 @@
         {
           "date": "2020-03-14",
           "label": "Ibuprofen Controversy",
-          "content": "French Health Minister tweets that ibuprofen could be an aggravating factor. Anecdotal and pharmacological speculation, not evidence-based. WHO temporarily recommends against ibuprofen; WHO and EMA later retract on 3/19."
+          "content": "The French Health Minister tweets that ibuprofen could be an aggravating factor. Anecdotal and pharmacological speculation, not evidence-based. WHO temporarily recommends against ibuprofen; WHO and EMA later retract on 3/19."
         },
         {
           "date": "2020-03-15",
           "label": "HCQ Stockpile Revealed",
-          "content": "Indu (CPO) shares that RWJBH has stockpiled hydroxychloroquine and requests an algorithm for distribution."
+          "content": "The Chief Pharmacy Officer shares that our health system has stockpiled hydroxychloroquine and requests an algorithm for distribution."
         },
         {
           "date": "2020-03-16",
           "label": "HCQ Protocol Version 3",
-          "content": "Nav (NB ID PharmD) sends updated recommendations: HCQ for most eligible patients, remdesivir via clinical trial if mechanically ventilated, IL-6 antagonist if ARDS. RWJBH AMS distributes first formal guidance (Version 3)."
+          "content": "Our ID PharmD colleague sends updated recommendations: HCQ for most eligible patients, remdesivir via clinical trial if mechanically ventilated, IL-6 antagonist if ARDS. The AMS distributes the first formal guidance (Version 3)."
         },
         {
           "date": "2020-03-16",
           "label": "Steroids Debate Begins",
-          "content": "Steve shares JAMA retrospective suggesting steroids may help; CDC and WHO recommend against them at this time. Later proven to reduce mortality."
+          "content": "I share a JAMA retrospective suggesting steroids may help; CDC and WHO recommend against them at this time. Later proven to reduce mortality."
         },
         {
           "date": "2020-03-17",
           "label": "First Staff Pharmacist Presentation",
-          "content": "Author gives first Covid-19 presentation to CBMC staff pharmacists. Packed room. Most questions cannot be answered."
+          "content": "I give my first Covid-19 presentation to staff pharmacists. Packed room. Most questions cannot be answered."
         },
         {
           "date": "2020-03-18",
@@ -192,17 +192,17 @@
         {
           "date": "2020-03-19",
           "label": "French HCQ Study Circulates",
-          "content": "Dr. Smith shares the French HCQ/azithromycin study. Not yet published or peer-reviewed. Debate begins on dosing, azithromycin addition, and QTc monitoring. Trump calls HCQ 'a game changer' at press conference. Azithromycin goes on ASHP shortage."
+          "content": "An ID physician shares the French HCQ/azithromycin study — not yet published or peer-reviewed. Debate begins on dosing, azithromycin addition, and QTc monitoring. The President calls HCQ 'a game changer' at a press conference. Azithromycin goes on ASHP shortage."
         },
         {
           "date": "2020-03-20",
           "label": "HCQ Use 'Out of Control'",
-          "content": "Author notes in email: 'well our use is starting to get out of control.' First daily HCQ tracking reports begin."
+          "content": "I note in an email: 'well our use is starting to get out of control.' First daily HCQ tracking reports begin."
         },
         {
           "date": "2020-03-20",
           "label": "First Compassionate Use Approved",
-          "content": "Author's first Gilead compassionate use remdesivir request (on behalf of Dr. Mistry, ICU) is approved."
+          "content": "My first Gilead compassionate use remdesivir request, submitted on behalf of an ICU physician, is approved."
         },
         {
           "date": "2020-03-25",
@@ -212,12 +212,12 @@
         {
           "date": "2020-03-27",
           "label": "Azithromycin Recommendation Challenged",
-          "content": "Nav and Steve draft SBAR to pull azithromycin from protocol citing: no prior evidence, non-equivalent control group, no clinical benefit demonstrated, and potential QTc toxicity."
+          "content": "My ID PharmD colleague and I draft an SBAR to pull azithromycin from the protocol citing: no prior evidence, non-equivalent control group, no clinical benefit demonstrated, and potential QTc toxicity."
         },
         {
           "date": "2020-03-28",
-          "label": "HCQ Dosing Conflict — Dr. Smith",
-          "content": "Dr. Smith (CBMC ID) emails CEO, CMO, Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. Author provides pushback via email. Smith calls author immediately claiming he was 'stabbed in the back.'"
+          "label": "HCQ Dosing Conflict",
+          "content": "An ID physician emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. I provide pushback via email. The physician calls me immediately, claiming I had 'stabbed him in the back.'"
         },
         {
           "date": "2020-03-28",
@@ -238,18 +238,18 @@
       "personal_nodes": [
         {
           "date": "2020-03-14",
-          "label": "Ed's 50th Birthday Skipped",
-          "content": "After Chris and Tara's decision, author emails Lisa that he and Amy won't attend Ed's 50th birthday due to Covid-19. Lisa's parents later end up in the ICU; her father passes away."
+          "label": "A Friend's 50th Birthday Skipped",
+          "content": "After mutual friends decided not to attend, I email a friend that my wife and I won't attend a 50th birthday gathering due to Covid-19. Our friend's parents later end up in the ICU; her father passes away."
         },
         {
           "date": "2020-03-16",
-          "label": "Amy Works From Home",
-          "content": "Amy begins working from home."
+          "label": "My Wife Works From Home",
+          "content": "My wife begins working from home."
         },
         {
           "date": "2020-03-17",
           "label": "Reading Chinese Papers",
-          "content": "'Trying to read all of these Chinese papers' — author uses Google Translate on foreign-language studies to keep up with global evidence."
+          "content": "'Trying to read all of these Chinese papers' — I use Google Translate on foreign-language studies to keep up with global evidence."
         },
         {
           "date": "2020-03-21",
@@ -259,17 +259,17 @@
         {
           "date": "2020-03-22",
           "label": "Emails From Strangers",
-          "content": "Author receives an email from a new JCMC attending about the guidelines. Over the following weeks, receives emails from a physician in NYC and one in India — both unaffiliated with RWJBH — because the guidelines included his contact info."
+          "content": "I receive an email from a new attending physician about the guidelines. Over the following weeks, I receive emails from physicians in NYC and India — both unaffiliated with our health system — because the guidelines included my contact info."
         },
         {
           "date": "2020-04-03",
-          "label": "Trump Oval Office Meeting",
-          "content": "Dr. Smith meets with President Trump, Laura Ingraham, and FDA Director Stephen Hahn to pressure HCQ authorization."
+          "label": "Oval Office Meeting",
+          "content": "An ID physician meets with the President, a TV host, and the FDA Director to pressure HCQ authorization."
         },
         {
           "date": "2020-04-04",
-          "label": "Video Call With Amy",
-          "content": "Amy grocery shopping online; communicating via Zoom. Kayleigh and Logan 'living their best life making mud soup.' Amy's knuckles cracked from hand sanitizing. Steve not yet wearing a mask at work — CDC hadn't recommended it for healthcare workers yet. 'We're just a covid hospital, every unit is an ICU, no one knows how to treat it, people want to try everything.' 'My music selection is a good indicator of my mental state — I've been listening to emo like it's 2005.'"
+          "label": "Video Call With My Wife",
+          "content": "My wife is grocery shopping online; we're communicating via Zoom. The kids are 'living their best life making mud soup.' My wife's knuckles are cracked from hand sanitizing. I'm not yet wearing a mask at work — the CDC hadn't recommended it for healthcare workers yet. 'We're just a covid hospital, every unit is an ICU, no one knows how to treat it, people want to try everything.' 'My music selection is a good indicator of my mental state — I've been listening to emo like it's 2005.'"
         }
       ],
       "assets_wishlist": [
@@ -298,32 +298,32 @@
         {
           "date": "2020-04-11",
           "label": "HCQ Skepticism Grows",
-          "content": "NEJM quasi-experimental HCQ study circulates. First serious discussion in the ID pharmacy group of pulling the HCQ recommendation entirely. Group notes that stopping azithromycin 'wasn't as bad as expected.'"
+          "content": "A NEJM quasi-experimental HCQ study circulates. The first serious discussion in the ID pharmacy group of pulling the HCQ recommendation entirely. The group notes that stopping azithromycin 'wasn't as bad as expected.'"
         },
         {
           "date": "2020-04-11",
           "label": "Ivermectin: First and Last (for 8 months)",
-          "content": "Dr. Bessler and Dr. Lin separately ask about ivermectin. Author explains that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months."
+          "content": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months."
         },
         {
           "date": "2020-04-17",
           "label": "Tocilizumab: Earlier May Be Better",
-          "content": "Preliminary tocilizumab results from Stat Pat suggest earlier administration may be more effective — consistent with clinical suspicion."
+          "content": "Preliminary tocilizumab results suggest earlier administration may be more effective — consistent with our clinical suspicion."
         },
         {
           "date": "2020-04-24",
           "label": "NIH Guidelines Adopted",
-          "content": "RWJBH AMS decides guidelines will mirror NIH guidelines going forward — requiring a much higher evidence threshold before making recommendations. No recommended therapies at this point."
+          "content": "Our AMS decides guidelines will mirror NIH guidelines going forward — requiring a much higher evidence threshold before making recommendations. No recommended therapies at this point."
         },
         {
           "date": "2020-04-27",
-          "label": "HCQ Pulled From RWJBH Guidelines",
-          "content": "HCQ recommendation officially removed from RWJBH guidelines based on NIH and IDSA guidance."
+          "label": "HCQ Pulled From Guidelines",
+          "content": "The HCQ recommendation is officially removed from our guidelines based on NIH and IDSA guidance."
         },
         {
           "date": "2020-04-29",
           "label": "Remdesivir: Contradictory Data",
-          "content": "Chinese remdesivir RCT in Lancet shows no benefit. Same day, NIAID shares (unpublished, non-peer-reviewed) data from its RCT indicating benefit. 'Timing causes considerable confusion.'"
+          "content": "A Chinese remdesivir RCT in Lancet shows no benefit. The same day, NIAID shares (unpublished, non-peer-reviewed) data from its RCT indicating benefit. 'Timing causes considerable confusion.'"
         },
         {
           "date": "2020-05-01",
@@ -333,39 +333,39 @@
         {
           "date": "2020-05-08",
           "label": "Anakinra Early Data",
-          "content": "First retrospective cohort data on anakinra published in The Lancet. Author notes it 'looks better than toci data.' Tocilizumab use dropping significantly."
+          "content": "First retrospective cohort data on anakinra published in The Lancet. I note it 'looks better than toci data.' Tocilizumab use is dropping significantly."
         },
         {
           "date": "2020-05-08",
           "label": "HCQ NEJM Study: No Benefit",
-          "content": "Large observational study from NYP published in NEJM finds no benefit from hydroxychloroquine."
+          "content": "A large observational study published in NEJM finds no benefit from hydroxychloroquine."
         },
         {
           "date": "2020-05-15",
           "label": "First Remdesivir Shipment",
-          "content": "26 courses of remdesivir arrive at CBMC around 6-7pm. Dr. Smith pre-emptively enters ~10 orders that evening; most are on patients admitted long ago, unlikely to benefit."
+          "content": "26 courses of remdesivir arrive around 6-7pm. An ID physician pre-emptively enters ~10 orders that evening; most are on patients admitted long ago, unlikely to benefit."
         },
         {
           "date": "2020-05-22",
           "label": "HCQ Gated to Clinical Trial",
-          "content": "P&T memo to Medical Staff: HCQ for Covid-19 must go through CINJ clinical trial. Non-trial use permitted only if patient is ineligible. Dr. Smith responds calling it 'Tuskegee type illegal.'"
+          "content": "A P&T memo to Medical Staff states: HCQ for Covid-19 must go through a clinical trial. Non-trial use permitted only if a patient is ineligible. The ID physician responds calling it 'Tuskegee type illegal.'"
         }
       ],
       "personal_nodes": [
         {
           "date": "Circa April 2020",
           "label": "The Hospital Empties",
-          "content": "Non-essential personnel work from home. Empty hallways and cafeteria. Hospital receives donations: food, drinks, hand sanitizers from distilleries, handwritten letters from children, mask comfort adapters."
+          "content": "Non-essential personnel work from home. Empty hallways and cafeteria. The hospital receives donations: food, drinks, hand sanitizers from distilleries, handwritten letters from children, mask comfort adapters."
         },
         {
           "date": "Circa April 2020",
           "label": "Trailers in the Parking Lot",
-          "content": "Hospital morgue fills. Two refrigerated trailers placed in the physician parking lot for overflow bodies. They remained for months. Every employee saw them going in and out each day."
+          "content": "The hospital morgue fills. Two refrigerated trailers are placed in the physician parking lot for overflow bodies. They remained for months. Every employee saw them going in and out each day."
         },
         {
           "date": "Circa April 2020",
           "label": "'Here Comes the Sun'",
-          "content": "Beatles song played over hospital loudspeaker each time a patient is extubated. Sound quality described as horrendous."
+          "content": "The Beatles song is played over the hospital loudspeaker each time a patient is extubated. Sound quality described as horrendous."
         },
         {
           "date": "Circa April 2020",
@@ -375,7 +375,7 @@
         {
           "date": "Circa April 2020",
           "label": "Tooth-Grinding",
-          "content": "Author notices mild, persistent tooth pain — eventually realizes it is from clenching his jaw. A subconscious physical response to facing unanswerable questions with lives on the line."
+          "content": "I notice mild, persistent tooth pain — eventually realizing it is from clenching my jaw. A subconscious physical response to facing unanswerable questions with lives on the line."
         },
         {
           "date": "Circa April 2020",
@@ -385,17 +385,17 @@
         {
           "date": "Circa April 2020",
           "label": "Hotel Stay",
-          "content": "Steve moves into a hotel from April 7 to April 18 to protect his family."
+          "content": "I move into a hotel from April 7 to April 18 to protect my family."
         },
         {
           "date": "Circa April 2020",
-          "label": "Amy's Knit Mask",
-          "content": "Amy handknits a mask for Steve to use outside the hospital, since there were not enough for non-healthcare workers. 'It probably didn't work that well but it meant a lot to me that she worked on it for me.'"
+          "label": "My Wife's Knit Mask",
+          "content": "My wife handknits a mask for me to use outside the hospital, since there weren't enough for non-healthcare workers. 'It probably didn't work that well but it meant a lot to me that she worked on it for me.'"
         },
         {
           "date": "Circa April 2020",
-          "label": "Amy Cuts Steve's Hair",
-          "content": "Amy cuts Steve's hair. It takes three attempts and two hours, but turns out well. Steve has jealous coworkers."
+          "label": "My Wife Cuts My Hair",
+          "content": "My wife cuts my hair. It takes three attempts and two hours, but turns out well. I have jealous coworkers."
         },
         {
           "date": "Circa April 2020",
@@ -426,32 +426,32 @@
         {
           "date": "2020-07-02",
           "label": "Sarilumab Fails Primary Endpoint",
-          "content": "Regeneron reports sarilumab study fails to meet primary endpoint. Criteria was too broad, including circumstances where the drug is ineffective. Later proven effective in more targeted use. Regeneron pivots to monoclonal antibody targeting the spike protein."
+          "content": "Regeneron reports the sarilumab study fails to meet its primary endpoint. Criteria was too broad, including circumstances where the drug is ineffective. Later proven effective in more targeted use. Regeneron pivots to a monoclonal antibody targeting the spike protein."
         },
         {
           "date": "2020-09-20",
           "label": "First Compassionate Use: Casirivimab/Imdevimab",
-          "content": "Author works with Dr. Hasan on first (of at least two) compassionate use requests for Regeneron's casirivimab/imdevimab in a pediatric patient."
+          "content": "I work with the Pediatric ID physician on the first (of at least two) compassionate use requests for Regeneron's casirivimab/imdevimab in a pediatric patient."
         },
         {
           "date": "2020-10-02",
-          "label": "Trump Receives Casirivimab/Imdevimab",
-          "content": "President Trump publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. Brings considerable media attention to the medication."
+          "label": "The President Receives Casirivimab/Imdevimab",
+          "content": "The President publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. This brings considerable media attention to the medication."
         },
         {
           "date": "2020-11-09",
           "label": "Bamlanivimab EUA Granted",
-          "content": "FDA grants EUA for bamlanivimab. Immediate discussions about where to administer it — Kristine and author suggest the ED. System decides on EDs by November 16."
+          "content": "FDA grants EUA for bamlanivimab. Immediate discussions about where to administer it — a pharmacy colleague and I suggest the ED. The system decides on EDs by November 16."
         },
         {
           "date": "2020-11-18",
           "label": "Bamlanivimab Dispensing Begins",
-          "content": "CBMC begins dispensing bamlanivimab."
+          "content": "Our hospital begins dispensing bamlanivimab."
         },
         {
           "date": "2020-11-21",
           "label": "Casirivimab/Imdevimab EUA",
-          "content": "FDA grants EUA for casirivimab/imdevimab (Regeneron). Both 'bam' and 'Regeneron' used simultaneously based on inconsistent supply."
+          "content": "FDA grants EUA for casirivimab/imdevimab (Regeneron). Both 'bam' and 'Regeneron' are used simultaneously based on inconsistent supply."
         },
         {
           "date": "2021-02-09",
@@ -461,7 +461,7 @@
         {
           "date": "2021-02-09",
           "label": "Mutation Reckoning",
-          "content": "Author reflects on prior dismissal of mutation concerns: 'This was very wrong.' First concern was the Alpha variant (UK), more transmissible but not affecting MAB activity. Then variants emerged worldwide."
+          "content": "I reflect on my prior dismissal of mutation concerns: 'This was very wrong.' My first concern was the Alpha variant (UK), more transmissible but not affecting MAB activity. Then variants emerged worldwide."
         },
         {
           "date": "2021-04-16",
@@ -498,12 +498,12 @@
         {
           "date": "2020-11-11",
           "label": "MAB Paper Submitted",
-          "content": "MAB paper submitted to Journal of Medical Virology (JMV) after rejection from many journals."
+          "content": "My MAB paper is submitted to the Journal of Medical Virology after rejection from many journals."
         },
         {
           "date": "2022-02-20",
           "label": "MAB Paper Published",
-          "content": "MAB paper officially published in Journal of Medical Virology."
+          "content": "My MAB paper is officially published in the Journal of Medical Virology."
         }
       ],
       "assets_wishlist": [
@@ -530,8 +530,8 @@
         },
         {
           "date": "2020-09-11",
-          "label": "Director of Pharmacy Cautions Against Vaccine",
-          "content": "Prominent NJ/NY pharmacy administrator emails a large list serv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance."
+          "label": "A Pharmacy Leader Cautions Against Vaccine",
+          "content": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance."
         },
         {
           "date": "2020-10-06",
@@ -540,18 +540,18 @@
         },
         {
           "date": "2020-10-09",
-          "label": "RWJBH Vaccine Task Force",
-          "content": "First email from Indu (RWJBH CPO) about internal vaccine task force formation."
+          "label": "Vaccine Task Force Formed",
+          "content": "First email from the Chief Pharmacy Officer about an internal vaccine task force formation."
         },
         {
           "date": "2020-11-09",
           "label": "Pfizer 90% Efficacy Announced",
-          "content": "Tim (PGY1 resident) tells author the news: Pfizer vaccine is 90% effective. 'I remember being blown away. Thrilled.' All experts were similarly stunned by the magnitude of efficacy."
+          "content": "A PGY1 resident tells me the news: the Pfizer vaccine is 90% effective. 'I remember being blown away. Thrilled.' All experts were similarly stunned by the magnitude of efficacy."
         },
         {
           "date": "2020-12-10",
-          "label": "Steve Watches FDA VRPAC Meeting",
-          "content": "Author watches most of the FDA Vaccines and Related Biological Products Advisory Committee meeting on the Pfizer vaccine. Will watch many more VRPAC and ACIP meetings over the next year."
+          "label": "I Watch the FDA VRPAC Meeting",
+          "content": "I watch most of the FDA Vaccines and Related Biological Products Advisory Committee meeting on the Pfizer vaccine. I will watch many more VRPAC and ACIP meetings over the next year."
         },
         {
           "date": "2020-12-11",
@@ -560,8 +560,8 @@
         },
         {
           "date": "2020-12-14",
-          "label": "Steve Gets Pharmacist Immunizer License",
-          "content": "Author obtains his pharmacist immunizer license."
+          "label": "I Get My Pharmacist Immunizer License",
+          "content": "I obtain my pharmacist immunizer license."
         },
         {
           "date": "2020-12-18",
@@ -570,25 +570,25 @@
         },
         {
           "date": "2020-12-21",
-          "label": "First Vaccines at CBMC",
-          "content": "First day of vaccine administration at CBMC. Author vaccinated at 5pm — an hour after clinic scheduled to close — as vaccine team looks for volunteers to use up remaining doses. He was not in the first priority group."
+          "label": "First Vaccines at the Hospital",
+          "content": "First day of vaccine administration at our hospital. I'm vaccinated at 5pm — an hour after the clinic is scheduled to close — as the vaccine team looks for volunteers to use up remaining doses. I was not in the first priority group."
         },
         {
           "date": "2020-12-23",
-          "label": "Steve Starts Vaccinating",
-          "content": "First day author administers vaccinations. Initially staff only, then public. Provides over 300 vaccinations over the next four months at CBMC, Essex County (former Sears at Livingston Mall), and an elementary school gym in West Orange."
+          "label": "I Start Vaccinating",
+          "content": "My first day administering vaccinations. Initially staff only, then the public. I provide over 300 vaccinations over the next four months at our hospital, a county vaccination site at a former mall, and an elementary school gym."
         }
       ],
       "personal_nodes": [
         {
           "date": "Summer 2020",
           "label": "NEJM Podcast Revelation",
-          "content": "Author starts listening to NEJM Interviews podcast — weekly Covid-19 literature updates. First realization that vaccine mandates might happen, that this would be the biggest vaccination campaign in history, and that he needed to get licensed to vaccinate."
+          "content": "I start listening to the NEJM Interviews podcast — weekly Covid-19 literature updates. My first realization that vaccine mandates might happen, that this would be the biggest vaccination campaign in history, and that I need to get licensed to vaccinate."
         },
         {
           "date": "2020-11-09",
           "label": "Missed the Tweet",
-          "content": "Author was upset he missed the Pfizer 90% efficacy tweet — Tim (resident) was the one who told him. He had been checking Twitter 2-4x per day all year."
+          "content": "I was upset I missed the Pfizer 90% efficacy tweet — a resident was the one who told me. I had been checking Twitter 2-4x per day all year."
         },
         {
           "date": "2020-12-23",
@@ -598,12 +598,12 @@
         {
           "date": "2020-12-23",
           "label": "Notable Vaccinees",
-          "content": "Author vaccinates the Chair of Medicine and several physicians he works with. Also vaccinates Michael McLeod of the NJ Devils and some minor league players. Supervises technicians vaccinating Alexander Holtz (NJ Devils 1st round pick)."
+          "content": "I vaccinate the Chair of Medicine and several physicians I work with. I also vaccinate an NHL player and some minor league players. I supervise technicians vaccinating a first-round NHL draft pick."
         },
         {
           "date": "Late December 2020",
-          "label": "Indu Calls Before TV Appearance",
-          "content": "Indu (RWJBH CPO) calls author 20 minutes before a television appearance asking how to explain how the vaccines work."
+          "label": "The CPO Calls Before a TV Appearance",
+          "content": "The Chief Pharmacy Officer calls me 20 minutes before a television appearance asking how to explain how the vaccines work."
         }
       ],
       "assets_wishlist": [
@@ -612,7 +612,7 @@
         "image34 — Photo from Moderna EUA area (medium landscape)",
         "image9 — Photo from first vaccination day, December 21 (medium portrait)",
         "image33 — Photo from vaccination clinic era (small portrait)",
-        "image42 — Photo from late December / Indu TV call era (medium landscape)"
+        "image42 — Photo from late December / CPO TV call era (medium landscape)"
       ]
     },
     {
@@ -623,37 +623,37 @@
       "anchor_date": "2021-06-01",
       "layout": "full",
       "vibe": "Conflict / Vindication",
-      "vibe_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where the author is named by Dr. Smith, and a COO privately drops f-bombs in his defense.",
+      "vibe_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
       "clinical_nodes": [
         {
           "date": "2020-12-10",
           "label": "P&T Memo: HCQ Prohibited",
-          "content": "Author works with Dr. Rokosz (CMO), Pharmacy Director Heather, and Ali (AD) on a P&T memo to stop HCQ use for Covid-19. ID division votes on prohibition — passes by a narrow margin. Dr. Weiner (ID co-chair) completely unaware of the process; does not check email."
+          "content": "I work with the CMO, the Pharmacy Director, and the Associate Director on a P&T memo to stop HCQ use for Covid-19. The ID division votes on prohibition — passes by a narrow margin. The ID co-chair is completely unaware of the process; he does not check email."
         },
         {
           "date": "2021-02-05",
-          "label": "Rokosz vs. Smith Over HCQ Ban",
-          "content": "Dr. Rokosz (CMO) and Dr. Smith (ID) clash directly over the HCQ ban."
+          "label": "CMO vs. ID Physician Over HCQ Ban",
+          "content": "The CMO and the ID physician clash directly over the HCQ ban."
         },
         {
           "date": "2021-06-01",
-          "label": "Dr. Smith on Fox News — Names Steve Smoke",
-          "content": "Dr. Smith returns to Fox News claiming his unpublished, retrospective study proves hydroxychloroquine works. He names the author by name on national television: 'I turned to the pharmacist, Steve Smoke at St. Barnabas and I said, I got people that are literally more than four times difference in weight, one or both groups is getting the wrong dose.' The study is vastly inferior to available evidence and — to the author's knowledge — was never published."
+          "label": "Fox News Appearance — My Name Used",
+          "content": "The ID physician returns to Fox News claiming his unpublished, retrospective study proves hydroxychloroquine works. He names me by name on national television: 'I turned to the pharmacist, Steve Smoke at St. Barnabas and I said, I got people that are literally more than four times difference in weight, one or both groups is getting the wrong dose.' The study is vastly inferior to available evidence and — to my knowledge — was never published."
         },
         {
           "date": "2021-06-08",
           "label": "Vindication: UTI Pathway Praised",
-          "content": "Dr. Yodice (Chair of Medicine) sends an email praising Steve's work on an unrelated UTI antimicrobial stewardship pathway to the CEO, CFO, and CMO. Dr. Rokosz (CMO) responds in agreement."
+          "content": "The Chair of Medicine sends an email praising my work on an unrelated UTI antimicrobial stewardship pathway to the CEO, CFO, and CMO. The CMO responds in agreement."
         },
         {
           "date": "2021-06-08",
           "label": "COO Private Support",
-          "content": "The COO comes down to Steve's office for a private conversation. Says the institution supports him, that he shouldn't have to deal with what happened, and 'drops some f-bombs about Dr. Smith.'"
+          "content": "The COO comes down to my office for a private conversation. Says the institution supports me, that I shouldn't have to deal with what happened, and drops some f-bombs about the ID physician."
         },
         {
           "date": "2020-06-05",
           "label": "RECOVERY Trial: HCQ No Benefit",
-          "content": "RECOVERY trial determines no benefit from hydroxychloroquine in hospitalized Covid-19 patients. Author distributes details and clinical trial contact info to ID physicians."
+          "content": "The RECOVERY trial determines no benefit from hydroxychloroquine in hospitalized Covid-19 patients. I distribute the details and clinical trial contact info to ID physicians."
         },
         {
           "date": "2020-06-15",
@@ -663,40 +663,40 @@
         {
           "date": "2020-06-16",
           "label": "RECOVERY Trial: Dexamethasone Reduces Mortality",
-          "content": "RECOVERY trial reports dexamethasone reduces mortality — a landmark finding. Questions arise about whether a trial report (not peer-reviewed) is sufficient to change practice. RWJBH waits for NIH guideline update but Indu is pressured by Dr. Nahass to act sooner."
+          "content": "The RECOVERY trial reports dexamethasone reduces mortality — a landmark finding. Questions arise about whether a trial report (not peer-reviewed) is sufficient to change practice. Our system waits for the NIH guideline update but the CPO is pressured by an ID physician to act sooner."
         },
         {
           "date": "2020-12-01",
-          "label": "Ivermectin Returns — Bessler Confrontation",
-          "content": "Dr. Bessler (ID) and Dr. Mouravskaia (ID) order ivermectin. Author pushes back. Dr. Bessler is very rude: 'How dare you?… I've been practicing medicine for X years…' Compares situation to bamlanivimab. Bamlanivimab later proven effective; ivermectin is not."
+          "label": "Ivermectin Returns — Physician Confrontation",
+          "content": "Two ID physicians order ivermectin. I push back. One is very rude: 'How dare you?… I've been practicing medicine for X years…' The physician compares the situation to bamlanivimab. Bamlanivimab is later proven effective; ivermectin is not."
         }
       ],
       "personal_nodes": [
         {
           "date": "2021-06-01",
-          "label": "Named on Fox News",
-          "content": "Author is named by Dr. Smith on Fox News in context of a disagreement over HCQ dosing methodology. The clip and transcript are preserved as external links."
+          "label": "Named on TV",
+          "content": "I am named by an ID physician on Fox News in the context of a disagreement over HCQ dosing methodology. The clip and transcript are preserved as external links."
         },
         {
           "date": "2021-06-08",
           "label": "COO Drops F-Bombs",
-          "content": "The hospital COO visits Steve's office privately to offer personal support and express frustration with Dr. Smith."
+          "content": "The hospital COO visits my office privately to offer personal support and express frustration with the ID physician."
         },
         {
           "date": "2021-04-13",
           "label": "HCQ Paper Accepted",
-          "content": "The hydroxychloroquine paper is accepted for publication (submitted to JCPT February 25, 2021, after rejection from several journals)."
+          "content": "My hydroxychloroquine paper is accepted for publication (submitted in February 2021, after rejection from several journals)."
         },
         {
           "date": "2020-08-03",
           "label": "Opinion Article Published",
-          "content": "Opinion article published in Pharmacy Practice News. Key themes: difficulty determining what therapies work; misinformation from the messy scientific process being in the spotlight; importance of humility and saying 'I don't know'; the essential role of patients volunteering for RCTs."
+          "content": "My opinion article is published in Pharmacy Practice News. Key themes: difficulty determining what therapies work; misinformation from the messy scientific process being in the spotlight; importance of humility and saying 'I don't know'; the essential role of patients volunteering for RCTs."
         }
       ],
       "assets_wishlist": [
-        "image26 — Photo associated with February 5, 2021 Rokosz/Smith confrontation (large landscape)",
+        "image26 — Photo associated with February 5, 2021 CMO/ID physician confrontation (large landscape)",
         "image7 — Screenshot or memo image from May 22, 2020 HCQ/CINJ trial gating memo",
-        "image8 — Screenshot or document image from December 3, 2020 (Dr. Rokosz removed from remdesivir approval)",
+        "image8 — Screenshot or document image from December 3, 2020",
         "image28 — Photo from July 30, 2020 area (large landscape)",
         "image2 — Image from HCQ paper submission / acceptance area",
         "image11 — Image from June 5, 2020 (RECOVERY trial period, wide landscape)",
