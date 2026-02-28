@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import NodeCard from "./NodeCard";
 
-const VIBE_GRADIENTS = {
+const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
   "High-Alert / Acceleration": "from-amber-50 to-transparent",
   "Chaos / Urgency": "from-red-50 to-transparent",
@@ -11,7 +11,7 @@ const VIBE_GRADIENTS = {
   "Conflict / Vindication": "from-pink-50 to-transparent",
 };
 
-const VIBE_ICONS = {
+const MOOD_ICONS = {
   "Normalcy / Low-Alert": "🌤",
   "High-Alert / Acceleration": "⚡",
   "Chaos / Urgency": "🔥",
@@ -127,8 +127,8 @@ function buildChronologicalRows(clinicalNodes, personalNodes) {
 
 export default function Chapter({ chapter, isVisible }) {
   const isSplit = chapter.layout === "split";
-  const gradient = VIBE_GRADIENTS[chapter.vibe] || "from-stone-50 to-transparent";
-  const icon = VIBE_ICONS[chapter.vibe] || "📖";
+  const gradient = MOOD_GRADIENTS[chapter.mood] || "from-stone-50 to-transparent";
+  const icon = MOOD_ICONS[chapter.mood] || "📖";
 
   return (
     <section id={`chapter-${chapter.chapter_number}`} className="relative scroll-mt-8">
@@ -163,15 +163,15 @@ export default function Chapter({ chapter, isVisible }) {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 border border-stone-200"
           style={{ animation: isVisible ? "fade-in-up 0.5s ease-out 0.3s both" : "none" }}
         >
-          <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">Vibe</span>
-          <span className="text-xs text-stone-600 font-medium">{chapter.vibe}</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">Mood</span>
+          <span className="text-xs text-stone-600 font-medium">{chapter.mood}</span>
         </div>
 
         <p
           className="mt-4 text-sm text-stone-500 max-w-xl mx-auto leading-relaxed"
           style={{ animation: isVisible ? "fade-in-up 0.5s ease-out 0.4s both" : "none" }}
         >
-          {chapter.vibe_description}
+          {chapter.mood_description}
         </p>
       </header>
 

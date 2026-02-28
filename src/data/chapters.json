@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "A COVID Diary: An Infectious Diseases Pharmacist's Pandemic Chronicle",
+    "title": "A COVID Journal: An Infectious Diseases Pharmacist's Pandemic Chronicle",
     "author": "Steven Smoke",
     "generated": "2026-02-22",
     "description": "Structured chapter data extracted from the Covid-19 Timeline document for use in a React-based interactive website."
@@ -13,8 +13,8 @@
       "date_range": "December 12, 2019 – March 7, 2020",
       "anchor_date": "2019-12-12",
       "layout": "split",
-      "vibe": "Normalcy / Low-Alert",
-      "vibe_description": "A calm before the storm. Casual dismissal of early warning signs, life proceeding normally — Rutgers basketball, work trips, grocery runs.",
+      "mood": "Normalcy / Low-Alert",
+      "mood_description": "A calm before the storm. Casual dismissal of early warning signs, life proceeding normally — Rutgers basketball, work trips, grocery runs.",
       "clinical_nodes": [
         {
           "date": "2019-12-12",
@@ -83,8 +83,8 @@
       "date_range": "March 9, 2020 – March 13, 2020",
       "anchor_date": "2020-03-11",
       "layout": "split",
-      "vibe": "High-Alert / Acceleration",
-      "vibe_description": "Five days of cascading cancellations, first treatment emails, and the dawning realization that this is real. The world of sports collapses in real time.",
+      "mood": "High-Alert / Acceleration",
+      "mood_description": "Five days of cascading cancellations, first treatment emails, and the dawning realization that this is real. The world of sports collapses in real time.",
       "clinical_nodes": [
         {
           "date": "2020-03-09",
@@ -156,8 +156,8 @@
       "date_range": "March 14 – April 8, 2020",
       "anchor_date": "2020-03-19",
       "layout": "split",
-      "vibe": "Chaos / Urgency",
-      "vibe_description": "A frantic three weeks of evolving guidelines, drug shortages, political interference, Twitter misinformation, and inter-physician conflict over HCQ dosing. The science is moving faster than anyone can track.",
+      "mood": "Chaos / Urgency",
+      "mood_description": "A frantic three weeks of evolving guidelines, drug shortages, political interference, Twitter misinformation, and inter-physician conflict over HCQ dosing. The science is moving faster than anyone can track.",
       "clinical_nodes": [
         {
           "date": "2020-03-14",
@@ -292,8 +292,8 @@
       "date_range": "April 9 – May 31, 2020",
       "anchor_date": "2020-04-15",
       "layout": "split",
-      "vibe": "Isolation / Grief",
-      "vibe_description": "The hospital empties of non-essential staff but fills with the dying. Empty hallways. Refrigerated trailers in the parking lot. Clap-outs. 'Here Comes the Sun.' Tooth-grinding stress. An overwhelming sense of hopelessness on the morning commute.",
+      "mood": "Isolation / Grief",
+      "mood_description": "The hospital empties of non-essential staff but fills with the dying. Empty hallways. Refrigerated trailers in the parking lot. Clap-outs. 'Here Comes the Sun.' Tooth-grinding stress. An overwhelming sense of hopelessness on the morning commute.",
       "clinical_nodes": [
         {
           "date": "2020-04-11",
@@ -420,8 +420,8 @@
       "date_range": "July 2, 2020 – November 30, 2022",
       "anchor_date": "2020-11-09",
       "layout": "full",
-      "vibe": "Hope / Attrition",
-      "vibe_description": "A two-year arc of approved monoclonal antibodies — each arriving with promise, each eventually rendered obsolete by viral mutation. A clinical arms race the virus ultimately wins.",
+      "mood": "Hope / Attrition",
+      "mood_description": "A two-year arc of approved monoclonal antibodies — each arriving with promise, each eventually rendered obsolete by viral mutation. A clinical arms race the virus ultimately wins.",
       "clinical_nodes": [
         {
           "date": "2020-07-02",
@@ -520,8 +520,8 @@
       "date_range": "Summer 2020 – Spring 2021",
       "anchor_date": "2020-12-21",
       "layout": "split",
-      "vibe": "Hope / Joy",
-      "vibe_description": "A rare chapter of optimism in a dark year. The arrival of vaccines — 90% efficacy news that blew everyone away — and the shared joy of vaccination clinics. Pharmacists give hope a shot.",
+      "mood": "Hope / Joy",
+      "mood_description": "A rare chapter of optimism in a dark year. The arrival of vaccines — 90% efficacy news that blew everyone away — and the shared joy of vaccination clinics. Pharmacists give hope a shot.",
       "clinical_nodes": [
         {
           "date": "2020-06-30",
@@ -622,8 +622,8 @@
       "date_range": "December 10, 2020 – June 8, 2021",
       "anchor_date": "2021-06-01",
       "layout": "full",
-      "vibe": "Conflict / Vindication",
-      "vibe_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
+      "mood": "Conflict / Vindication",
+      "mood_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
       "clinical_nodes": [
         {
           "date": "2020-12-10",

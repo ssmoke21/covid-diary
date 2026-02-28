@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 
-const VIBE_COLORS = {
+const MOOD_COLORS = {
   "Normalcy / Low-Alert":       { bg: "#dbeafe", ring: "#3b82f6", text: "#1e40af", badge: "#eff6ff" },
   "High-Alert / Acceleration":  { bg: "#fef3c7", ring: "#f59e0b", text: "#92400e", badge: "#fffbeb" },
   "Chaos / Urgency":            { bg: "#fee2e2", ring: "#ef4444", text: "#991b1b", badge: "#fef2f2" },
@@ -85,7 +85,7 @@ export default function PulseTimeline({ chapters, activeChapter }) {
         <div className="flex flex-col items-center flex-1 justify-center gap-1">
           {chapters.map((ch, i) => {
             const isActive   = activeChapter === ch.chapter_number;
-            const vibeColor  = VIBE_COLORS[ch.vibe] || VIBE_COLORS["Normalcy / Low-Alert"];
+            const moodColor  = MOOD_COLORS[ch.mood] || MOOD_COLORS["Normalcy / Low-Alert"];
 
             return (
               <div key={ch.chapter_number} className="flex flex-col items-center">
@@ -93,7 +93,7 @@ export default function PulseTimeline({ chapters, activeChapter }) {
                 {i > 0 && (
                   <div className="w-0.5 transition-all duration-500" style={{
                     height: "24px",
-                    backgroundColor: ch.chapter_number <= activeChapter ? vibeColor.ring : "#e7e5e4",
+                    backgroundColor: ch.chapter_number <= activeChapter ? moodColor.ring : "#e7e5e4",
                   }} />
                 )}
 
@@ -109,15 +109,15 @@ export default function PulseTimeline({ chapters, activeChapter }) {
                   <div className="relative flex items-center justify-center">
                     {isActive && (
                       <span className="absolute w-4 h-4 rounded-full" style={{
-                        backgroundColor: vibeColor.ring,
+                        backgroundColor: moodColor.ring,
                         animation: "pulse-ring 2s ease-out infinite",
                       }} />
                     )}
                     <div
                       className="relative w-4 h-4 rounded-full border-2 transition-all duration-300 flex items-center justify-center"
                       style={{
-                        borderColor: vibeColor.ring,
-                        backgroundColor: isActive ? vibeColor.ring : "white",
+                        borderColor: moodColor.ring,
+                        backgroundColor: isActive ? moodColor.ring : "white",
                         transform: isActive ? "scale(1.3)" : "scale(1)",
                       }}
                     >
@@ -128,7 +128,7 @@ export default function PulseTimeline({ chapters, activeChapter }) {
                   {/* Expanded sidebar label (mobile drawer) */}
                   {isExpanded && (
                     <div className="whitespace-nowrap">
-                      <p className="text-xs font-semibold" style={{ color: vibeColor.text }}>
+                      <p className="text-xs font-semibold" style={{ color: moodColor.text }}>
                         Ch. {ch.chapter_number}
                       </p>
                       <p className="text-[10px] text-stone-400 max-w-[130px] truncate">{ch.title}</p>
@@ -164,7 +164,7 @@ export default function PulseTimeline({ chapters, activeChapter }) {
 }
 
 function TooltipCard({ chapter, anchorY, onMouseEnter, onMouseLeave }) {
-  const vibeColor = VIBE_COLORS[chapter.vibe] || VIBE_COLORS["Normalcy / Low-Alert"];
+  const moodColor = MOOD_COLORS[chapter.mood] || MOOD_COLORS["Normalcy / Low-Alert"];
   const TOOLTIP_H = 110; // approx height — keeps it on screen
   const SIDEBAR_W = 80;
   const ARROW_W   = 8;
@@ -193,17 +193,17 @@ function TooltipCard({ chapter, anchorY, onMouseEnter, onMouseLeave }) {
           borderTop: "7px solid transparent",
           borderBottom: "7px solid transparent",
           borderRight: `${ARROW_W}px solid`,
-          borderRightColor: vibeColor.ring,
+          borderRightColor: moodColor.ring,
         }}
       />
 
       {/* Card */}
       <div
         className="w-56 rounded-xl shadow-xl border overflow-hidden"
-        style={{ borderColor: vibeColor.ring + "55" }}
+        style={{ borderColor: moodColor.ring + "55" }}
       >
         {/* Colored header strip */}
-        <div className="px-4 py-2.5" style={{ backgroundColor: vibeColor.ring }}>
+        <div className="px-4 py-2.5" style={{ backgroundColor: moodColor.ring }}>
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-mono font-semibold text-white/80 uppercase tracking-widest">
               Chapter {chapter.chapter_number}
@@ -215,19 +215,19 @@ function TooltipCard({ chapter, anchorY, onMouseEnter, onMouseLeave }) {
         </div>
 
         {/* Body */}
-        <div className="px-4 py-3" style={{ backgroundColor: vibeColor.badge }}>
+        <div className="px-4 py-3" style={{ backgroundColor: moodColor.badge }}>
           <p className="text-sm font-bold text-stone-800 leading-tight mb-1">
             {chapter.title}
           </p>
           <p className="text-[11px] text-stone-500 italic leading-snug mb-2.5">
             {chapter.subtitle}
           </p>
-          {/* Vibe pill */}
+          {/* Mood pill */}
           <span
             className="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full"
-            style={{ backgroundColor: vibeColor.ring + "20", color: vibeColor.text }}
+            style={{ backgroundColor: moodColor.ring + "20", color: moodColor.text }}
           >
-            {chapter.vibe}
+            {chapter.mood}
           </span>
         </div>
       </div>
