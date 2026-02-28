@@ -1,5 +1,6 @@
-export default function NodeCard({ node, type, index }) {
+export default function NodeCard({ node, type, index, onOpenOverlay }) {
   const isClinical = type === "clinical";
+  const hasEmbed = !!node.embed;
 
   return (
     <div
@@ -7,13 +8,14 @@ export default function NodeCard({ node, type, index }) {
         isClinical
           ? "bg-[var(--color-clinical-muted)] border-[var(--color-clinical-border)]"
           : "bg-[var(--color-personal-muted)] border-[var(--color-personal-border)]"
-      }`}
+      } ${hasEmbed ? "cursor-pointer" : ""}`}
       style={{
         animation: `fade-in-up 0.5s ease-out ${index * 0.08}s both`,
       }}
+      onClick={hasEmbed && onOpenOverlay ? () => onOpenOverlay(node) : undefined}
     >
       {/* Date badge */}
-      <div className="flex items-start gap-3 mb-2">
+      <div className="flex items-start justify-between gap-3 mb-2">
         <span
           className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium tracking-wide shrink-0 ${
             isClinical
@@ -23,6 +25,9 @@ export default function NodeCard({ node, type, index }) {
         >
           {node.date}
         </span>
+        {hasEmbed && (
+          <span className="text-[10px] text-stone-400 font-medium shrink-0">View source ↗</span>
+        )}
       </div>
 
       {/* Label */}

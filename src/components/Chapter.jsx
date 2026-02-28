@@ -1,5 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import NodeCard from "./NodeCard";
+import NodeOverlay from "./NodeOverlay";
 
 const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
@@ -129,6 +130,7 @@ export default function Chapter({ chapter, isVisible }) {
   const isSplit = chapter.layout === "split";
   const gradient = MOOD_GRADIENTS[chapter.mood] || "from-stone-50 to-transparent";
   const icon = MOOD_ICONS[chapter.mood] || "📖";
+  const [overlayNode, setOverlayNode] = useState(null);
 
   return (
     <section id={`chapter-${chapter.chapter_number}`} className="relative scroll-mt-8">
@@ -177,12 +179,16 @@ export default function Chapter({ chapter, isVisible }) {
 
       <div className="px-4 md:px-8 pb-16">
         {isSplit
-          ? <SplitLayout chapter={chapter} isVisible={isVisible} />
-          : <FullLayout chapter={chapter} isVisible={isVisible} />
+          ? <SplitLayout chapter={chapter} isVisible={isVisible} onOpenOverlay={setOverlayNode} />
+          : <FullLayout chapter={chapter} isVisible={isVisible} onOpenOverlay={setOverlayNode} />
         }
       </div>
 
       <div className="w-full h-px bg-gradient-to-r from-transparent via-stone-300 to-transparent" />
+
+      {overlayNode && (
+        <NodeOverlay node={overlayNode} onClose={() => setOverlayNode(null)} />
+      )}
     </section>
   );
 }
@@ -230,7 +236,7 @@ function SpineCell({ row, isFirst, isLast }) {
   );
 }
 
-function SplitLayout({ chapter }) {
+function SplitLayout({ chapter, onOpenOverlay }) {
   const rows = buildChronologicalRows(chapter.clinical_nodes, chapter.personal_nodes);
 
   return (
@@ -266,7 +272,7 @@ function SplitLayout({ chapter }) {
             {/* Clinical cell */}
             <div className="flex flex-col justify-center">
               {row.clinical && (
-                <NodeCard node={row.clinical} type="clinical" index={i} />
+                <NodeCard node={row.clinical} type="clinical" index={i} onOpenOverlay={onOpenOverlay} />
               )}
             </div>
 
@@ -276,7 +282,7 @@ function SplitLayout({ chapter }) {
             {/* Personal cell */}
             <div className="flex flex-col justify-center">
               {row.personal && (
-                <NodeCard node={row.personal} type="personal" index={i} />
+                <NodeCard node={row.personal} type="personal" index={i} onOpenOverlay={onOpenOverlay} />
               )}
             </div>
           </Fragment>
@@ -288,7 +294,7 @@ function SplitLayout({ chapter }) {
 
 // ─── Full layout (chapters 5 & 7) ────────────────────────────────────────────
 
-function FullLayout({ chapter }) {
+function FullLayout({ chapter, onOpenOverlay }) {
   const allNodes = [
     ...chapter.clinical_nodes.map((n) => ({ ...n, type: "clinical" })),
     ...chapter.personal_nodes.map((n) => ({ ...n, type: "personal" })),
@@ -319,7 +325,7 @@ function FullLayout({ chapter }) {
                     : "border-[var(--color-personal-accent)]"
                 }`}
               />
-              <NodeCard node={node} type={node.type} index={i} />
+              <NodeCard node={node} type={node.type} index={i} onOpenOverlay={onOpenOverlay} />
             </div>
           ))}
         </div>
