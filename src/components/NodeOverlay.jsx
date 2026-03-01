@@ -54,7 +54,7 @@ export default function NodeOverlay({ node, onClose }) {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+      <div className={`bg-white rounded-2xl shadow-2xl w-full overflow-hidden ${node.embed?.type === "iframe" ? "max-w-3xl" : "max-w-md"}`}>
         {/* Header */}
         <div className="flex items-start justify-between px-6 pt-6 pb-3">
           <div>
@@ -85,6 +85,35 @@ export default function NodeOverlay({ node, onClose }) {
             <div ref={tweetRef} className="flex justify-center min-h-[120px] items-center">
               <span className="text-sm text-stone-300">Loading post…</span>
             </div>
+          </div>
+        )}
+
+        {/* Embed section — iframe */}
+        {node.embed?.type === "iframe" && (
+          <div className="border-t border-stone-100">
+            <div className="flex items-center justify-between px-6 py-3">
+              <p className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold">
+                Primary Source
+              </p>
+              <a
+                href={node.embed.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] text-stone-400 hover:text-stone-600 transition-colors flex items-center gap-1"
+              >
+                {node.embed.label}
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+            <iframe
+              src={node.embed.url}
+              title={node.label}
+              className="w-full border-0"
+              style={{ height: "520px" }}
+              loading="lazy"
+            />
           </div>
         )}
 
