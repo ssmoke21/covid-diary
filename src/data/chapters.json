@@ -644,7 +644,8 @@
         {
           "date": "Summer 2020",
           "label": "NEJM Podcast Revelation",
-          "content": "I start listening to the NEJM Interviews podcast — weekly Covid-19 literature updates. My first realization that vaccine mandates might happen, that this would be the biggest vaccination campaign in history, and that I need to get licensed to vaccinate."
+          "content": "I start listening to the NEJM Interviews podcast — weekly Covid-19 literature updates. My first realization that vaccine mandates might happen, that this would be the biggest vaccination campaign in history, and that I need to get licensed to vaccinate.",
+          "embed": { "type": "iframe", "url": "https://www.youtube.com/embed/videoseries?list=PLI8Ak-hj5dgGPn4CLGz2cj4mcixLrxzsn", "label": "Watch the NEJM Covid-19 Interviews Playlist on YouTube" }
         },
         {
           "date": "2020-11-09",
