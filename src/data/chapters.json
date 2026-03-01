@@ -537,7 +537,8 @@
         {
           "date": "2022-02-11",
           "label": "Bebtelovimab EUA",
-          "content": "FDA grants EUA for bebtelovimab despite 'basically no clinical data.'"
+          "content": "FDA grants EUA for bebtelovimab despite 'basically no clinical data.'",
+          "embed": { "type": "link", "url": "https://www.fda.gov/media/156151/download", "label": "Read the FDA EUA Letter" }
         },
         {
           "date": "2022-03-25",
