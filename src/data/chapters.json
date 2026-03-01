@@ -367,7 +367,8 @@
         {
           "date": "2020-05-08",
           "label": "Anakinra Early Data",
-          "content": "First retrospective cohort data on anakinra published in The Lancet. I note it 'looks better than toci data.' Tocilizumab use is dropping significantly."
+          "content": "First retrospective cohort data on anakinra published in The Lancet. I note it 'looks better than toci data.' Tocilizumab use is dropping significantly.",
+          "embed": { "type": "link", "url": "https://www.thelancet.com/journals/lanrhe/article/PIIS2665-9913(20)30164-8/fulltext", "label": "Read the Study in The Lancet Rheumatology" }
         },
         {
           "date": "2020-05-08",
