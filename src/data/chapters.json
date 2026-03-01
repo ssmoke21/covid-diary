@@ -608,7 +608,8 @@
         {
           "date": "2020-11-09",
           "label": "Pfizer 90% Efficacy Announced",
-          "content": "A PGY1 resident tells me the news: the Pfizer vaccine is 90% effective. 'I remember being blown away. Thrilled.' All experts were similarly stunned by the magnitude of efficacy."
+          "content": "A PGY1 resident tells me the news: the Pfizer vaccine is 90% effective. 'I remember being blown away. Thrilled.' All experts were similarly stunned by the magnitude of efficacy.",
+          "embed": { "type": "link", "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-vaccine-candidate-against", "label": "Read the Pfizer Press Release" }
         },
         {
           "date": "2020-12-10",
