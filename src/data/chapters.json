@@ -531,7 +531,8 @@
         {
           "date": "2022-01-26",
           "label": "Casirivimab/Imdevimab and Bamlanivimab/Etesevimab EUAs Revoked",
-          "content": "Both EUAs revoked due to variant resistance."
+          "content": "Both EUAs revoked due to variant resistance.",
+          "embed": { "type": "link", "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3075ed2", "label": "Read the FDA Announcement" }
         },
         {
           "date": "2022-02-11",
