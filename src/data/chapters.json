@@ -352,7 +352,8 @@
         {
           "date": "2020-05-08",
           "label": "HCQ NEJM Study: No Benefit",
-          "content": "A large observational study published in NEJM finds no benefit from hydroxychloroquine."
+          "content": "A large observational study published in NEJM finds no benefit from hydroxychloroquine.",
+          "embed": { "type": "link", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2012410", "label": "Read the Study in NEJM" }
         },
         {
           "date": "2020-05-15",
