@@ -277,7 +277,8 @@
         {
           "date": "2020-04-03",
           "label": "Oval Office Meeting",
-          "content": "An ID physician meets with the President, a TV host, and the FDA Director to pressure HCQ authorization."
+          "content": "An ID physician meets with the President, a TV host, and the FDA Director to pressure HCQ authorization.",
+          "embed": { "type": "iframe", "url": "https://coronavirus-democrats-oversight.house.gov/sites/evo-subsites/coronavirus-democrats-oversight.house.gov/files/2022.08.24%20The%20Trump%20White%20House%E2%80%99s%20Relentless%20Attacks%20on%20FDA%E2%80%99s%20Coronavirus%20Response.pdf", "label": "View House Oversight Report (PDF)" }
         },
         {
           "date": "2020-04-04",
