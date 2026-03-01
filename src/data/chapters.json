@@ -525,7 +525,8 @@
         {
           "date": "2021-05-26",
           "label": "Sotrovimab EUA",
-          "content": "FDA grants EUA for sotrovimab."
+          "content": "FDA grants EUA for sotrovimab.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-additional-monoclonal-antibody-treatment-covid-19", "label": "Read the FDA Press Announcement" }
         },
         {
           "date": "2022-01-26",
