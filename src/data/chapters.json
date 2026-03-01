@@ -422,6 +422,12 @@
           "date": "Circa April 2020",
           "label": "CDI Plummets, Fungal Infections Rise",
           "content": "Hospital CDI (C. diff) rates plummet due to dramatically improved hand hygiene. Fungal infections, MRSA, and other hospital-acquired infections rise due to the surge in critically ill patients with prolonged stays."
+        },
+        {
+          "date": "2020-07-14",
+          "label": "Preparing for the Next Wave",
+          "content": "CBMC pharmacy featured in a Wall Street Journal article on hospitals stocking up on Covid-19 drugs ahead of a feared second wave in the fall.",
+          "embed": { "type": "link", "url": "https://www.wsj.com/articles/hospitals-stock-up-on-covid-19-drugs-to-prepare-for-second-wave-in-fall-11594719000", "label": "Read the Article in the Wall Street Journal" }
         }
       ],
       "assets_wishlist": [
@@ -448,12 +454,6 @@
           "date": "2020-07-02",
           "label": "Sarilumab Fails Primary Endpoint",
           "content": "Regeneron reports the sarilumab study fails to meet its primary endpoint. Criteria was too broad, including circumstances where the drug is ineffective. Later proven effective in more targeted use. Regeneron pivots to a monoclonal antibody targeting the spike protein."
-        },
-        {
-          "date": "2020-07-14",
-          "label": "Preparing for the Next Wave",
-          "content": "CBMC pharmacy featured in a Wall Street Journal article on hospitals stocking up on Covid-19 drugs ahead of a feared second wave in the fall.",
-          "embed": { "type": "link", "url": "https://www.wsj.com/articles/hospitals-stock-up-on-covid-19-drugs-to-prepare-for-second-wave-in-fall-11594719000", "label": "Read the Article in the Wall Street Journal" }
         },
         {
           "date": "2020-09-20",
