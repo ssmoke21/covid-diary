@@ -639,6 +639,12 @@
       "mood_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
       "clinical_nodes": [
         {
+          "date": "2020-04-02",
+          "label": "Dr. Smith on Fox News",
+          "content": "ID physician Dr. Stephen Smith appears on Fox & Friends stating hydroxychloroquine is \"the beginning of the end of the pandemic.\"",
+          "embed": { "type": "link", "url": "https://www.foxnews.com/media/dr-stephen-smith-on-effectiveness-of-hydroxychloroquine-with-coronavirus-symptoms-beginning-of-the-end-of-the-pandemic", "label": "Watch the Segment on Fox News" }
+        },
+        {
           "date": "2020-12-10",
           "label": "P&T Memo: HCQ Prohibited",
           "content": "I work with the CMO, the Pharmacy Director, and the Associate Director on a P&T memo to stop HCQ use for Covid-19. The ID division votes on prohibition — passes by a narrow margin. The ID co-chair is completely unaware of the process; he does not check email."
