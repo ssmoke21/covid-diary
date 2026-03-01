@@ -519,7 +519,8 @@
         {
           "date": "2021-04-16",
           "label": "Bamlanivimab Alone EUA Revoked",
-          "content": "EUA for single-agent bamlanivimab revoked due to variant resistance."
+          "content": "EUA for single-agent bamlanivimab revoked due to variant resistance.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/media/147629/download", "label": "Read the FDA Revocation Letter (PDF)" }
         },
         {
           "date": "2021-05-26",
