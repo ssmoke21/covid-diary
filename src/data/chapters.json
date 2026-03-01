@@ -205,7 +205,9 @@
         {
           "date": "2020-03-19",
           "label": "French HCQ Study Circulates",
-          "content": "An ID physician shares the French HCQ/azithromycin study — not yet published or peer-reviewed. Debate begins on dosing, azithromycin addition, and QTc monitoring. The President calls HCQ 'a game changer' at a press conference. Azithromycin goes on ASHP shortage."
+          "content": "An ID physician shares the French HCQ/azithromycin study — not yet published or peer-reviewed. Debate begins on dosing, azithromycin addition, and QTc monitoring. The President calls HCQ 'a game changer' at a press conference. Azithromycin goes on ASHP shortage.",
+          "embed": { "type": "link", "url": "https://www.mediterranee-infection.com/wp-content/uploads/2020/03/Hydroxychloroquine_final_DOI_IJAA.pdf", "label": "Read the Original Preprint PDF (IHU Marseille)" },
+          "secondary_embed": { "type": "link", "url": "https://www.sciencedirect.com/science/article/pii/S0924857920300996", "label": "Read the Peer-Reviewed Publication (IJAA)" }
         },
         {
           "date": "2020-03-20",

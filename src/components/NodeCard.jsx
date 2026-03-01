@@ -85,7 +85,9 @@ export default function NodeCard({ node, type, index, onOpenOverlay, linked }) {
           }`}
         >
           <EmbedIcon type={node.embed.type} />
-          <span className="truncate">{embedFooterLabel(node.embed)}</span>
+          <span className="truncate">
+            {node.secondary_embed ? "2 sources" : embedFooterLabel(node.embed)}
+          </span>
           <svg className="w-3 h-3 shrink-0 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M7 17 17 7M7 7h10v10" />
           </svg>
