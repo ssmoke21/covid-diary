@@ -361,7 +361,8 @@
         {
           "date": "2020-05-01",
           "label": "Remdesivir EUA",
-          "content": "FDA issues emergency use authorization for remdesivir."
+          "content": "FDA issues emergency use authorization for remdesivir.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-issues-emergency-use-authorization-potential-covid-19-treatment", "label": "Read the FDA Press Announcement" }
         },
         {
           "date": "2020-05-08",
