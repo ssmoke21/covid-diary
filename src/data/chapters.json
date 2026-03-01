@@ -485,7 +485,8 @@
         {
           "date": "2020-10-02",
           "label": "The President Receives Casirivimab/Imdevimab",
-          "content": "The President publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. This brings considerable media attention to the medication."
+          "content": "The President publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. This brings considerable media attention to the medication.",
+          "embed": { "type": "link", "url": "https://www.statnews.com/2020/10/02/trump-taken-to-walter-reed-received-experimental-regeneron-covid19-treatment/", "label": "Read the Story on STAT News" }
         },
         {
           "date": "2020-11-09",
