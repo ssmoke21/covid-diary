@@ -450,6 +450,12 @@
           "content": "Regeneron reports the sarilumab study fails to meet its primary endpoint. Criteria was too broad, including circumstances where the drug is ineffective. Later proven effective in more targeted use. Regeneron pivots to a monoclonal antibody targeting the spike protein."
         },
         {
+          "date": "2020-07-14",
+          "label": "Preparing for the Next Wave",
+          "content": "CBMC pharmacy featured in a Wall Street Journal article on hospitals stocking up on Covid-19 drugs ahead of a feared second wave in the fall.",
+          "embed": { "type": "link", "url": "https://www.wsj.com/articles/hospitals-stock-up-on-covid-19-drugs-to-prepare-for-second-wave-in-fall-11594719000", "label": "Read the Article in the Wall Street Journal" }
+        },
+        {
           "date": "2020-09-20",
           "label": "First Compassionate Use: Casirivimab/Imdevimab",
           "content": "I work with the Pediatric ID physician on the first (of at least two) compassionate use requests for Regeneron's casirivimab/imdevimab in a pediatric patient."
