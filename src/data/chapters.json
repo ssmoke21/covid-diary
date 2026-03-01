@@ -543,7 +543,8 @@
         {
           "date": "2022-03-25",
           "label": "Sotrovimab EUA Restricted",
-          "content": "Sotrovimab EUA revised to exclude areas with high BA.2 prevalence, including New Jersey. Later fully revoked."
+          "content": "Sotrovimab EUA revised to exclude areas with high BA.2 prevalence, including New Jersey. Later fully revoked.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-updates-sotrovimab-emergency-use-authorization", "label": "Read the FDA Safety Update" }
         },
         {
           "date": "2022-11-30",
