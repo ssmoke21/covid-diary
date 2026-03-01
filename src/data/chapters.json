@@ -549,7 +549,8 @@
         {
           "date": "2022-11-30",
           "label": "Bebtelovimab EUA Revoked — The Virus Wins",
-          "content": "Bebtelovimab, the last available monoclonal antibody, has its EUA revoked. 'The virus has won the arms race.'"
+          "content": "Bebtelovimab, the last available monoclonal antibody, has its EUA revoked. 'The virus has won the arms race.'",
+          "embed": { "type": "link", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-announces-bebtelovimab-not-currently-authorized-any-us-region", "label": "Read the FDA Announcement" }
         }
       ],
       "personal_nodes": [
