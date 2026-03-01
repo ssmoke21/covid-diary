@@ -62,7 +62,8 @@
         {
           "date": "2020-02-16",
           "label": "Rutgers Basketball",
-          "content": "Rutgers beats #21 Illinois. Program on track for first NCAA tournament berth in 30 years."
+          "content": "Rutgers beats #21 Illinois. Program on track for first NCAA tournament berth in 30 years.",
+          "embed": { "type": "link", "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401166228/illinois-rutgers", "label": "View Game Recap on ESPN" }
         },
         {
           "date": "2020-03-01",
