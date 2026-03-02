@@ -323,6 +323,11 @@
           "date": "2020-04-14",
           "label": "First Baricitinib Question",
           "content": "A pharmacist at NBI asks about baricitinib — my first encounter with it as a potential immunomodulator for Covid-19. Speculation about its efficacy had appeared in a Lancet study. It is proven effective months later."
+        },
+        {
+          "date": "2020-04-16",
+          "label": "IRB Chair: Trial Enrollment vs. Compassionate Use",
+          "content": "The IRB Chair asks about our tocilizumab inventory. He only wants to recruit to the sarilumab study if tocilizumab is unavailable — because his study has a placebo arm. An interesting stance that cuts to a difficult ethical tension of the pandemic: offer an unproven drug to desperate patients, or advocate for enrollment in a trial that will actually advance science."
         }
       ],
       "personal_nodes": [
