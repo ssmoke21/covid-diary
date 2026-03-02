@@ -442,6 +442,11 @@
           "embed": { "type": "link", "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-issues-emergency-use-authorization-potential-covid-19-treatment", "label": "Read the FDA Press Announcement" }
         },
         {
+          "date": "2020-05-05",
+          "label": "\"Do We Have Remdesivir? If Not, Why Not?\"",
+          "content": "The US government begins distributing remdesivir — and no RWJBH hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution.\n\nA reporter from ABC, working on behalf of a patient, reaches out to CBMC Public Relations. The inquiry is directed to Pharmacy and to me through the IRB Chair: \"Do we have remdesivir? If not, why not?\""
+        },
+        {
           "date": "2020-05-08",
           "label": "Anakinra Early Data",
           "content": "First retrospective cohort data on anakinra published in The Lancet. I note it 'looks better than toci data.' Tocilizumab use is dropping significantly.",
