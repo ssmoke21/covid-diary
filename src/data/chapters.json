@@ -37,7 +37,7 @@
         {
           "date": "2020-01-24",
           "label": "AMS Prep Meeting",
-          "content": "A colleague mentions coronavirus might be a big deal. I dismiss the idea as unlikely and unrelated to the AMS agenda."
+          "content": "A colleague mentions coronavirus might be a big deal. The idea is dismissed as unlikely and off-agenda."
         },
         {
           "date": "2020-02-12",
@@ -280,6 +280,7 @@
         {
           "date": "2020-03-28",
           "label": "HCQ Dosing Conflict",
+          "preview": "An ID physician emails hospital leadership demanding higher HCQ dosing based on a non-comparative French study. A heated email exchange and phone call follow.",
           "content": "An ID physician (Smith) emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. He raises supply concerns about the current regimen, makes stronger claims about the data — \"Since patients on this regimen will clear the virus very quickly…\" — and implies he might be blocked from using the French dosing, which was not the case. He also follows up with kind words about the residents, as workload for them had been a prior point of discussion.\n\nI respond by email emphasizing the major limitations: the latest study is non-comparative, only 15% of patients were on oxygen, and significant questions remain about the original study. Given pharmacokinetics, a loading dose with shorter duration makes sense. Better evidence supports our regimen, though all evidence remains limited. Supply is a major concern. I commit to advocating for a shorter duration and close with gratitude for everyone's work.\n\nSmith calls immediately, saying I \"stabbed him in the back.\" As with most conversations with him, he drifts into other topics and the tension dissipates."
         },
         {
@@ -297,6 +298,7 @@
         {
           "date": "2020-04-01",
           "label": "\"There Are No Rules Anymore\"",
+          "preview": "A day of unproven therapies: ribavirin, zinc, colchicine, cyclosporine. Steve captures it: \"There are no rules anymore.\"",
           "content": "A wide-ranging day of unproven therapies. I add ribavirin to the reported inventory based on a contact of an ID physician in Egypt. Zinc sulfate shortages require active management — not recommended, not proven, but used widely. A conversation with my ID pharmacy colleague covers zinc + HCQ, colchicine, and cyclosporine: the first time I have heard of colchicine for Covid-19, the first time he has heard of cyclosporine. Steve captures the moment: \"There are no rules anymore.\""
         },
         {
@@ -444,6 +446,7 @@
         {
           "date": "2020-05-05",
           "label": "\"Do We Have Remdesivir? If Not, Why Not?\"",
+          "preview": "The US government distributes remdesivir — no RWJBH hospitals are selected. A reporter contacts CBMC on behalf of a patient: \"Do we have remdesivir? If not, why not?\"",
           "content": "The US government begins distributing remdesivir — and no RWJBH hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution.\n\nA reporter from ABC, working on behalf of a patient, reaches out to CBMC Public Relations. The inquiry is directed to Pharmacy and to me through the IRB Chair: \"Do we have remdesivir? If not, why not?\""
         },
         {
@@ -461,11 +464,13 @@
         {
           "date": "2020-05-11",
           "label": "What Is Our Threshold to Act Before National Guidelines?",
+          "preview": "I ask the CPO and AMS physician lead: what is our threshold to act before national guidelines? The answer: we follow national guidelines — a decision shaped by the HCQ experience.",
           "content": "I email the RWJBH CPO and AMS physician lead: \"What is the threshold for modifying our recommendations before national guidelines?\" The answer: we will follow national guidelines.\n\nThe question anticipates a recurring problem — new data that shifts the treatment landscape days or weeks before guidelines catch up. This will eventually come to a head most visibly with tocilizumab, leaving clinicians wanting to act on emerging evidence with no system guidance to support them.\n\nThe answer, in some ways, is likely a response to the early HCQ experience: a lesson in the dangers of moving fast on unproven therapies, and the institutional cost of having to walk recommendations back once national guidelines catch up."
         },
         {
           "date": "2020-05-15",
           "label": "First Remdesivir Shipment",
+          "preview": "26 courses arrive at 6–7pm after a day-long delay. Allocation strategy debated, supply falls short of demand, and a Saturday morning CMO call is needed to approve orders.",
           "content": "We are told to expect the first remdesivir shipment. The CEO emails pharmacy leadership and me to sort out receiving logistics. We ask the CMO how to allocate a limited supply — 4–15 courses expected — against high demand of 25–30 anticipated eligible patients.\n\nThe CMO responds: first come, first served — and this becomes the system-wide strategy. Around this time I hear from colleagues at other institutions that first come, first served is not considered equitable. We did not have the capacity to implement a more equitable allocation process.\n\nMidday, the shipment is reported delayed. The next day, 26 courses of remdesivir arrive around 6–7pm. An ID physician pre-emptively enters roughly 10 orders that evening — after I have left for the day. We never established a clear implementation process. I end up calling the CMO on Saturday morning to review and approve the orders."
         },
         {
@@ -695,7 +700,7 @@
         {
           "date": "2020-11-09",
           "label": "Pfizer 90% Efficacy Announced",
-          "content": "A PGY1 resident tells me the news: the Pfizer vaccine is 90% effective. 'I remember being blown away. Thrilled.' All experts were similarly stunned by the magnitude of efficacy.",
+          "content": "Pfizer vaccine trial reports 90% efficacy — a result that stuns experts across the field.",
           "embed": { "type": "link", "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-vaccine-candidate-against", "label": "Read the Pfizer Press Release" }
         },
         {
@@ -724,7 +729,7 @@
         {
           "date": "2020-12-21",
           "label": "First Vaccines at the Hospital",
-          "content": "First day of vaccine administration at our hospital. I'm vaccinated at 5pm — an hour after the clinic is scheduled to close — as the vaccine team looks for volunteers to use up remaining doses. I was not in the first priority group."
+          "content": "First day of vaccine administration at our hospital."
         },
         {
           "date": "2020-12-23",
@@ -743,6 +748,11 @@
           "date": "2020-11-09",
           "label": "Missed the Tweet",
           "content": "I was upset I missed the Pfizer 90% efficacy tweet — a resident was the one who told me. I had been checking Twitter 2-4x per day all year."
+        },
+        {
+          "date": "2020-12-21",
+          "label": "My Turn: Vaccinated at 5pm",
+          "content": "I'm vaccinated at 5pm — an hour after the clinic is scheduled to close — as the vaccine team looks for volunteers to use up remaining doses. I was not in the first priority group."
         },
         {
           "date": "2020-12-23",

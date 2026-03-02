@@ -32,6 +32,8 @@ function embedFooterLabel(embed) {
 export default function NodeCard({ node, type, index, onOpenOverlay, linked }) {
   const isClinical = type === "clinical";
   const hasEmbed = !!node.embed;
+  const hasPreview = !!node.preview;
+  const isClickable = hasEmbed || hasPreview;
 
   return (
     <div
@@ -39,11 +41,11 @@ export default function NodeCard({ node, type, index, onOpenOverlay, linked }) {
         isClinical
           ? `bg-[var(--color-clinical-muted)] border-[var(--color-clinical-border)]`
           : `bg-[var(--color-personal-muted)] border-[var(--color-personal-border)]`
-      } ${hasEmbed ? `node-clickable ${isClinical ? "is-clinical" : "is-personal"}` : ""}`}
+      } ${isClickable ? `node-clickable ${isClinical ? "is-clinical" : "is-personal"}` : ""}`}
       style={{
         animation: `fade-in-up 0.5s ease-out ${index * 0.08}s both`,
       }}
-      onClick={hasEmbed && onOpenOverlay ? () => onOpenOverlay(node) : undefined}
+      onClick={isClickable && onOpenOverlay ? () => onOpenOverlay(node) : undefined}
     >
       {/* Card body */}
       <div className="p-5">
@@ -72,8 +74,27 @@ export default function NodeCard({ node, type, index, onOpenOverlay, linked }) {
         </h4>
 
         {/* Content */}
-        <p className="text-sm leading-relaxed text-stone-700">{node.content}</p>
+        <p className="text-sm leading-relaxed text-stone-700">{node.preview ?? node.content}</p>
       </div>
+
+      {/* Read-more footer strip (preview-only nodes) */}
+      {hasPreview && !hasEmbed && (
+        <div
+          className={`flex items-center gap-2 px-5 py-2.5 border-t text-xs font-medium ${
+            isClinical
+              ? "bg-[var(--color-clinical)]/8 border-[var(--color-clinical-border)] text-[var(--color-clinical)]"
+              : "bg-[var(--color-personal)]/8 border-[var(--color-personal-border)] text-[var(--color-personal)]"
+          }`}
+        >
+          <svg className="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+          <span>Read more</span>
+          <svg className="w-3 h-3 shrink-0 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17 17 7M7 7h10v10" />
+          </svg>
+        </div>
+      )}
 
       {/* Embed footer strip */}
       {hasEmbed && (
