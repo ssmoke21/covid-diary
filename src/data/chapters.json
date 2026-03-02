@@ -237,6 +237,26 @@
           "embed": { "type": "tweet", "url": "https://x.com/realDonaldTrump/status/1241367239900778501" }
         },
         {
+          "date": "2020-03-23",
+          "label": "CBMC Pharmacy Updates to ID Begin",
+          "content": "I begin sending regular updates to the ID division: case numbers, HCQ utilization, medication inventory, and literature summaries. Sent three days a week for the next month and a half."
+        },
+        {
+          "date": "2020-03-23",
+          "label": "Remdesivir Trial Site: Ambition Without Infrastructure",
+          "content": "Physicians frequently raise the idea of becoming a remdesivir clinical trial site and developing our own trial. In practice, there is a shortage of primary investigators with trial experience and our research infrastructure is limited. We do not become a remdesivir site. A handful of trials are approved through IRB, but very few patients are enrolled."
+        },
+        {
+          "date": "2020-03-23",
+          "label": "HCQ Reporting: Wildly Wrong Numbers",
+          "content": "A system-level HCQ report shows just 14 patients across the entire system — meanwhile CBMC alone has 37. Daily manual reconciliation of HCQ numbers is required for corporate reporting throughout most of the first wave."
+        },
+        {
+          "date": "2020-03-23",
+          "label": "ACEi/ARB as Solution: Early Misstep",
+          "content": "A forwarded email from a board-certified critical care pharmacist (via ACCP CC PRN) argues that because ACE2 is the SARS-CoV-2 receptor, ACE inhibitors and ARBs could be a therapeutic solution. These medications are later proven not to be effective."
+        },
+        {
           "date": "2020-03-25",
           "label": "HCQ Duration Curtailed",
           "content": "Greater than 5-day HCQ duration discouraged due to limited evidence and supply constraints."
