@@ -257,6 +257,11 @@
           "content": "A forwarded email from a board-certified critical care pharmacist (via ACCP CC PRN) argues that because ACE2 is the SARS-CoV-2 receptor, ACE inhibitors and ARBs could be a therapeutic solution. These medications are later proven not to be effective."
         },
         {
+          "date": "2020-03-24",
+          "label": "CAP Antibiotics Added to Covid-19 Order Set",
+          "content": "The decision is made to include community-acquired pneumonia antibiotics in the Covid-19 order set. Antibiotic overuse for Covid-19 becomes a massive problem in 2020, likely contributing to significant increases in antibiotic-resistant infections. Doxycycline is prioritized for CAP treatment to conserve the dwindling supply of azithromycin."
+        },
+        {
           "date": "2020-03-25",
           "label": "HCQ Duration Curtailed",
           "content": "Greater than 5-day HCQ duration discouraged due to limited evidence and supply constraints."
