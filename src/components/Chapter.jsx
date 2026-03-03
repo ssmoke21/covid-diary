@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import NodeCard from "./NodeCard";
 import NodeOverlay from "./NodeOverlay";
-import CaseChart from "./CaseChart";
-import caseData from "../data/case-data.json";
+import CaseMap from "./CaseMap";
+import mapData from "../data/map-data.json";
 
 const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
@@ -237,11 +237,9 @@ export default function Chapter({ chapter, isVisible }) {
 
       {/* Case data visualization — Chapters 1–4 only */}
       {hasCaseChart && CHAPTER_DATE_RANGES[chapter.chapter_number] && (
-        <CaseChart
-          data={caseData}
+        <CaseMap
+          data={mapData}
           currentDate={currentNodeDate}
-          startDate={CHAPTER_DATE_RANGES[chapter.chapter_number].start}
-          endDate={CHAPTER_DATE_RANGES[chapter.chapter_number].end}
           isVisible={isVisible}
         />
       )}

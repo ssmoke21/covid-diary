@@ -1,0 +1,206 @@
+import { useMemo } from "react";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Marker,
+} from "@vnedyalk0v/react19-simple-maps";
+import topology from "world-atlas/countries-110m.json";
+
+// ─── Date parsing helpers (mirrors CaseChart.jsx / Chapter.jsx) ──────────────
+
+const MONTHS_MAP = {
+  january: 0, february: 1, march: 2, april: 3,
+  may: 4, june: 5, july: 6, august: 7,
+  september: 8, october: 9, november: 10, december: 11,
+};
+
+const SHORT_MONTHS = [
+  "Jan","Feb","Mar","Apr","May","Jun",
+  "Jul","Aug","Sep","Oct","Nov","Dec",
+];
+
+function parseNodeDate(dateStr) {
+  if (!dateStr) return 0;
+  const iso = new Date(dateStr + "T00:00:00");
+  if (!isNaN(iso)) return iso.getTime();
+  const lower = dateStr.toLowerCase();
+  if (lower.includes("summer")) { const y = dateStr.match(/\d{4}/)?.[0]; return y ? new Date(+y, 6, 1).getTime() : 0; }
+  if (lower.includes("spring")) { const y = dateStr.match(/\d{4}/)?.[0]; return y ? new Date(+y, 3, 1).getTime() : 0; }
+  if (lower.includes("winter")) { const y = dateStr.match(/\d{4}/)?.[0]; return y ? new Date(+y, 0, 1).getTime() : 0; }
+  if (lower.includes("fall") || lower.includes("autumn")) { const y = dateStr.match(/\d{4}/)?.[0]; return y ? new Date(+y, 9, 1).getTime() : 0; }
+  for (const [name, idx] of Object.entries(MONTHS_MAP)) {
+    if (lower.includes(name)) {
+      const y = dateStr.match(/\d{4}/)?.[0];
+      if (!y) continue;
+      let day = 15;
+      if (lower.includes("early")) day = 5;
+      else if (lower.includes("late")) day = 25;
+      return new Date(+y, idx, day).getTime();
+    }
+  }
+  return 0;
+}
+
+function formatDateFull(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr + "T00:00:00");
+  return `${SHORT_MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
+function formatNumber(n) {
+  if (n == null || isNaN(n)) return "—";
+  return n.toLocaleString();
+}
+
+// ─── Bubble sizing constants ─────────────────────────────────────────────────
+
+const MAX_RADIUS = 20;
+const MIN_RADIUS = 1.5;
+
+// ─── Main component ──────────────────────────────────────────────────────────
+
+export default function CaseMap({ data, currentDate, isVisible }) {
+  // Find the date index closest to the current scroll position
+  const dateIndex = useMemo(() => {
+    if (!currentDate || !data?.dates?.length) return 0;
+    const targetTs = parseNodeDate(currentDate);
+    if (!targetTs) return 0;
+
+    // Binary search for closest date
+    const dates = data.dates;
+    let lo = 0;
+    let hi = dates.length - 1;
+
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
+      const midTs = new Date(dates[mid] + "T00:00:00").getTime();
+      if (midTs < targetTs) lo = mid + 1;
+      else hi = mid;
+    }
+
+    // Check if lo-1 is closer
+    if (lo > 0) {
+      const loTs = new Date(dates[lo] + "T00:00:00").getTime();
+      const prevTs = new Date(dates[lo - 1] + "T00:00:00").getTime();
+      if (Math.abs(prevTs - targetTs) < Math.abs(loTs - targetTs)) {
+        return lo - 1;
+      }
+    }
+    return lo;
+  }, [currentDate, data]);
+
+  // Compute bubbles for the current date
+  const bubbles = useMemo(() => {
+    if (!data?.countries?.length) return [];
+
+    const active = data.countries
+      .map((c) => ({ ...c, value: c.cases[dateIndex] || 0 }))
+      .filter((c) => c.value > 0);
+
+    if (!active.length) return [];
+
+    const maxVal = Math.max(...active.map((c) => c.value));
+    const scale = MAX_RADIUS / Math.sqrt(maxVal || 1);
+
+    return active
+      .map((c) => ({
+        id: c.id,
+        name: c.name,
+        coordinates: [c.lng, c.lat],
+        radius: Math.max(MIN_RADIUS, Math.sqrt(c.value) * scale),
+        cases: c.value,
+      }))
+      // Sort smallest first so large bubbles render on top
+      .sort((a, b) => a.cases - b.cases);
+  }, [data, dateIndex]);
+
+  // Global total for annotation
+  const globalTotal = data?.global?.[dateIndex] || 0;
+  const currentIsoDate = data?.dates?.[dateIndex] || "";
+
+  if (!data?.dates?.length) return null;
+
+  return (
+    <div
+      className="sticky top-0 z-20 overflow-hidden border-b border-stone-700/30"
+      style={{
+        animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none",
+      }}
+    >
+      {/* Map container with dark background */}
+      <div
+        className="relative"
+        style={{ backgroundColor: "#1a1a2e" }}
+      >
+        <ComposableMap
+          projection="geoNaturalEarth1"
+          projectionConfig={{ scale: 140, center: [10, 20] }}
+          width={800}
+          height={380}
+          style={{
+            width: "100%",
+            height: "auto",
+            maxHeight: "170px",
+            display: "block",
+          }}
+        >
+          {/* Country outlines */}
+          <Geographies geography={topology}>
+            {({ geographies }) =>
+              geographies.map((geo, i) => (
+                <Geography
+                  key={geo.rsmKey || geo.id || i}
+                  geography={geo}
+                  fill="#2a2a4a"
+                  stroke="#3a3a5a"
+                  strokeWidth={0.4}
+                  style={{
+                    default: { outline: "none" },
+                    hover: { outline: "none" },
+                    pressed: { outline: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+
+          {/* Red bubbles at country centroids */}
+          {bubbles.map((b) => (
+            <Marker key={b.id} coordinates={b.coordinates}>
+              <circle
+                r={b.radius}
+                fill="rgba(220, 38, 38, 0.6)"
+                stroke="rgba(239, 68, 68, 0.85)"
+                strokeWidth={0.5}
+              />
+            </Marker>
+          ))}
+        </ComposableMap>
+      </div>
+
+      {/* Annotation bar */}
+      <div
+        className="flex items-center justify-center gap-3 py-1.5 text-[10px] font-mono"
+        style={{ backgroundColor: "#12121f" }}
+      >
+        {currentIsoDate && (
+          <span className="text-stone-500">{formatDateFull(currentIsoDate)}</span>
+        )}
+        {currentIsoDate && globalTotal > 0 && (
+          <>
+            <span className="text-stone-700">|</span>
+            <span className="text-red-400/80 font-medium">
+              {formatNumber(globalTotal)} total cases worldwide
+            </span>
+          </>
+        )}
+        {!currentIsoDate && (
+          <span className="text-stone-600 text-[9px] uppercase tracking-widest">
+            Global Case Tracker
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
