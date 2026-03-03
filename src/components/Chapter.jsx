@@ -1,8 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import NodeCard from "./NodeCard";
 import NodeOverlay from "./NodeOverlay";
-import CaseMap from "./CaseMap";
-import mapData from "../data/map-data.json";
+import MapVisualization from "./MapVisualization";
 
 const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
@@ -171,7 +170,7 @@ export default function Chapter({ chapter, isVisible }) {
         });
         if (topmost) setCurrentNodeDate(topmost);
       },
-      { threshold: 0.2, rootMargin: "-15% 0px -65% 0px" }
+      { threshold: 0.2, rootMargin: "-15% 0px -55% 0px" }
     );
 
     // Small delay to ensure DOM is rendered
@@ -237,10 +236,10 @@ export default function Chapter({ chapter, isVisible }) {
 
       {/* Case data visualization — Chapters 1–4 only */}
       {hasCaseChart && CHAPTER_DATE_RANGES[chapter.chapter_number] && (
-        <CaseMap
-          data={mapData}
+        <MapVisualization
           currentDate={currentNodeDate}
           isVisible={isVisible}
+          chapterNumber={chapter.chapter_number}
         />
       )}
 

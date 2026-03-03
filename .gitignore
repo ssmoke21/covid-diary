@@ -25,3 +25,4 @@ dist-ssr
 
 # Large raw data files (processed output is committed)
 scripts/owid-covid-data.csv
+scripts/nyt-us-states.csv

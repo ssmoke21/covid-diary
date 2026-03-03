@@ -7,7 +7,7 @@ import {
 } from "@vnedyalk0v/react19-simple-maps";
 import topology from "world-atlas/countries-110m.json";
 
-// ─── Date parsing helpers (mirrors CaseChart.jsx / Chapter.jsx) ──────────────
+// ─── Shared date parsing helpers (exported for reuse) ────────────────────────
 
 const MONTHS_MAP = {
   january: 0, february: 1, march: 2, april: 3,
@@ -20,7 +20,7 @@ const SHORT_MONTHS = [
   "Jul","Aug","Sep","Oct","Nov","Dec",
 ];
 
-function parseNodeDate(dateStr) {
+export function parseNodeDate(dateStr) {
   if (!dateStr) return 0;
   const iso = new Date(dateStr + "T00:00:00");
   if (!isNaN(iso)) return iso.getTime();
@@ -42,15 +42,38 @@ function parseNodeDate(dateStr) {
   return 0;
 }
 
-function formatDateFull(dateStr) {
+export function formatDateFull(dateStr) {
   if (!dateStr) return "";
   const d = new Date(dateStr + "T00:00:00");
   return `${SHORT_MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 }
 
-function formatNumber(n) {
+export function formatNumber(n) {
   if (n == null || isNaN(n)) return "—";
   return n.toLocaleString();
+}
+
+/** Binary-search a sorted dates array for the closest match to targetTs */
+export function findDateIndex(dates, targetTs) {
+  if (!dates?.length || !targetTs) return 0;
+  let lo = 0;
+  let hi = dates.length - 1;
+
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    const midTs = new Date(dates[mid] + "T00:00:00").getTime();
+    if (midTs < targetTs) lo = mid + 1;
+    else hi = mid;
+  }
+
+  if (lo > 0) {
+    const loTs = new Date(dates[lo] + "T00:00:00").getTime();
+    const prevTs = new Date(dates[lo - 1] + "T00:00:00").getTime();
+    if (Math.abs(prevTs - targetTs) < Math.abs(loTs - targetTs)) {
+      return lo - 1;
+    }
+  }
+  return lo;
 }
 
 // ─── Bubble sizing constants ─────────────────────────────────────────────────
@@ -60,34 +83,19 @@ const MIN_RADIUS = 1.5;
 
 // ─── Main component ──────────────────────────────────────────────────────────
 
-export default function CaseMap({ data, currentDate, isVisible }) {
+/**
+ * @param {Object} props
+ * @param {Object} props.data - Map data with dates, global, countries arrays
+ * @param {string} props.currentDate - Current timeline node date string
+ * @param {boolean} [props.isVisible] - Controls fade-in animation
+ * @param {boolean} [props.embedded] - If true, renders map-only (no sticky wrapper/annotation)
+ */
+export default function CaseMap({ data, currentDate, isVisible, embedded = false }) {
   // Find the date index closest to the current scroll position
   const dateIndex = useMemo(() => {
     if (!currentDate || !data?.dates?.length) return 0;
     const targetTs = parseNodeDate(currentDate);
-    if (!targetTs) return 0;
-
-    // Binary search for closest date
-    const dates = data.dates;
-    let lo = 0;
-    let hi = dates.length - 1;
-
-    while (lo < hi) {
-      const mid = (lo + hi) >> 1;
-      const midTs = new Date(dates[mid] + "T00:00:00").getTime();
-      if (midTs < targetTs) lo = mid + 1;
-      else hi = mid;
-    }
-
-    // Check if lo-1 is closer
-    if (lo > 0) {
-      const loTs = new Date(dates[lo] + "T00:00:00").getTime();
-      const prevTs = new Date(dates[lo - 1] + "T00:00:00").getTime();
-      if (Math.abs(prevTs - targetTs) < Math.abs(loTs - targetTs)) {
-        return lo - 1;
-      }
-    }
-    return lo;
+    return findDateIndex(data.dates, targetTs);
   }, [currentDate, data]);
 
   // Compute bubbles for the current date
@@ -111,7 +119,6 @@ export default function CaseMap({ data, currentDate, isVisible }) {
         radius: Math.max(MIN_RADIUS, Math.sqrt(c.value) * scale),
         cases: c.value,
       }))
-      // Sort smallest first so large bubbles render on top
       .sort((a, b) => a.cases - b.cases);
   }, [data, dateIndex]);
 
@@ -121,6 +128,58 @@ export default function CaseMap({ data, currentDate, isVisible }) {
 
   if (!data?.dates?.length) return null;
 
+  // ── Map SVG content (shared between embedded and standalone) ──
+  const mapContent = (
+    <div className="relative" style={{ backgroundColor: "#1a1a2e" }}>
+      <ComposableMap
+        projection="geoNaturalEarth1"
+        projectionConfig={{ scale: 140, center: [10, 20] }}
+        width={800}
+        height={380}
+        style={{
+          width: "100%",
+          height: "auto",
+          maxHeight: "170px",
+          display: "block",
+        }}
+      >
+        <Geographies geography={topology}>
+          {({ geographies }) =>
+            geographies.map((geo, i) => (
+              <Geography
+                key={geo.rsmKey || geo.id || i}
+                geography={geo}
+                fill="#2a2a4a"
+                stroke="#3a3a5a"
+                strokeWidth={0.4}
+                style={{
+                  default: { outline: "none" },
+                  hover: { outline: "none" },
+                  pressed: { outline: "none" },
+                }}
+              />
+            ))
+          }
+        </Geographies>
+
+        {bubbles.map((b) => (
+          <Marker key={b.id} coordinates={b.coordinates}>
+            <circle
+              r={b.radius}
+              fill="rgba(220, 38, 38, 0.6)"
+              stroke="rgba(239, 68, 68, 0.85)"
+              strokeWidth={0.5}
+            />
+          </Marker>
+        ))}
+      </ComposableMap>
+    </div>
+  );
+
+  // ── Embedded mode: just the map, no wrapper ──
+  if (embedded) return mapContent;
+
+  // ── Standalone mode: sticky wrapper + annotation bar ──
   return (
     <div
       className="sticky top-0 z-20 overflow-hidden border-b border-stone-700/30"
@@ -128,56 +187,7 @@ export default function CaseMap({ data, currentDate, isVisible }) {
         animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none",
       }}
     >
-      {/* Map container with dark background */}
-      <div
-        className="relative"
-        style={{ backgroundColor: "#1a1a2e" }}
-      >
-        <ComposableMap
-          projection="geoNaturalEarth1"
-          projectionConfig={{ scale: 140, center: [10, 20] }}
-          width={800}
-          height={380}
-          style={{
-            width: "100%",
-            height: "auto",
-            maxHeight: "170px",
-            display: "block",
-          }}
-        >
-          {/* Country outlines */}
-          <Geographies geography={topology}>
-            {({ geographies }) =>
-              geographies.map((geo, i) => (
-                <Geography
-                  key={geo.rsmKey || geo.id || i}
-                  geography={geo}
-                  fill="#2a2a4a"
-                  stroke="#3a3a5a"
-                  strokeWidth={0.4}
-                  style={{
-                    default: { outline: "none" },
-                    hover: { outline: "none" },
-                    pressed: { outline: "none" },
-                  }}
-                />
-              ))
-            }
-          </Geographies>
-
-          {/* Red bubbles at country centroids */}
-          {bubbles.map((b) => (
-            <Marker key={b.id} coordinates={b.coordinates}>
-              <circle
-                r={b.radius}
-                fill="rgba(220, 38, 38, 0.6)"
-                stroke="rgba(239, 68, 68, 0.85)"
-                strokeWidth={0.5}
-              />
-            </Marker>
-          ))}
-        </ComposableMap>
-      </div>
+      {mapContent}
 
       {/* Annotation bar */}
       <div
