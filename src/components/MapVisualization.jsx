@@ -21,7 +21,7 @@ export default function MapVisualization({ currentDate, isVisible, chapterNumber
   const showUsaMap = chapterNumber >= 2;
   const showHospital = chapterNumber >= 3;
 
-  // Compute annotation values from both datasets
+  // Compute annotation values from all datasets
   const annotation = useMemo(() => {
     const targetTs = parseNodeDate(currentDate);
 
@@ -35,8 +35,19 @@ export default function MapVisualization({ currentDate, isVisible, chapterNumber
       usTotal = usMapData.usTotal?.[usIdx] || 0;
     }
 
-    return { worldDate, worldTotal, usTotal };
-  }, [currentDate, showUsaMap]);
+    let hospitalPositive = null;
+    if (showHospital && hospitalData.dates?.length) {
+      const hIdx = findDateIndex(hospitalData.dates, targetTs);
+      // Only show hospital data up to the current scroll position (no future reveal)
+      const hDate = hospitalData.dates[hIdx];
+      const hDateTs = new Date(hDate + "T00:00:00").getTime();
+      if (hDateTs <= targetTs) {
+        hospitalPositive = hospitalData.positive[hIdx];
+      }
+    }
+
+    return { worldDate, worldTotal, usTotal, hospitalPositive };
+  }, [currentDate, showUsaMap, showHospital]);
 
   // Use the world date for display (it covers all chapters)
   const displayDate = annotation.worldDate;
@@ -104,40 +115,63 @@ export default function MapVisualization({ currentDate, isVisible, chapterNumber
         )}
       </div>
 
-      {/* Shared annotation bar */}
+      {/* Annotation bar — stats centered under each panel */}
       <div
-        className="flex items-center justify-center gap-3 py-1.5 text-[10px] font-mono"
+        className="py-1.5 text-[10px] font-mono"
         style={{ backgroundColor: "#12121f" }}
       >
-        {displayDate && (
-          <span className="text-stone-500">{formatDateFull(displayDate)}</span>
-        )}
+        {/* Mobile: single centered row showing date + US total */}
+        <div className="flex items-center justify-center gap-3 lg:hidden">
+          {displayDate && (
+            <span className="text-stone-500">{formatDateFull(displayDate)}</span>
+          )}
+          {displayDate && annotation.usTotal > 0 && (
+            <>
+              <span className="text-stone-700">|</span>
+              <span className="text-red-400/80 font-medium">
+                {formatNumber(annotation.usTotal)} US
+              </span>
+            </>
+          )}
+        </div>
 
-        {/* World total — hidden on mobile for Ch2+ */}
-        {displayDate && annotation.worldTotal > 0 && (
-          <span className="hidden lg:inline-flex items-center gap-3">
-            <span className="text-stone-700">|</span>
-            <span className="text-red-400/80 font-medium">
-              {formatNumber(annotation.worldTotal)} worldwide
-            </span>
-          </span>
-        )}
+        {/* Desktop: grid matching panel widths */}
+        <div className={`hidden lg:grid ${showHospital ? "grid-cols-3" : "grid-cols-2"}`}>
+          {/* Under world map */}
+          <div className="text-center">
+            {displayDate && (
+              <span className="text-stone-500">{formatDateFull(displayDate)}</span>
+            )}
+            {displayDate && annotation.worldTotal > 0 && (
+              <>
+                <span className="text-stone-700 mx-2">|</span>
+                <span className="text-red-400/80 font-medium">
+                  {formatNumber(annotation.worldTotal)} worldwide
+                </span>
+              </>
+            )}
+          </div>
 
-        {/* US total — always shown for Ch2+ */}
-        {displayDate && annotation.usTotal > 0 && (
-          <>
-            <span className="text-stone-700">|</span>
-            <span className="text-red-400/80 font-medium">
-              {formatNumber(annotation.usTotal)} US
-            </span>
-          </>
-        )}
+          {/* Under USA map */}
+          <div className="text-center">
+            {displayDate && annotation.usTotal > 0 && (
+              <span className="text-red-400/80 font-medium">
+                {formatNumber(annotation.usTotal)} US
+              </span>
+            )}
+          </div>
 
-        {!displayDate && (
-          <span className="text-stone-600 text-[9px] uppercase tracking-widest">
-            Global Case Tracker
-          </span>
-        )}
+          {/* Under hospital chart (Ch3-4 only) */}
+          {showHospital && (
+            <div className="text-center">
+              {annotation.hospitalPositive != null && (
+                <span className="text-red-400/80 font-medium">
+                  {formatNumber(annotation.hospitalPositive)} COVID+ inpatient
+                </span>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

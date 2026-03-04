@@ -78,8 +78,8 @@ export function findDateIndex(dates, targetTs) {
 
 // ─── Bubble sizing constants ─────────────────────────────────────────────────
 
-const MAX_RADIUS = 20;
-const MIN_RADIUS = 1.5;
+const MAX_RADIUS = 35;
+const MIN_RADIUS = 2;
 
 // ─── Main component ──────────────────────────────────────────────────────────
 

@@ -25,39 +25,51 @@ function formatTick(dateStr) {
 
 /**
  * Area chart showing hospital COVID-19 census (positive + PUI).
- * Rendered in embedded mode inside MapVisualization.
- *
- * @param {Object} props
- * @param {Object} props.data - Hospital data with dates, positive, pui arrays
- * @param {string} props.currentDate - Current timeline node date string
+ * Only reveals data up to the current scroll date — future is hidden.
+ * Y axis scales dynamically to the revealed data so the peak isn't spoiled.
  */
 export default function HospitalChart({ data, currentDate }) {
-  // Build chart data array
-  const chartData = useMemo(() => {
-    if (!data?.dates?.length) return [];
-    return data.dates.map((d, i) => ({
-      date: d,
-      positive: data.positive[i] ?? null,
-      pui: data.pui[i] ?? null,
-    }));
-  }, [data]);
-
-  // Find current position for the reference line
-  const cursorDate = useMemo(() => {
-    if (!currentDate || !data?.dates?.length) return null;
+  // Find where we are in the data
+  const cursorIndex = useMemo(() => {
+    if (!currentDate || !data?.dates?.length) return 0;
     const targetTs = parseNodeDate(currentDate);
-    if (!targetTs) return null;
-    const idx = findDateIndex(data.dates, targetTs);
-    return data.dates[idx];
+    if (!targetTs) return 0;
+    return findDateIndex(data.dates, targetTs);
   }, [currentDate, data]);
 
-  // Current positive count for annotation
+  // Build chart data — only up to the current scroll position (progressive reveal)
+  const { chartData, yMax } = useMemo(() => {
+    if (!data?.dates?.length) return { chartData: [], yMax: 50 };
+
+    // Only include data points up to and including the cursor
+    const revealed = [];
+    let maxVal = 0;
+    for (let i = 0; i <= cursorIndex && i < data.dates.length; i++) {
+      const pos = data.positive[i] ?? null;
+      const pui = data.pui[i] ?? null;
+      revealed.push({
+        date: data.dates[i],
+        positive: pos,
+        pui: pui,
+      });
+      if (pos != null && pos > maxVal) maxVal = pos;
+      if (pui != null && pui > maxVal) maxVal = pui;
+    }
+
+    // Add some headroom to the Y axis (round up to nice number)
+    const headroom = Math.max(50, Math.ceil(maxVal * 1.15 / 25) * 25);
+
+    return { chartData: revealed, yMax: headroom };
+  }, [data, cursorIndex]);
+
+  // Current date string for the reference line
+  const cursorDate = data?.dates?.[cursorIndex] || null;
+
+  // Current positive count for the legend
   const currentPositive = useMemo(() => {
-    if (!cursorDate || !data?.dates?.length) return null;
-    const idx = data.dates.indexOf(cursorDate);
-    if (idx < 0) return null;
-    return data.positive[idx];
-  }, [cursorDate, data]);
+    if (cursorIndex < 0 || !data?.positive) return null;
+    return data.positive[cursorIndex];
+  }, [cursorIndex, data]);
 
   if (!chartData.length) return null;
 
@@ -98,6 +110,7 @@ export default function HospitalChart({ data, currentDate }) {
               minTickGap={40}
             />
             <YAxis
+              domain={[0, yMax]}
               tick={{ fill: "#64748b", fontSize: 8, fontFamily: "monospace" }}
               axisLine={false}
               tickLine={false}
@@ -113,6 +126,7 @@ export default function HospitalChart({ data, currentDate }) {
               fill="url(#gradPui)"
               dot={false}
               connectNulls
+              isAnimationActive={false}
               name="PUI"
             />
 
@@ -125,10 +139,11 @@ export default function HospitalChart({ data, currentDate }) {
               fill="url(#gradPositive)"
               dot={false}
               connectNulls
+              isAnimationActive={false}
               name="COVID+"
             />
 
-            {/* Scroll cursor */}
+            {/* Scroll cursor at the leading edge */}
             {cursorDate && (
               <ReferenceLine
                 x={cursorDate}

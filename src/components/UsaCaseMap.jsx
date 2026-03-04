@@ -10,8 +10,8 @@ import { parseNodeDate, findDateIndex } from "./CaseMap";
 
 // ─── Bubble sizing (smaller than world map — states are closer together) ─────
 
-const MAX_RADIUS = 14;
-const MIN_RADIUS = 1.5;
+const MAX_RADIUS = 25;
+const MIN_RADIUS = 2;
 
 // ─── Main component ──────────────────────────────────────────────────────────
 
