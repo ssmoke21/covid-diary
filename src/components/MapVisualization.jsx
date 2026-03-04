@@ -155,7 +155,7 @@ export default function MapVisualization({ currentDate, isVisible, chapterNumber
   // ── Chapters 2-4: Multi-panel ──
   return (
     <div
-      className="sticky top-0 z-20 overflow-hidden border-b border-stone-700/30"
+      className="sticky top-0 z-20 overflow-hidden"
       style={{
         animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none",
       }}
@@ -294,6 +294,8 @@ export default function MapVisualization({ currentDate, isVisible, chapterNumber
           )}
         </div>
       </div>
+      {/* Gradient divider — matches chapter separator style */}
+      <div className="h-px bg-gradient-to-r from-transparent via-stone-600/40 to-transparent" />
     </div>
   );
 }
