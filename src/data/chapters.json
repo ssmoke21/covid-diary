@@ -42,7 +42,8 @@
         {
           "date": "2020-03-01",
           "label": "Puerto Rico Work Trip",
-          "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?"
+          "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?",
+          "link_group": "puerto-rico-march-2020"
         },
         {
           "date": "2020-03-04",
@@ -72,7 +73,8 @@
         {
           "date": "2020-03-01",
           "label": "My Wife Prepares",
-          "content": "While I'm in Puerto Rico, my wife begins preparing for a potential Covid-19 wave — first grocery haul and cleaning supplies."
+          "content": "While I'm in Puerto Rico, my wife begins preparing for a potential Covid-19 wave — first grocery haul and cleaning supplies.",
+          "link_group": "puerto-rico-march-2020"
         }
       ],
       "assets_wishlist": [
@@ -184,7 +186,8 @@
         {
           "date": "2020-03-16",
           "label": "HCQ Protocol Version 3",
-          "content": "Our ID PharmD colleague sends updated recommendations: HCQ for most eligible patients, remdesivir via clinical trial if mechanically ventilated, IL-6 antagonist if ARDS. The AMS distributes the first formal guidance (Version 3)."
+          "content": "Our ID PharmD colleague sends updated recommendations: HCQ for most eligible patients, remdesivir via clinical trial if mechanically ventilated, IL-6 antagonist if ARDS. The AMS distributes the first formal guidance (Version 3).",
+          "link_group": "hcq-v3-strangers"
         },
         {
           "date": "2020-03-16",
@@ -361,9 +364,10 @@
           "embed": { "type": "iframe", "url": "https://www.nj.com/coronavirus/2020/03/nonessential-businesses-will-be-shut-down-in-nj-due-to-coronavirus-outbreak-gov-murphy-says.html", "label": "Read the Story on NJ.com" }
         },
         {
-          "date": "2020-03-22",
+          "date": "2020-03-16",
           "label": "Emails From Strangers",
-          "content": "I receive an email from a new attending physician about the guidelines. Over the following weeks, I receive emails from physicians in NYC and India — both unaffiliated with our health system — because the guidelines included my contact info."
+          "content": "I receive an email from a new attending physician about the guidelines. Over the following weeks, I receive emails from physicians in NYC and India — both unaffiliated with our health system — because the guidelines included my contact info.",
+          "link_group": "hcq-v3-strangers"
         },
         {
           "date": "2020-03-30",
@@ -701,7 +705,8 @@
           "date": "2020-11-09",
           "label": "Pfizer 90% Efficacy Announced",
           "content": "Pfizer vaccine trial reports 90% efficacy — a result that stuns experts across the field.",
-          "embed": { "type": "link", "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-vaccine-candidate-against", "label": "Read the Pfizer Press Release" }
+          "embed": { "type": "link", "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-vaccine-candidate-against", "label": "Read the Pfizer Press Release" },
+          "link_group": "pfizer-announcement"
         },
         {
           "date": "2020-12-10",
@@ -729,12 +734,14 @@
         {
           "date": "2020-12-21",
           "label": "First Vaccines at the Hospital",
-          "content": "First day of vaccine administration at our hospital."
+          "content": "First day of vaccine administration at our hospital.",
+          "link_group": "vaccine-dec-21"
         },
         {
           "date": "2020-12-23",
           "label": "I Start Vaccinating",
-          "content": "My first day administering vaccinations. Initially staff only, then the public. I provide over 300 vaccinations over the next four months at our hospital, a county vaccination site at a former mall, and an elementary school gym."
+          "content": "My first day administering vaccinations. Initially staff only, then the public. I provide over 300 vaccinations over the next four months at our hospital, a county vaccination site at a former mall, and an elementary school gym.",
+          "link_group": "vaccine-dec-23"
         }
       ],
       "personal_nodes": [
@@ -747,17 +754,20 @@
         {
           "date": "2020-11-09",
           "label": "Missed the Tweet",
-          "content": "I was upset I missed the Pfizer 90% efficacy tweet — a resident was the one who told me. I had been checking Twitter 2-4x per day all year."
+          "content": "I was upset I missed the Pfizer 90% efficacy tweet — a resident was the one who told me. I had been checking Twitter 2-4x per day all year.",
+          "link_group": "pfizer-announcement"
         },
         {
           "date": "2020-12-21",
           "label": "My Turn: Vaccinated at 5pm",
-          "content": "I'm vaccinated at 5pm — an hour after the clinic is scheduled to close — as the vaccine team looks for volunteers to use up remaining doses. I was not in the first priority group."
+          "content": "I'm vaccinated at 5pm — an hour after the clinic is scheduled to close — as the vaccine team looks for volunteers to use up remaining doses. I was not in the first priority group.",
+          "link_group": "vaccine-dec-21"
         },
         {
           "date": "2020-12-23",
           "label": "Joy at the Vaccine Clinic",
-          "content": "'I remember the shared sense of positivity, excitement and joy among the vaccinators and public. Everyone was happier than they had been in nearly a year.'"
+          "content": "'I remember the shared sense of positivity, excitement and joy among the vaccinators and public. Everyone was happier than they had been in nearly a year.'",
+          "link_group": "vaccine-dec-23"
         },
         {
           "date": "2020-12-23",
@@ -809,17 +819,13 @@
           "date": "2021-06-01",
           "label": "Fox News Appearance — My Name Used",
           "content": "The ID physician returns to Fox News claiming his unpublished, retrospective study proves hydroxychloroquine works. He names me by name on national television: 'I turned to the pharmacist, Steve Smoke at St. Barnabas and I said, I got people that are literally more than four times difference in weight, one or both groups is getting the wrong dose.' The study is vastly inferior to available evidence and — to my knowledge — was never published.",
-          "embed": { "type": "link", "url": "https://www.foxnews.com/video/6257007407001", "label": "Watch the Segment on Fox News" }
+          "embed": { "type": "link", "url": "https://www.foxnews.com/video/6257007407001", "label": "Watch the Segment on Fox News" },
+          "link_group": "fox-news-june-2021"
         },
         {
           "date": "2021-06-08",
           "label": "Vindication: UTI Pathway Praised",
           "content": "The Chair of Medicine sends an email praising my work on an unrelated UTI antimicrobial stewardship pathway to the CEO, CFO, and CMO. The CMO responds in agreement."
-        },
-        {
-          "date": "2021-06-08",
-          "label": "COO Private Support",
-          "content": "The COO comes down to my office for a private conversation. Says the institution supports me, that I shouldn't have to deal with what happened, and drops some f-bombs about the ID physician."
         },
         {
           "date": "2020-06-05",
@@ -849,7 +855,8 @@
         {
           "date": "2021-06-01",
           "label": "Named on TV",
-          "content": "I am named by an ID physician on Fox News in the context of a disagreement over HCQ dosing methodology. The clip and transcript are preserved as external links."
+          "content": "I am named by an ID physician on Fox News in the context of a disagreement over HCQ dosing methodology. The clip and transcript are preserved as external links.",
+          "link_group": "fox-news-june-2021"
         },
         {
           "date": "2021-06-08",
