@@ -119,6 +119,27 @@ function buildChronologicalRows(clinicalNodes, personalNodes) {
     if (!c)            { rows.push({ clinical: null, personal: p }); pi++; }
     else if (!p)       { rows.push({ clinical: c, personal: null }); ci++; }
     else if (c.ts === p.ts) {
+      // If c has a link_group, prefer pairing with the personal node that shares the same
+      // link_group — even if there are other same-timestamp personal nodes earlier in the array.
+      if (c.link_group) {
+        let matchPi = -1;
+        for (let look = pi; look < personal.length && personal[look].ts === c.ts; look++) {
+          if (personal[look].link_group === c.link_group) {
+            matchPi = look;
+            break;
+          }
+        }
+        if (matchPi > pi) {
+          // Emit any same-timestamp personal nodes that precede the match as solo rows
+          for (let k = pi; k < matchPi; k++) {
+            rows.push({ clinical: null, personal: personal[k] });
+          }
+          rows.push({ clinical: c, personal: personal[matchPi], linked: true });
+          pi = matchPi + 1;
+          ci++;
+          continue;
+        }
+      }
       const linked = !!(c.link_group && p.link_group && c.link_group === p.link_group);
       rows.push({ clinical: c, personal: p, linked });
       ci++; pi++;
