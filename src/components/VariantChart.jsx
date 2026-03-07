@@ -35,6 +35,16 @@ function abbreviateNumber(n) {
   return String(n);
 }
 
+// Shorten drug names to fit inside the chart
+function shortMABLabel(label) {
+  return label
+    .replace("Casi/Imde", "C+I")
+    .replace("Casi & Bam", "C+B")
+    .replace("Sotrovimab", "Sotrov")
+    .replace("Bebtelovimab", "Bebtelo")
+    .replace("Restricted", "Restr.");
+}
+
 // ─── Main component ──────────────────────────────────────────────────────────
 
 /**
@@ -245,18 +255,31 @@ export default function VariantChart({ data, caseData, currentDate }) {
               isAnimationActive={false}
             />
 
-            {/* MAB event reference lines */}
-            {visibleEvents.map((evt, i) => (
-              <ReferenceLine
-                key={`mab-${i}`}
-                yAxisId="left"
-                x={evt.date}
-                stroke={evt.type === "grant" ? "#22c55e" : "#ef4444"}
-                strokeWidth={1}
-                strokeDasharray="4 2"
-                strokeOpacity={0.6}
-              />
-            ))}
+            {/* MAB event reference lines — alternating dy to prevent label overlap */}
+            {visibleEvents.map((evt, i) => {
+              const color = evt.type === "grant" ? "#22c55e" : "#ef4444";
+              return (
+                <ReferenceLine
+                  key={`mab-${i}`}
+                  yAxisId="left"
+                  x={evt.date}
+                  stroke={color}
+                  strokeWidth={1}
+                  strokeDasharray="4 2"
+                  strokeOpacity={0.6}
+                  label={{
+                    value: shortMABLabel(evt.label),
+                    position: "insideTopLeft",
+                    fill: color,
+                    fillOpacity: 0.85,
+                    fontSize: 7,
+                    fontFamily: "monospace",
+                    dx: 3,
+                    dy: 8 + (i % 2) * 11,
+                  }}
+                />
+              );
+            })}
 
             {/* Scroll cursor at the leading edge */}
             {cursorDate && (
@@ -291,20 +314,6 @@ export default function VariantChart({ data, caseData, currentDate }) {
             <span className="text-sky-400/80 font-medium">
               {formatNumber(annotation.cases)} cases
             </span>
-            {annotation.lastEvent && (
-              <>
-                <span className="text-stone-700">|</span>
-                <span
-                  className={`font-medium ${
-                    annotation.lastEvent.type === "revoke"
-                      ? "text-red-400/80"
-                      : "text-emerald-400/80"
-                  }`}
-                >
-                  {annotation.lastEvent.label}
-                </span>
-              </>
-            )}
           </>
         )}
         {!annotation && (
