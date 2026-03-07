@@ -49,7 +49,8 @@
           "date": "2020-03-01",
           "label": "Puerto Rico Work Trip",
           "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?",
-          "link_group": "puerto-rico-march-2020"
+          "link_group": "puerto-rico-march-2020",
+          "embed": { "type": "image", "url": "images/puerto-rico.jpg", "caption": "Puerto Rico, March 2020" }
         },
         {
           "date": "2020-03-04",
