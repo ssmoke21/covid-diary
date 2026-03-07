@@ -4,6 +4,8 @@ import NodeOverlay from "./NodeOverlay";
 import MapVisualization from "./MapVisualization";
 import VariantChart from "./VariantChart";
 import variantData from "../data/variant-data.json";
+import CaseWaveChart from "./CaseWaveChart";
+import caseWaveData from "../data/case-wave-data.json";
 
 const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
@@ -172,9 +174,9 @@ export default function Chapter({ chapter, isVisible }) {
   const sectionRef = useRef(null);
   const hasChart = chapter.chapter_number <= 5;
 
-  // IntersectionObserver to track which timeline node is currently visible
+  // IntersectionObserver to track which timeline node is currently visible (Ch1–4)
   useEffect(() => {
-    if (!hasChart) return;
+    if (!hasChart || chapter.chapter_number === 5) return;
     const section = sectionRef.current;
     if (!section) return;
 
@@ -207,6 +209,73 @@ export default function Chapter({ chapter, isVisible }) {
       observer.disconnect();
     };
   }, [hasChart, chapter.chapter_number]);
+
+  // ─── Smooth scroll interpolation for Ch5 (sparse timeline nodes) ───────────
+  useEffect(() => {
+    if (chapter.chapter_number !== 5) return;
+    const section = sectionRef.current;
+    if (!section) return;
+
+    let rafId = null;
+
+    function handleScroll() {
+      if (rafId) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        const nodes = section.querySelectorAll("[data-node-date]");
+        if (!nodes.length) return;
+
+        const readingPoint = window.innerHeight * 0.3;
+
+        // Build sorted list of { y, ts, date }
+        const items = [];
+        nodes.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const y = rect.top + rect.height / 2;
+          const ts = parseNodeDate(el.dataset.nodeDate);
+          if (ts) items.push({ y, ts, date: el.dataset.nodeDate });
+        });
+        if (!items.length) return;
+
+        // Find the two nodes that bracket the reading point
+        let above = null;
+        let below = null;
+        for (const item of items) {
+          if (item.y <= readingPoint) above = item;
+          else if (!below) below = item;
+        }
+
+        // Edge cases
+        if (!above && below) { setCurrentNodeDate(below.date); return; }
+        if (above && !below) { setCurrentNodeDate(above.date); return; }
+        if (!above && !below) return;
+
+        // Interpolate timestamp between the two bracketing nodes
+        const fraction = Math.max(0, Math.min(1,
+          (readingPoint - above.y) / (below.y - above.y)
+        ));
+        const interpolatedTs = above.ts + (below.ts - above.ts) * fraction;
+
+        // Convert to ISO date string
+        const d = new Date(interpolatedTs);
+        const yyyy = d.getFullYear();
+        const mm = String(d.getMonth() + 1).padStart(2, "0");
+        const dd = String(d.getDate()).padStart(2, "0");
+        setCurrentNodeDate(`${yyyy}-${mm}-${dd}`);
+      });
+    }
+
+    const timer = setTimeout(() => {
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll(); // Initial computation
+    }, 150);
+
+    return () => {
+      clearTimeout(timer);
+      if (rafId) cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [chapter.chapter_number]);
 
   return (
     <section
@@ -275,6 +344,7 @@ export default function Chapter({ chapter, isVisible }) {
           }}
         >
           <VariantChart data={variantData} currentDate={currentNodeDate} />
+          <CaseWaveChart data={caseWaveData} currentDate={currentNodeDate} />
           <div className="h-px bg-gradient-to-r from-transparent via-stone-600/40 to-transparent" />
         </div>
       )}

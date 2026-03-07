@@ -121,7 +121,7 @@ export default function VariantChart({ data, currentDate }) {
       </div>
 
       {/* Chart area */}
-      <div className="px-1" style={{ height: "180px" }}>
+      <div className="px-1" style={{ height: "160px" }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={chartData}
