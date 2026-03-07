@@ -45,6 +45,19 @@ function shortMABLabel(label) {
     .replace("Restricted", "Restr.");
 }
 
+// Snap an event date to the nearest available week date in the data
+function findNearestDate(dates, targetDateStr) {
+  if (!dates.length) return null;
+  const target = new Date(targetDateStr + "T00:00:00").getTime();
+  let best = dates[0];
+  let bestDiff = Math.abs(new Date(dates[0] + "T00:00:00").getTime() - target);
+  for (const d of dates) {
+    const diff = Math.abs(new Date(d + "T00:00:00").getTime() - target);
+    if (diff < bestDiff) { bestDiff = diff; best = d; }
+  }
+  return best;
+}
+
 // ─── Main component ──────────────────────────────────────────────────────────
 
 /**
@@ -141,17 +154,23 @@ export default function VariantChart({ data, caseData, currentDate }) {
     };
   }, [chartData, data]);
 
-  // MAB events that fall within the revealed date range
+  // MAB events that fall within the revealed date range, snapped to nearest week
   const visibleEvents = useMemo(() => {
-    if (!data?.mab_events?.length || !chartData.length) return [];
+    if (!data?.mab_events?.length || !chartData.length || !dates.length) return [];
     const lastRevealedTs = new Date(
       chartData[chartData.length - 1].date + "T00:00:00"
     ).getTime();
-    return data.mab_events.filter((evt) => {
-      const evtTs = new Date(evt.date + "T00:00:00").getTime();
-      return evtTs <= lastRevealedTs;
-    });
-  }, [data, chartData]);
+    const ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+    return data.mab_events
+      .filter((evt) => {
+        const evtTs = new Date(evt.date + "T00:00:00").getTime();
+        return evtTs <= lastRevealedTs + ONE_WEEK;
+      })
+      .map((evt) => ({
+        ...evt,
+        snappedDate: findNearestDate(dates, evt.date),
+      }));
+  }, [data, chartData, dates]);
 
   if (!chartData.length) return null;
 
@@ -262,7 +281,7 @@ export default function VariantChart({ data, caseData, currentDate }) {
                 <ReferenceLine
                   key={`mab-${i}`}
                   yAxisId="left"
-                  x={evt.date}
+                  x={evt.snappedDate}
                   stroke={color}
                   strokeWidth={1}
                   strokeDasharray="4 2"
