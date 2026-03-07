@@ -442,6 +442,11 @@
           "content": "The HCQ recommendation is officially removed from our guidelines based on NIH and IDSA guidance."
         },
         {
+          "date": "Circa April 2020",
+          "label": "Infection Paradox: CDI Down, Fungal Infections Up",
+          "content": "Hospital CDI (C. diff) rates plummet due to dramatically improved hand hygiene across the facility. Meanwhile, fungal infections, MRSA, and other hospital-acquired infections rise due to the surge in critically ill patients with prolonged stays. The same pattern holds for respiratory illnesses more broadly — influenza, RSV, and rhinovirus transmission collapse as masking and social distancing suppress their spread. Other infectious diseases would remain suppressed throughout the pandemic."
+        },
+        {
           "date": "2020-04-29",
           "label": "Remdesivir: Contradictory Data",
           "content": "A Chinese remdesivir RCT in Lancet shows no benefit. The same day, NIAID shares (unpublished, non-peer-reviewed) data from its RCT indicating benefit. 'Timing causes considerable confusion.'",
@@ -493,59 +498,15 @@
       "personal_nodes": [
         {
           "date": "Circa April 2020",
-          "label": "The Hospital Empties",
-          "content": "Non-essential personnel work from home. Empty hallways and cafeteria. The hospital receives donations: food, drinks, hand sanitizers from distilleries, handwritten letters from children, mask comfort adapters."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "Trailers in the Parking Lot",
-          "content": "The hospital morgue fills. Two refrigerated trailers are placed in the physician parking lot for overflow bodies. They remained for months. Every employee saw them going in and out each day."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "'Here Comes the Sun'",
-          "content": "The Beatles song is played over the hospital loudspeaker each time a patient is extubated. Sound quality described as horrendous."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "Clap-Outs",
-          "content": "Staff line the halls and applaud patients discharged after weeks- or months-long admissions."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "Tooth-Grinding",
-          "content": "I notice mild, persistent tooth pain — eventually realizing it is from clenching my jaw. A subconscious physical response to facing unanswerable questions with lives on the line."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "Morning Commute Grief",
-          "content": "'I remember getting emotional a few times. It was always on my morning commute... I remember feeling an overwhelming hopelessness. Not just for myself and all the patients and their families. But for everyone I care about and how isolated and scared they must be.'"
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "Hotel Stay",
-          "content": "I move into a hotel from April 7 to April 18 to protect my family."
+          "label": "Life During the Surge",
+          "preview": "Empty hallways, refrigerated trailers, clap-outs, tooth-grinding, and a hotel stay to protect my family. The human texture of the worst weeks.",
+          "content": "Non-essential personnel work from home, leaving the hospital eerily quiet — empty hallways, a silent cafeteria. The community responds with an outpouring of support: donated food and drinks, hand sanitizer from local distilleries, handwritten letters from children, mask comfort adapters.\n\nThe hospital morgue fills. Two refrigerated trailers are placed in the physician parking lot for overflow bodies. They remained for months. Every employee passed them going in and out each day.\n\nThe Beatles' 'Here Comes the Sun' plays over the hospital loudspeaker each time a patient is extubated. The sound quality is described as horrendous. Staff line the halls and applaud patients discharged after weeks- or months-long admissions.\n\nI move into a hotel from April 7 to April 18 to protect my family from exposure.\n\nI notice mild, persistent tooth pain — eventually realizing it is from clenching my jaw. A subconscious physical response to facing unanswerable questions with lives on the line.\n\n'I remember getting emotional a few times. It was always on my morning commute... I remember feeling an overwhelming hopelessness. Not just for myself and all the patients and their families. But for everyone I care about and how isolated and scared they must be.'\n\nMy wife handknits a mask for me to use outside the hospital, since there weren't enough for non-healthcare workers. 'It probably didn't work that well but it meant a lot to me that she worked on it for me.' She also cuts my hair — three attempts, two hours — and it turns out well. I have jealous coworkers."
         },
         {
           "date": "2020-04-14",
           "label": "Healthcare Heroes Salute",
           "content": "A procession of thanks is held outside St. Barnabas Medical Center — police, fire, and community members lining up to honor hospital staff during the height of the surge.",
           "embed": { "type": "iframe", "url": "https://abc7ny.com/post/procession-of-thanks-for-heroes-at-st-barnabas-medical-center/6102573/", "label": "Watch the Coverage on ABC7" }
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "My Wife's Knit Mask",
-          "content": "My wife handknits a mask for me to use outside the hospital, since there weren't enough for non-healthcare workers. 'It probably didn't work that well but it meant a lot to me that she worked on it for me.'"
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "My Wife Cuts My Hair",
-          "content": "My wife cuts my hair. It takes three attempts and two hours, but turns out well. I have jealous coworkers."
-        },
-        {
-          "date": "Circa April 2020",
-          "label": "CDI Plummets, Fungal Infections Rise",
-          "content": "Hospital CDI (C. diff) rates plummet due to dramatically improved hand hygiene. Fungal infections, MRSA, and other hospital-acquired infections rise due to the surge in critically ill patients with prolonged stays."
         },
         {
           "date": "2020-07-14",
