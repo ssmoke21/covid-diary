@@ -2,6 +2,8 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import NodeCard from "./NodeCard";
 import NodeOverlay from "./NodeOverlay";
 import MapVisualization from "./MapVisualization";
+import VariantChart from "./VariantChart";
+import variantData from "../data/variant-data.json";
 
 const MOOD_GRADIENTS = {
   "Normalcy / Low-Alert": "from-blue-50 to-transparent",
@@ -168,11 +170,11 @@ export default function Chapter({ chapter, isVisible }) {
   const [overlayNode, setOverlayNode] = useState(null);
   const [currentNodeDate, setCurrentNodeDate] = useState(null);
   const sectionRef = useRef(null);
-  const hasCaseChart = chapter.chapter_number <= 4;
+  const hasChart = chapter.chapter_number <= 5;
 
   // IntersectionObserver to track which timeline node is currently visible
   useEffect(() => {
-    if (!hasCaseChart) return;
+    if (!hasChart) return;
     const section = sectionRef.current;
     if (!section) return;
 
@@ -204,7 +206,7 @@ export default function Chapter({ chapter, isVisible }) {
       clearTimeout(timer);
       observer.disconnect();
     };
-  }, [hasCaseChart, chapter.chapter_number]);
+  }, [hasChart, chapter.chapter_number]);
 
   return (
     <section
@@ -255,13 +257,26 @@ export default function Chapter({ chapter, isVisible }) {
         </p>
       </header>
 
-      {/* Case data visualization — Chapters 1–4 only */}
-      {hasCaseChart && CHAPTER_DATE_RANGES[chapter.chapter_number] && (
+      {/* Case data visualization — Chapters 1–4 */}
+      {hasChart && CHAPTER_DATE_RANGES[chapter.chapter_number] && (
         <MapVisualization
           currentDate={currentNodeDate}
           isVisible={isVisible}
           chapterNumber={chapter.chapter_number}
         />
+      )}
+
+      {/* Variant chart — Chapter 5 */}
+      {chapter.chapter_number === 5 && (
+        <div
+          className="sticky top-0 z-20 overflow-hidden"
+          style={{
+            animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none",
+          }}
+        >
+          <VariantChart data={variantData} currentDate={currentNodeDate} />
+          <div className="h-px bg-gradient-to-r from-transparent via-stone-600/40 to-transparent" />
+        </div>
       )}
 
       <div className="px-4 md:px-8 pb-16">
