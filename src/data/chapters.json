@@ -40,6 +40,12 @@
           "content": "Novel coronavirus (nCoV-2019) officially renamed Covid-19. Topics: employee travel screening, mask shortage, testing protocols."
         },
         {
+          "date": "2020-02-25",
+          "label": "Italy: The West's First Major Outbreak",
+          "content": "Italy reports a rapidly escalating outbreak — the first in a western country with reliable reporting infrastructure. Unlike prior outbreaks (Zika, Ebola, SARS, MERS), this one is not contained to one country or region. The coverage is unlike anything people have seen before: overwhelmed hospitals, doctors making impossible triage decisions. A turning point in understanding what is coming.",
+          "embed": { "type": "link", "url": "https://www.cnn.com/2020/02/25/europe/italy-coronavirus-backfoot-intl", "label": "Read the Story on CNN" }
+        },
+        {
           "date": "2020-03-01",
           "label": "Puerto Rico Work Trip",
           "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?",
