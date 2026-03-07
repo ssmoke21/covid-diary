@@ -85,6 +85,21 @@ function EmbedSection({ embedNode }) {
               {embed.caption}
             </p>
           )}
+          {embedNode.secondary_embed && (
+            <div className="px-6 pb-4">
+              <a
+                href={embedNode.secondary_embed.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
+              >
+                <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">{embedNode.secondary_embed.label}</span>
+                <svg className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
       )}
 
