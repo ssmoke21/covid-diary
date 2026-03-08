@@ -1,5 +1,86 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
+// ── PhotoCarousel ─────────────────────────────────────────────────────────────
+function PhotoCarousel({ embed }) {
+  const [idx, setIdx] = useState(0);
+  if (!embed) return null;
+
+  const photos =
+    embed.type === "gallery"
+      ? embed.photos
+      : [{ url: embed.url, caption: embed.caption }];
+  const photo = photos[idx];
+  const count = photos.length;
+
+  return (
+    <div>
+      <div className="relative overflow-hidden rounded-lg bg-stone-100">
+        <img
+          src={`${import.meta.env.BASE_URL}${photo.url}`}
+          alt={photo.caption || ""}
+          className="w-full object-cover"
+          style={{ maxHeight: "260px" }}
+        />
+        {count > 1 && (
+          <>
+            <button
+              onClick={() => setIdx((idx - 1 + count) % count)}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white rounded-full w-7 h-7 flex items-center justify-center text-xl leading-none transition-colors"
+              aria-label="Previous photo"
+            >‹</button>
+            <button
+              onClick={() => setIdx((idx + 1) % count)}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white rounded-full w-7 h-7 flex items-center justify-center text-xl leading-none transition-colors"
+              aria-label="Next photo"
+            >›</button>
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+              {photos.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setIdx(i)}
+                  className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                    i === idx ? "bg-white" : "bg-white/40 hover:bg-white/70"
+                  }`}
+                  aria-label={`Photo ${i + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+      {photo.caption && (
+        <p className="text-center text-[10px] font-mono uppercase tracking-widest text-stone-400 mt-1.5 px-1">
+          {photo.caption}
+        </p>
+      )}
+    </div>
+  );
+}
+
+// ── Reusable external link button ─────────────────────────────────────────────
+function LinkButton({ src }) {
+  return (
+    <a
+      href={src.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
+    >
+      <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">
+        {src.label}
+      </span>
+      <svg
+        className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round"
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
+  );
+}
+
+// ── EmbedSection — used by single-node overlays ───────────────────────────────
 function EmbedSection({ embedNode }) {
   const tweetRef = useRef(null);
 
@@ -39,7 +120,9 @@ function EmbedSection({ embedNode }) {
     <>
       {embed.type === "tweet" && (
         <div className="border-t border-stone-100 px-6 py-5">
-          <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-3 font-semibold">Primary Source</p>
+          <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-3 font-semibold">
+            Primary Source
+          </p>
           <div ref={tweetRef} className="flex justify-center min-h-[120px] items-center">
             <span className="text-sm text-stone-300">Loading post…</span>
           </div>
@@ -49,7 +132,9 @@ function EmbedSection({ embedNode }) {
       {embed.type === "iframe" && (
         <div className="border-t border-stone-100">
           <div className="flex items-center justify-between px-6 py-3">
-            <p className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold">Primary Source</p>
+            <p className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold">
+              Primary Source
+            </p>
             <a
               href={embed.url}
               target="_blank"
@@ -58,7 +143,8 @@ function EmbedSection({ embedNode }) {
             >
               {embed.label}
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
           </div>
@@ -72,63 +158,12 @@ function EmbedSection({ embedNode }) {
         </div>
       )}
 
-      {embed.type === "image" && (
-        <div className="border-t border-stone-100">
-          <img
-            src={`${import.meta.env.BASE_URL}${embed.url}`}
-            alt={embed.caption || embedNode.label}
-            className="w-full object-cover"
-            style={{ maxHeight: "420px" }}
-          />
-          {embed.caption && (
-            <p className="px-6 py-2 text-[10px] text-stone-400 font-mono uppercase tracking-widest text-center">
-              {embed.caption}
-            </p>
-          )}
-          {embedNode.secondary_embed && (
-            <div className="px-6 pb-4">
-              <a
-                href={embedNode.secondary_embed.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
-              >
-                <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">{embedNode.secondary_embed.label}</span>
-                <svg className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-          )}
-        </div>
-      )}
-
-      {embed.type === "gallery" && (
-        <div className="border-t border-stone-100 p-3">
-          <div className="grid grid-cols-2 gap-2">
-            {embed.photos.map((photo, i) => (
-              <img
-                key={i}
-                src={`${import.meta.env.BASE_URL}${photo.url}`}
-                alt={photo.caption || ""}
-                className="w-full object-cover rounded-lg"
-                style={{ height: "160px" }}
-              />
-            ))}
-          </div>
+      {(embed.type === "image" || embed.type === "gallery") && (
+        <div className="border-t border-stone-100 px-4 py-4">
+          <PhotoCarousel embed={embed} />
           {embedNode.secondary_embed && (
             <div className="mt-3">
-              <a
-                href={embedNode.secondary_embed.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
-              >
-                <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">{embedNode.secondary_embed.label}</span>
-                <svg className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+              <LinkButton src={embedNode.secondary_embed} />
             </div>
           )}
         </div>
@@ -140,20 +175,9 @@ function EmbedSection({ embedNode }) {
             {embedNode.secondary_embed ? "Sources" : "Primary Source"}
           </p>
           <div className="flex flex-col gap-2">
-            {[embed, ...(embedNode.secondary_embed ? [embedNode.secondary_embed] : [])].map((src, i) => (
-              <a
-                key={i}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
-              >
-                <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">{src.label}</span>
-                <svg className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            ))}
+            {[embed, ...(embedNode.secondary_embed ? [embedNode.secondary_embed] : [])].map(
+              (src, i) => <LinkButton key={i} src={src} />
+            )}
           </div>
         </div>
       )}
@@ -161,15 +185,18 @@ function EmbedSection({ embedNode }) {
   );
 }
 
+// ── Helpers ───────────────────────────────────────────────────────────────────
+const isPhotoEmbed = (embed) =>
+  embed?.type === "image" || embed?.type === "gallery";
+
+// ── NodeOverlay ───────────────────────────────────────────────────────────────
 export default function NodeOverlay({ node, onClose }) {
-  // Close on Escape
   useEffect(() => {
     const handleKey = (e) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
-  // Prevent body scroll while open
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
@@ -180,14 +207,18 @@ export default function NodeOverlay({ node, onClose }) {
   const isPaired = !!node.pairedNode;
   const clinical = isPaired ? (node.type === "clinical" ? node : node.pairedNode) : null;
   const personal = isPaired ? (node.type === "personal" ? node : node.pairedNode) : null;
-  const embedNode = isPaired
-    ? (clinical?.embed ? clinical : personal?.embed ? personal : null)
-    : (node.embed ? node : null);
 
-  const hasIframe = embedNode?.embed?.type === "iframe";
-  const hasImage = embedNode?.embed?.type === "image" || embedNode?.embed?.type === "gallery";
+  const hasIframe =
+    clinical?.embed?.type === "iframe" ||
+    personal?.embed?.type === "iframe" ||
+    (!isPaired && node.embed?.type === "iframe");
   const hasSections = !isPaired && !!node.sections?.length;
-  const modalWidth = hasIframe ? "max-w-3xl" : isPaired ? "max-w-2xl" : (hasSections || hasImage) ? "max-w-2xl" : "max-w-md";
+  const hasPairedPhoto = isPaired && (isPhotoEmbed(clinical?.embed) || isPhotoEmbed(personal?.embed));
+  const modalWidth =
+    hasIframe ? "max-w-3xl"
+    : isPaired ? "max-w-2xl"
+    : (hasSections || isPhotoEmbed(node.embed)) ? "max-w-2xl"
+    : "max-w-md";
 
   return (
     <div
@@ -215,43 +246,68 @@ export default function NodeOverlay({ node, onClose }) {
               </button>
             </div>
 
-            {/* Two-column body */}
-            <div className="flex" style={{ maxHeight: "60vh" }}>
+            {/* Two-column body — photos live inside each column, below the text */}
+            <div className="flex overflow-hidden" style={{ maxHeight: hasPairedPhoto ? "72vh" : "60vh" }}>
 
               {/* Clinical column (left) */}
-              <div className="flex-1 overflow-y-auto px-6 pb-5">
-                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5" style={{ color: "var(--color-clinical)" }}>
+              <div className="flex-1 overflow-y-auto px-5 pb-5">
+                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                  style={{ color: "var(--color-clinical)" }}>
                   Clinical
                 </p>
                 <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-clinical)" }}>
                   {clinical?.label}
                 </h3>
                 <p className="text-sm text-stone-600 leading-relaxed">{clinical?.content}</p>
+
+                {isPhotoEmbed(clinical?.embed) && (
+                  <div className="mt-4">
+                    <PhotoCarousel embed={clinical.embed} />
+                    {clinical.secondary_embed && (
+                      <div className="mt-3"><LinkButton src={clinical.secondary_embed} /></div>
+                    )}
+                  </div>
+                )}
               </div>
 
-              {/* Vertical amber dashed divider with ↔ centered */}
+              {/* Vertical amber dashed divider */}
               <div className="relative w-5 shrink-0">
                 <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 border-l border-dashed border-amber-300" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-amber-400 text-xs font-bold leading-none py-0.5">↔</div>
               </div>
 
               {/* Personal column (right) */}
-              <div className="flex-1 overflow-y-auto px-6 pb-5">
-                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5" style={{ color: "var(--color-personal)" }}>
+              <div className="flex-1 overflow-y-auto px-5 pb-5">
+                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                  style={{ color: "var(--color-personal)" }}>
                   Personal
                 </p>
                 <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-personal)" }}>
                   {personal?.label}
                 </h3>
                 <p className="text-sm text-stone-600 leading-relaxed">{personal?.content}</p>
+
+                {isPhotoEmbed(personal?.embed) && (
+                  <div className="mt-4">
+                    <PhotoCarousel embed={personal.embed} />
+                    {personal.secondary_embed && (
+                      <div className="mt-3"><LinkButton src={personal.secondary_embed} /></div>
+                    )}
+                  </div>
+                )}
               </div>
 
             </div>
 
-            {/* Embeds — render both clinical and personal if both have them */}
-            <EmbedSection embedNode={clinical?.embed ? clinical : null} />
-            <EmbedSection embedNode={personal?.embed ? personal : null} />
+            {/* Non-photo embeds (tweets, iframes, links) at the bottom */}
+            {clinical?.embed && !isPhotoEmbed(clinical.embed) && (
+              <EmbedSection embedNode={clinical} />
+            )}
+            {personal?.embed && !isPhotoEmbed(personal.embed) && (
+              <EmbedSection embedNode={personal} />
+            )}
           </>
+
         ) : (
           <>
             {/* ── Standard single-node overlay ── */}
@@ -288,7 +344,7 @@ export default function NodeOverlay({ node, onClose }) {
                     {section.image && (
                       <img
                         src={`${import.meta.env.BASE_URL}${section.image}`}
-                        alt={section.title}
+                        alt={section.title || ""}
                         className="w-full object-cover rounded-lg mt-3"
                         style={{ maxHeight: "220px" }}
                       />
