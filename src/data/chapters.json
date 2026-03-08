@@ -88,7 +88,8 @@
           "date": "2020-03-01",
           "label": "My Wife Prepares",
           "content": "While I'm in Puerto Rico, my wife begins preparing for a potential Covid-19 wave — first grocery haul and cleaning supplies.",
-          "link_group": "puerto-rico-march-2020"
+          "link_group": "puerto-rico-march-2020",
+          "embed": { "type": "image", "url": "images/cleaning-supplies.png", "caption": "First prep haul — March 2020" }
         }
       ],
       "assets_wishlist": [
@@ -398,7 +399,8 @@
         {
           "date": "2020-04-04",
           "label": "Video Call With My Wife",
-          "content": "My wife and I sat on our balcony and talked for 30 minutes. We knew it was worth documenting, so we recorded it. My wife is grocery shopping online. The niece and nephew are 'living their best life making mud soup.' My wife's knuckles are cracked from hand sanitizing. I'm not yet wearing a mask at work — the CDC hadn't recommended it for healthcare workers yet. 'We're just a covid hospital, every unit is an ICU, no one knows how to treat it, people want to try everything.' 'My music selection is a good indicator of my mental state — I've been listening to emo like it's 2005.'"
+          "content": "My wife and I sat on our balcony and talked for 30 minutes. We knew it was worth documenting, so we recorded it. My wife is grocery shopping online. The niece and nephew are 'living their best life making mud soup.' My wife's knuckles are cracked from hand sanitizing. I'm not yet wearing a mask at work — the CDC hadn't recommended it for healthcare workers yet. 'We're just a covid hospital, every unit is an ICU, no one knows how to treat it, people want to try everything.' 'My music selection is a good indicator of my mental state — I've been listening to emo like it's 2005.'",
+          "embed": { "type": "image", "url": "images/video-with-wife.png", "caption": "Balcony recording — April 4, 2020" }
         }
       ],
       "assets_wishlist": [
@@ -511,6 +513,8 @@
           "sections": [
             { "title": "The Hospital Empties", "text": "Non-essential personnel work from home, leaving the hospital eerily quiet — empty hallways, a silent cafeteria." },
             { "title": "Community Donations", "text": "All kinds of donations arrived. Hand sanitizer from local distilleries that had converted their production lines. Food, drinks, snacks. Mask comfort adapters. Handwritten letters from entire classrooms of kids who had never met any of us. There was a period where you could feel the appreciation from the community — everyone wanted to do something, anything, to help. It meant something.", "image": "images/meatwipes.jpg" },
+            { "title": "The City Goes Quiet", "text": "Outside the hospital, the world shut down. Parks, playgrounds, schools — all closed.", "image": "images/playground-closed.png" },
+            { "title": "Community Support", "image": "images/donations-insta.png" },
             { "title": "Trailers in the Parking Lot", "text": "The hospital morgue fills. Two refrigerated trailers are placed in the physician parking lot for overflow bodies. They remained for months. Every employee passed them going in and out each day." },
             { "title": "'Here Comes the Sun'", "text": "The Beatles' 'Here Comes the Sun' plays over the hospital loudspeaker each time a patient is extubated. The sound quality is described as horrendous." },
             { "title": "Clap-Outs", "text": "Staff line the halls and applaud patients discharged after weeks- or months-long admissions." },
@@ -525,7 +529,10 @@
           "date": "2020-04-14",
           "label": "Healthcare Heroes Salute",
           "content": "A procession of thanks is held outside St. Barnabas Medical Center — police, fire, and community members lining up to honor hospital staff during the height of the surge.",
-          "embed": { "type": "image", "url": "images/healthcare-heroes.jpg", "caption": "Healthcare Heroes Salute — St. Barnabas Medical Center, April 14, 2020" },
+          "embed": { "type": "gallery", "photos": [
+            { "url": "images/healthcare-heroes.jpg", "caption": "Healthcare Heroes Salute — April 14, 2020" },
+            { "url": "images/healthcare-heroes-insta.png" }
+          ]},
           "secondary_embed": { "type": "link", "url": "https://abc7ny.com/post/procession-of-thanks-for-heroes-at-st-barnabas-medical-center/6102573/", "label": "Watch the Coverage on ABC7" }
         },
         {

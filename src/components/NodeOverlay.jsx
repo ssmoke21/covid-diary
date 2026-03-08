@@ -116,6 +116,21 @@ function EmbedSection({ embedNode }) {
               />
             ))}
           </div>
+          {embedNode.secondary_embed && (
+            <div className="mt-3">
+              <a
+                href={embedNode.secondary_embed.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 hover:bg-stone-100 hover:border-stone-300 transition-all duration-200 group"
+              >
+                <span className="text-sm font-medium text-stone-700 group-hover:text-stone-900">{embedNode.secondary_embed.label}</span>
+                <svg className="w-4 h-4 text-stone-400 group-hover:text-stone-600 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
       )}
 
@@ -233,8 +248,9 @@ export default function NodeOverlay({ node, onClose }) {
 
             </div>
 
-            {/* Embed if any */}
-            <EmbedSection embedNode={embedNode} />
+            {/* Embeds — render both clinical and personal if both have them */}
+            <EmbedSection embedNode={clinical?.embed ? clinical : null} />
+            <EmbedSection embedNode={personal?.embed ? personal : null} />
           </>
         ) : (
           <>
@@ -261,10 +277,14 @@ export default function NodeOverlay({ node, onClose }) {
               <div className="px-6 pb-5 overflow-y-auto space-y-5" style={{ maxHeight: "65vh" }}>
                 {node.sections.map((section, i) => (
                   <div key={i}>
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-1">
-                      {section.title}
-                    </p>
-                    <p className="text-sm text-stone-600 leading-relaxed">{section.text}</p>
+                    {section.title && (
+                      <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-1">
+                        {section.title}
+                      </p>
+                    )}
+                    {section.text && (
+                      <p className="text-sm text-stone-600 leading-relaxed">{section.text}</p>
+                    )}
                     {section.image && (
                       <img
                         src={`${import.meta.env.BASE_URL}${section.image}`}
