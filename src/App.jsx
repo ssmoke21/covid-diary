@@ -116,16 +116,6 @@ export default function App() {
           </p>
           <div className="space-y-5 font-serif text-xl text-stone-500 leading-relaxed italic">
             <p>This is my COVID story.</p>
-            <p>
-              I&rsquo;ve been trying to piece together a journal of this experience for years.
-              Every time I sit down to write, I&rsquo;m hit with the exhausting weight of those
-              memories. But this story refuses to be ignored.
-            </p>
-            <p>
-              It is not the most difficult or most important. But it is significant.
-              Like so many other stories from this time, it is unique and
-              extraordinary &mdash; worth sharing and worth learning from.
-            </p>
           </div>
           <div className="w-8 h-px bg-red-300 mx-auto mt-12" />
         </section>
