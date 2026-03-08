@@ -114,8 +114,8 @@ export default function App() {
           <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-stone-400 mb-8">
             Prologue
           </p>
-          <div className="space-y-5 font-serif text-xl text-stone-500 leading-relaxed italic">
-            <p>This is my COVID story.</p>
+          <div className="font-serif text-xl text-stone-500 leading-relaxed italic">
+            <p>This is my COVID story. It is not the most difficult or most important. But it is significant. Like so many other stories from this time, it is unique and extraordinary &mdash; worth sharing and worth learning from.</p>
           </div>
           <div className="w-8 h-px bg-red-300 mx-auto mt-12" />
         </section>
