@@ -122,10 +122,10 @@ export default function App() {
               memories. But this story refuses to be ignored.
             </p>
             <p>
-              It is not the most difficult, and not the most important. But it is important.
-              It was extraordinary and unique &mdash; worth hearing, worth learning from.
+              It is not the most difficult or most important. But it is significant.
+              Like so many other stories from this time, it is unique and
+              extraordinary &mdash; worth sharing and worth learning from.
             </p>
-            <p>Like so many other stories from this time.</p>
           </div>
           <div className="w-8 h-px bg-red-300 mx-auto mt-12" />
         </section>
