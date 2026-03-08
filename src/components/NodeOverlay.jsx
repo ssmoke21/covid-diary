@@ -14,12 +14,11 @@ function PhotoCarousel({ embed }) {
 
   return (
     <div>
-      <div className="relative overflow-hidden rounded-lg bg-stone-100">
+      <div className="relative overflow-hidden rounded-lg bg-stone-100" style={{ height: "240px" }}>
         <img
           src={`${import.meta.env.BASE_URL}${photo.url}`}
           alt={photo.caption || ""}
-          className="w-full object-cover"
-          style={{ maxHeight: "260px" }}
+          className="w-full h-full object-contain"
         />
         {count > 1 && (
           <>
@@ -216,6 +215,7 @@ export default function NodeOverlay({ node, onClose }) {
   const hasPairedPhoto = isPaired && (isPhotoEmbed(clinical?.embed) || isPhotoEmbed(personal?.embed));
   const modalWidth =
     hasIframe ? "max-w-3xl"
+    : (isPaired && hasPairedPhoto) ? "max-w-3xl"
     : isPaired ? "max-w-2xl"
     : (hasSections || isPhotoEmbed(node.embed)) ? "max-w-2xl"
     : "max-w-md";
@@ -246,56 +246,103 @@ export default function NodeOverlay({ node, onClose }) {
               </button>
             </div>
 
-            {/* Two-column body — photos live inside each column, below the text */}
-            <div className="flex overflow-hidden" style={{ maxHeight: hasPairedPhoto ? "72vh" : "60vh" }}>
+            {/* Body: photo-left + stacked-text-right when photos present; side-by-side otherwise */}
+            <div className="flex overflow-hidden" style={{ maxHeight: hasPairedPhoto ? "76vh" : "60vh" }}>
 
-              {/* Clinical column (left) */}
-              <div className="flex-1 overflow-y-auto px-5 pb-5">
-                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
-                  style={{ color: "var(--color-clinical)" }}>
-                  Clinical
-                </p>
-                <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-clinical)" }}>
-                  {clinical?.label}
-                </h3>
-                <p className="text-sm text-stone-600 leading-relaxed">{clinical?.content}</p>
+              {/* ── Photo column (left) — only rendered when at least one photo exists ── */}
+              {hasPairedPhoto && (
+                <div className="w-2/5 flex-shrink-0 overflow-y-auto border-r border-stone-100 bg-stone-50/60">
+                  {isPhotoEmbed(clinical?.embed) && (
+                    <div className={`p-3 ${isPhotoEmbed(personal?.embed) ? "border-b border-stone-100" : ""}`}>
+                      <p className="text-[9px] uppercase tracking-widest font-bold mb-2"
+                        style={{ color: "var(--color-clinical)" }}>
+                        Clinical
+                      </p>
+                      <PhotoCarousel embed={clinical.embed} />
+                      {clinical.secondary_embed && (
+                        <div className="mt-2"><LinkButton src={clinical.secondary_embed} /></div>
+                      )}
+                    </div>
+                  )}
+                  {isPhotoEmbed(personal?.embed) && (
+                    <div className="p-3">
+                      <p className="text-[9px] uppercase tracking-widest font-bold mb-2"
+                        style={{ color: "var(--color-personal)" }}>
+                        Personal
+                      </p>
+                      <PhotoCarousel embed={personal.embed} />
+                      {personal.secondary_embed && (
+                        <div className="mt-2"><LinkButton src={personal.secondary_embed} /></div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
 
-                {isPhotoEmbed(clinical?.embed) && (
-                  <div className="mt-4">
-                    <PhotoCarousel embed={clinical.embed} />
-                    {clinical.secondary_embed && (
-                      <div className="mt-3"><LinkButton src={clinical.secondary_embed} /></div>
-                    )}
+              {/* ── Text area: stacked (with photos) or side-by-side (without photos) ── */}
+              {hasPairedPhoto ? (
+                /* Stacked clinical on top, personal on bottom */
+                <div className="flex-1 flex flex-col overflow-hidden min-w-0">
+                  <div className="flex-1 overflow-y-auto px-5 py-4 min-h-0">
+                    <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                      style={{ color: "var(--color-clinical)" }}>
+                      Clinical
+                    </p>
+                    <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-clinical)" }}>
+                      {clinical?.label}
+                    </h3>
+                    <p className="text-sm text-stone-600 leading-relaxed">{clinical?.content}</p>
                   </div>
-                )}
-              </div>
 
-              {/* Vertical amber dashed divider */}
-              <div className="relative w-5 shrink-0">
-                <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 border-l border-dashed border-amber-300" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-amber-400 text-xs font-bold leading-none py-0.5">↔</div>
-              </div>
-
-              {/* Personal column (right) */}
-              <div className="flex-1 overflow-y-auto px-5 pb-5">
-                <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
-                  style={{ color: "var(--color-personal)" }}>
-                  Personal
-                </p>
-                <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-personal)" }}>
-                  {personal?.label}
-                </h3>
-                <p className="text-sm text-stone-600 leading-relaxed">{personal?.content}</p>
-
-                {isPhotoEmbed(personal?.embed) && (
-                  <div className="mt-4">
-                    <PhotoCarousel embed={personal.embed} />
-                    {personal.secondary_embed && (
-                      <div className="mt-3"><LinkButton src={personal.secondary_embed} /></div>
-                    )}
+                  {/* Horizontal amber dashed divider */}
+                  <div className="relative h-5 shrink-0 mx-5">
+                    <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 border-t border-dashed border-amber-300" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-amber-400 text-xs font-bold leading-none px-1">↕</div>
                   </div>
-                )}
-              </div>
+
+                  <div className="flex-1 overflow-y-auto px-5 py-4 min-h-0">
+                    <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                      style={{ color: "var(--color-personal)" }}>
+                      Personal
+                    </p>
+                    <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-personal)" }}>
+                      {personal?.label}
+                    </h3>
+                    <p className="text-sm text-stone-600 leading-relaxed">{personal?.content}</p>
+                  </div>
+                </div>
+              ) : (
+                /* Original side-by-side columns when no photos */
+                <>
+                  <div className="flex-1 overflow-y-auto px-5 pb-5">
+                    <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                      style={{ color: "var(--color-clinical)" }}>
+                      Clinical
+                    </p>
+                    <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-clinical)" }}>
+                      {clinical?.label}
+                    </h3>
+                    <p className="text-sm text-stone-600 leading-relaxed">{clinical?.content}</p>
+                  </div>
+
+                  {/* Vertical amber dashed divider */}
+                  <div className="relative w-5 shrink-0">
+                    <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 border-l border-dashed border-amber-300" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-amber-400 text-xs font-bold leading-none py-0.5">↔</div>
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto px-5 pb-5">
+                    <p className="text-[9px] uppercase tracking-widest font-bold mb-1.5"
+                      style={{ color: "var(--color-personal)" }}>
+                      Personal
+                    </p>
+                    <h3 className="text-base font-bold mb-1.5" style={{ color: "var(--color-personal)" }}>
+                      {personal?.label}
+                    </h3>
+                    <p className="text-sm text-stone-600 leading-relaxed">{personal?.content}</p>
+                  </div>
+                </>
+              )}
 
             </div>
 
@@ -345,7 +392,7 @@ export default function NodeOverlay({ node, onClose }) {
                       <img
                         src={`${import.meta.env.BASE_URL}${section.image}`}
                         alt={section.title || ""}
-                        className="w-full object-cover rounded-lg mt-3"
+                        className="w-full object-contain rounded-lg mt-3"
                         style={{ maxHeight: "220px" }}
                       />
                     )}
