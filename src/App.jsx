@@ -240,27 +240,11 @@ export default function App() {
             </div>
           </div>
 
-          {/* Closing line */}
-          <div className="mt-16 text-center">
-            <div className="w-8 h-px bg-red-300 mx-auto mb-8" />
-            <p className="font-serif text-xl sm:text-2xl text-stone-800 italic leading-relaxed">
-              &ldquo;Let&rsquo;s shine the spotlight on ourselves,
-              and let&rsquo;s begin to heal.&rdquo;
-            </p>
-          </div>
         </section>
 
         {/* Footer */}
         <footer className="py-16 text-center border-t border-stone-200">
-          <p className="font-serif text-lg text-stone-400 italic">
-            &ldquo;We&rsquo;re just a covid hospital, every unit is an ICU, no one knows how
-            to treat it.&rdquo;
-          </p>
-          <p className="font-serif text-base text-stone-400 italic mt-6">
-            &ldquo;Let&rsquo;s shine the spotlight on ourselves,
-            and let&rsquo;s begin to heal.&rdquo;
-          </p>
-          <p className="text-xs text-stone-300 mt-6">
+          <p className="text-xs text-stone-300">
             {chaptersData.meta.title} &middot; {chaptersData.meta.author}
           </p>
         </footer>
