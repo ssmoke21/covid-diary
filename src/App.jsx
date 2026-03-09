@@ -224,18 +224,17 @@ export default function App() {
               </p>
               <div className="space-y-4 font-serif text-base text-stone-600 leading-relaxed">
                 <p>
-                  A resolution has been introduced to Congress to designate the first Monday
-                  in March as COVID-19 Memorial Day &mdash; an opportunity for remembrance of those
-                  we lost, recognition of healthcare workers&rsquo; efforts, and reflection on
-                  lessons learned for future preparedness. Regardless of the resolution&rsquo;s
-                  fate, there is nothing stopping hospitals, organizations, or individuals
-                  from observing it.
+                  Efforts are underway at both the state and national levels to designate a
+                  COVID-19 Memorial Day in March. The goal is to create a formal space for
+                  remembrance, recognition of healthcare efforts, and reflection on future
+                  preparedness. Whether or not these formal resolutions pass, the need for
+                  the day remains.
                 </p>
                 <p>
-                  What I would call on others to do is simply speak up. Share your story.
-                  Just as we managed the pandemic through collective effort, we can rally
-                  support for this. March 2025 was the fifth anniversary of the initial
-                  COVID-19 wave in the US. It&rsquo;s overdue.
+                  If this day is to have lasting meaning, it will be built on our collective
+                  accounts. This concludes my portion of the record. I hope to see others add
+                  theirs, ensuring this period is not defined by silence, but by the weight
+                  of our shared experience.
                 </p>
               </div>
             </div>
