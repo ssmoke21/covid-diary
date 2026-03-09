@@ -179,9 +179,9 @@ export default function App() {
                   infection preventionists and patient care techs and medical residents?
                 </p>
                 <p>
-                  At the time, who had the bandwidth to appreciate or even understand all that
-                  everyone was doing? And when things were past the peak, everyone was ready to
-                  move on. These stories will not manifest on their own. They must be created.
+                  At the time, no one had the bandwidth to appreciate or even understand all that
+                  everyone was doing. And when things were past the peak, everyone was ready to
+                  move on. But these stories will not manifest on their own. They must be written.
                   For a field that prides itself on reflection, learning, and self-improvement,
                   I find it remarkable how little we have done to recognize and learn from what
                   we went through.
