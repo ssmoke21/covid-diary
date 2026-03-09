@@ -139,8 +139,15 @@
         },
         {
           "date": "2020-03-11",
-          "label": "ID / IC Meeting — A Warning Issued",
-          "content": "An ID physician argues the system is moving too slowly: 'We need to prepare for what transmission will be, not what it currently is. We will be overrun.' The next 3 meetings are canceled."
+          "label": "System Infectious Diseases Meeting — A Warning Issued",
+          "content": "A chronically irritable ID physician berates the group: the system is moving too slowly. 'We need to prepare for what transmission will be, not what it currently is. We will be overrun.' The next 3 meetings are canceled.",
+          "preview": "A chronically irritable ID physician berates the group: the system is moving too slowly. The next 3 meetings are canceled.",
+          "sections": [
+            {
+              "heading": "She Was Right",
+              "text": "I remember her message hitting hard — harder than most things I'd heard in a meeting room. She was blunt, visibly frustrated, and not particularly diplomatic about it. At the time, some of that got in the way of the message. But when the world turned upside down just days later, I remembered exactly what she had said. She had seen it coming. She had told us. And we hadn't moved fast enough."
+            }
+          ]
         },
         {
           "date": "2020-03-11",
