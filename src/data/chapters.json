@@ -83,6 +83,13 @@
           "date": "2020-02-16",
           "label": "Rutgers Basketball",
           "content": "Rutgers beats #21 Illinois. Program on track for first NCAA tournament berth in 30 years.",
+          "preview": "Rutgers beats #21 Illinois. Program on track for first NCAA tournament berth in 30 years.",
+          "sections": [
+            {
+              "heading": "A Lifetime of Letdowns",
+              "text": "Never in my lifetime had Rutgers men's basketball made the NCAA tournament. To be a Rutgers fan was to be fluent in disappointment — close calls that weren't close, early exits, and seasons that faded quietly into nothing. And yet, here we were. The energy around the program was electric. Something felt genuinely different."
+            }
+          ],
           "embed": { "type": "image", "url": "images/rutgers-basketball.jpg", "caption": "Rutgers vs. #21 Illinois — Feb 16, 2020" },
           "secondary_embed": { "type": "link", "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401166228/illinois-rutgers", "label": "View Game Recap on ESPN" }
         },
