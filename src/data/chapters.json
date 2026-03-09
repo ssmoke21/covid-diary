@@ -57,6 +57,13 @@
           "date": "2020-03-01",
           "label": "Puerto Rico Work Trip",
           "content": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?",
+          "preview": "Extended discussion with a Population Health physician during a flight delay about openness to travel amid the impending Covid-19 wave. He poses a hypothetical: would I travel in May?",
+          "sections": [
+            {
+              "heading": "Three Months Might As Well Have Been Thirty Years",
+              "text": "The question seemed almost absurd. Asking me whether I'd travel in May — three months away — might as well have been asking about thirty years in the future. Even having watched the footage out of Italy, even knowing what was unfolding overseas, it was somehow inconceivable that it would reach us in any meaningful way. We were watching it on TV, in other countries. That's where things like this happened."
+            }
+          ],
           "link_group": "puerto-rico-march-2020",
           "embed": { "type": "image", "url": "images/puerto-rico.jpg", "caption": "Puerto Rico, March 2020" }
         },
