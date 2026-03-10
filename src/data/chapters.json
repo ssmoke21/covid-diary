@@ -742,6 +742,7 @@
           "label": "A Pharmacy Leader Cautions Against Vaccine",
           "content": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance.",
           "preview": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance.",
+          "link_group": "pharmacy-leader-vaccine-caution",
           "sections": [
             {
               "heading": "Shocked",
@@ -824,6 +825,12 @@
           "label": "NEJM Podcast Revelation",
           "content": "I start listening to the NEJM Interviews podcast — weekly Covid-19 literature updates. My first realization that vaccine mandates might happen, that this would be the biggest vaccination campaign in history, and that I need to get licensed to vaccinate.",
           "embed": { "type": "iframe", "url": "https://www.youtube.com/embed/videoseries?list=PLI8Ak-hj5dgGPn4CLGz2cj4mcixLrxzsn", "label": "Watch the NEJM Covid-19 Interviews Playlist on YouTube" }
+        },
+        {
+          "date": "2020-09-11",
+          "label": "When Leadership Gets It Wrong",
+          "content": "A state pharmacy leader urges colleagues to avoid the vaccine. I was shocked — and troubled by what it revealed about how people reason under uncertainty.",
+          "link_group": "pharmacy-leader-vaccine-caution"
         },
         {
           "date": "2020-11-09",
