@@ -740,7 +740,22 @@
         {
           "date": "2020-09-11",
           "label": "A Pharmacy Leader Cautions Against Vaccine",
-          "content": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance."
+          "content": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance.",
+          "preview": "A prominent pharmacy administrator emails a large listserv urging extreme caution: recommends waiting for full FDA approval PLUS 6 months of post-marketing data before vaccinating. Advises pharmacists to carry liability insurance.",
+          "sections": [
+            {
+              "heading": "Shocked",
+              "text": "I was genuinely shocked. This wasn't a fringe voice — this was leadership at the state level, with reach across the profession. The message completely undermined trust in the scientific process at exactly the moment we needed to be building it. If healthcare providers wouldn't advocate for the rigor of randomized controlled trials and thorough safety assessments, who would?"
+            },
+            {
+              "heading": "How People Handle Uncertainty",
+              "text": "At a broader level, it reflected something I was seeing everywhere — in debates about masking, social distancing, treatment decisions. The pandemic upended how people perceive risk. Suddenly every decision carried a new, uncertain calculus with no precedent to lean on. For some, that uncertainty produced volatile responses. And I think I began to understand why: their judgment wasn't built on first principles. It was built on experience and routine. When that scaffolding was gone, there was nothing underneath."
+            },
+            {
+              "heading": "The Case for First Principles",
+              "text": "The pandemic drove home to me how essential it is to anchor decisions in logic and underlying principles — not habit, not comfort. Randomized controlled trials. Thorough safety assessments. These aren't bureaucratic formalities. They are how you actually learn whether something is safe and effective. The vaccines went through that process. And they worked. As healthcare providers, our job wasn't to add to the noise or the fear. It was to lead — to guide patients toward what the evidence showed, clearly and without panic."
+            }
+          ]
         },
         {
           "date": "2020-10-06",
