@@ -791,7 +791,14 @@
         {
           "date": "2020-12-14",
           "label": "I Get My Pharmacist Immunizer License",
-          "content": "I obtain my pharmacist immunizer license."
+          "content": "I obtain my pharmacist immunizer license. Hands-on patient care is not my comfort zone — but I knew this was going to be a big deal, and I had to be a part of it.",
+          "preview": "I obtain my pharmacist immunizer license. Hands-on patient care is not my comfort zone — but I knew this was going to be a big deal, and I had to be a part of it.",
+          "sections": [
+            {
+              "heading": "Outside My Comfort Zone, On Purpose",
+              "text": "Truthfully, direct patient care — the hands-on work — is not really where I live professionally. It has never been my comfort zone. But I knew what was coming. This was going to be the largest vaccination campaign in history, and it was going to matter enormously. That was enough. I didn't need it to be easy or comfortable. I needed to be part of it."
+            }
+          ]
         },
         {
           "date": "2020-12-18",
