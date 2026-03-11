@@ -860,12 +860,14 @@
           "date": "2020-12-23",
           "label": "Joy at the Vaccine Clinic",
           "content": "'I remember the shared sense of positivity, excitement and joy among the vaccinators and public. Everyone was happier than they had been in nearly a year.'",
+          "preview": "'I remember the shared sense of positivity, excitement and joy among the vaccinators and public. Everyone was happier than they had been in nearly a year.'",
+          "sections": [
+            {
+              "heading": "A Few Notable Arms",
+              "text": "Among the people I vaccinated: the Chair of Medicine, several physicians I worked closely with, an NHL player, and some minor league players. I also supervised technicians vaccinating a first-round NHL draft pick. In a year defined by so much loss and uncertainty, there was something quietly meaningful about being on the giving end of this."
+            }
+          ],
           "link_group": "vaccine-dec-23"
-        },
-        {
-          "date": "2020-12-23",
-          "label": "Notable Vaccinees",
-          "content": "I vaccinate the Chair of Medicine and several physicians I work with. I also vaccinate an NHL player and some minor league players. I supervise technicians vaccinating a first-round NHL draft pick."
         },
         {
           "date": "Late December 2020",
