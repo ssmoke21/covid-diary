@@ -195,7 +195,7 @@ export default function CaseMap({ data, currentDate, isVisible, embedded = false
   // ── Standalone mode: sticky wrapper + annotation bar ──
   return (
     <div
-      className="sticky top-0 z-20 overflow-hidden"
+      className="sticky top-0 z-20 overflow-hidden rounded-lg mx-2 border border-stone-700/30"
       style={{
         animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none",
       }}
