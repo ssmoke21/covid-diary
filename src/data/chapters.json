@@ -1085,8 +1085,23 @@
         },
         {
           "date": "2020-11-09",
-          "label": "Missed the Tweet",
-          "content": "I was upset I missed the Pfizer 90% efficacy tweet — a resident was the one who told me. I had been checking Twitter 2-4x per day all year.",
+          "label": "90% — A Pivot in the Pandemic",
+          "content": "The Pfizer efficacy data lands at 90%. It is thrilling — a genuine turning point. I had been checking Twitter constantly all year and somehow a resident beat me to it.",
+          "preview": "The Pfizer efficacy data lands at 90%. It is thrilling — a genuine turning point. I had been checking Twitter constantly all year and somehow a resident beat me to it.",
+          "sections": [
+            {
+              "heading": "How I Found Out",
+              "text": "I had been checking Twitter two to four times a day for most of the year — it had become one of the primary ways breaking medical news traveled fastest. So when Pfizer announced 90% efficacy, the fact that a resident told me before I saw it myself was genuinely surprising. A small thing, but it stuck. After months of monitoring, I missed the biggest piece of news the year had to offer."
+            },
+            {
+              "heading": "What the Data Actually Showed",
+              "text": "The headline number was stunning — 90% efficacy far exceeded what most people in the field had expected or hoped for. But it's worth being precise about what the trial was designed to show. The primary endpoint was symptomatic Covid-19. That's meaningful and important. But the study wasn't powered to detect an effect on severity of disease — hospitalizations, serious illness, death. And yet that's where the vaccines ultimately proved most consequential. The benefit in preventing severe outcomes turned out to be enormous, arguably the most important thing the vaccines did. The trial didn't show us that; we learned it later."
+            },
+            {
+              "heading": "The Transmission Question",
+              "text": "Early enthusiasm — including some of mine — leaned into the idea that high vaccine efficacy against symptomatic disease would translate to reduced transmission and meaningful population-level control. That didn't fully hold up. Vaccination reduced individual risk substantially, but the vaccines' effect on onward transmission was more limited than early optimism suggested, and it waned further as variants emerged. It's not that the vaccines underperformed — they performed extraordinarily well at what they were built to do. But the story we told ourselves about where they would take us needed revision."
+            }
+          ],
           "link_group": "pfizer-announcement"
         },
         {
