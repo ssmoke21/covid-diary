@@ -325,6 +325,20 @@ export default function Chapter({ chapter, isVisible }) {
         </p>
       </header>
 
+      {/* Chapter introduction */}
+      {chapter.introduction && (
+        <div
+          className="max-w-2xl mx-auto px-6 pb-10"
+          style={{ animation: isVisible ? "fade-in-up 0.5s ease-out 0.5s both" : "none" }}
+        >
+          <div className="border-l-2 border-stone-300 pl-5">
+            <p className="font-serif text-base md:text-lg text-stone-600 leading-relaxed italic">
+              {chapter.introduction}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Case data visualization — Chapters 1–4 */}
       {hasChart && CHAPTER_DATE_RANGES[chapter.chapter_number] && (
         <MapVisualization

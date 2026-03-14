@@ -15,6 +15,7 @@
       "layout": "split",
       "mood": "Normalcy / Low-Alert",
       "mood_description": "A calm before the storm. Casual dismissal of early warning signs, life proceeding normally — Rutgers basketball, work trips, grocery runs.",
+      "introduction": "I was on my honeymoon when the first cases were reported in Wuhan. I didn't think much of it. None of us did. There had been outbreaks before — SARS, MERS, Ebola, Zika — and they had never really reached us. This chapter is about the period before we understood what was coming, and how easy it was to look the other way.",
       "clinical_nodes": [
         {
           "date": "Mid December 2019",
@@ -131,6 +132,7 @@
       "layout": "split",
       "mood": "High-Alert / Acceleration",
       "mood_description": "Five days of cascading cancellations, first treatment emails, and the dawning realization that this is real. The world of sports collapses in real time.",
+      "introduction": "Five days. That's all it took for the world to come apart. The NBA suspended its season. March Madness was canceled. A colleague told us we were moving too slowly, and she was right. By Friday, I was drafting treatment protocols for a disease we barely understood. Nothing about the pace of that week has ever felt normal in retrospect.",
       "clinical_nodes": [
         {
           "date": "2020-03-09",
@@ -239,6 +241,7 @@
       "layout": "split",
       "mood": "Chaos / Urgency",
       "mood_description": "A frantic three weeks of evolving guidelines, drug shortages, political interference, Twitter misinformation, and inter-physician conflict over HCQ dosing. The science is moving faster than anyone can track.",
+      "introduction": "This was the period where the science couldn't keep up with the crisis, and the politics couldn't stay out of the science. We were writing and rewriting treatment guidelines in real time, debating drugs we had almost no evidence for, and fielding questions no one could answer. Every day brought a new study, a new shortage, a new argument. I described my role at the time as an offensive coordinator — calling plays from the booth, not from the field. That metaphor held up better than most of the treatments we recommended.",
       "clinical_nodes": [
         {
           "date": "2020-03-14",
@@ -547,6 +550,7 @@
       "layout": "split",
       "mood": "Isolation / Grief",
       "mood_description": "The hospital empties of non-essential staff but fills with the dying. Empty hallways. Refrigerated trailers in the parking lot. Clap-outs. 'Here Comes the Sun.' Tooth-grinding stress. An overwhelming sense of hopelessness on the morning commute.",
+      "introduction": "The hospital filled with the dying and emptied of almost everyone else. Hallways went quiet. Refrigerated trailers appeared in the parking lot. I moved into a hotel to protect my family and started grinding my teeth without realizing it. This was the stretch where hopelessness stopped being an abstract concept and became something I felt on my morning commute.",
       "clinical_nodes": [
         {
           "date": "2020-04-11",
@@ -716,6 +720,7 @@
       "layout": "full",
       "mood": "Hope / Attrition",
       "mood_description": "A two-year arc of approved monoclonal antibodies — each arriving with promise, each eventually rendered obsolete by viral mutation. A clinical arms race the virus ultimately wins.",
+      "introduction": "Over two years, we operationalized a succession of monoclonal antibodies — each one arriving with promise, each one eventually rendered obsolete by a virus that kept evolving. I was wrong about that. Early in the pandemic, I had dismissed concerns about meaningful viral mutation. The virus proved otherwise, and this chapter is in many ways a record of that reckoning.",
       "clinical_nodes": [
         {
           "date": "2020-07-02",
@@ -937,6 +942,7 @@
       "layout": "split",
       "mood": "Hope / Joy",
       "mood_description": "A rare chapter of optimism in a dark year. The arrival of vaccines — 90% efficacy news that blew everyone away — and the shared joy of vaccination clinics. Pharmacists give hope a shot.",
+      "introduction": "When the Pfizer efficacy data came in at 90%, it didn't feel real. Nothing in the prior year had prepared us for good news at that scale. I got my immunizer license — not because direct patient care was my comfort zone, but because I knew this was going to be the most important thing any of us would be part of. Over the next four months, I gave more than 300 vaccinations. It was the closest thing to joy I had felt in a year.",
       "clinical_nodes": [
         {
           "date": "2020-06-30",
@@ -1186,6 +1192,7 @@
       "layout": "full",
       "mood": "Conflict / Vindication",
       "mood_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
+      "introduction": "This story runs parallel to much of what came before. It traces a conflict that threaded through the entire pandemic — a physician's continued advocacy for hydroxychloroquine long after the evidence had turned against it. It's a story about what happens when ego meets evidence, and about what it felt like to be named on national television by someone I disagreed with. It's the most personal chapter, and the one I'm least sure how to tell.",
       "clinical_nodes": [
         {
           "date": "2020-04-02",
