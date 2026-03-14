@@ -992,8 +992,31 @@
         },
         {
           "date": "2020-12-10",
-          "label": "I Watch the FDA VRPAC Meeting",
-          "content": "I watch most of the FDA Vaccines and Related Biological Products Advisory Committee meeting on the Pfizer vaccine. I will watch many more VRPAC and ACIP meetings over the next year.",
+          "label": "FDA VRBPAC",
+          "content": "I watch most of the FDA Vaccines and Related Biological Products Advisory Committee meeting on the Pfizer vaccine. I will watch many more VRBPAC and ACIP meetings over the next year.",
+          "preview": "I watch most of the FDA Vaccines and Related Biological Products Advisory Committee meeting on the Pfizer vaccine. I will watch many more VRBPAC and ACIP meetings over the next year.",
+          "sections": [
+            {
+              "heading": "A Companion to the NEJM Podcast",
+              "text": "Watching the VRBPAC was a natural extension of what I had been getting from the NEJM podcast — another window into how experts actually engage with evidence in real time. Some of the same names appeared. And like the podcast, the quality of reasoning varied. Some participants were rigorous and precise, following the data carefully and staying within what it could support. Others were less so — more impressionistic, more prone to letting adjacent considerations blur the question in front of them. Watching that contrast play out across a long meeting was itself instructive."
+            },
+            {
+              "heading": "When Perception Enters the Room",
+              "text": "What I found most striking — and a little unsettling — was how some committee members let the optics of their decision factor into their reasoning. Not just 'what does the data show' but 'how will this recommendation be received.' That's understandable in a political context. But in a scientific advisory committee, it's a meaningful departure from the purpose of the exercise. The question on the table is whether the evidence supports authorization. How the public might interpret a yes or a no is a different question, and conflating the two muddies both."
+            },
+            {
+              "heading": "Raw Data and Hard Numbers",
+              "text": "One of the things that made these meetings genuinely valuable was the data that came with them. The FDA presentations included the actual numbers behind the benefit-risk calculations — event rates, confidence intervals, projections for different populations and age groups. This was exactly the kind of material that's hard to communicate to the public but essential for understanding why the committee was making the calls it made. I found it far more useful than the press releases and news coverage that followed."
+            },
+            {
+              "heading": "The Public Comment Period",
+              "text": "The open comment periods were something else entirely. Members of the public could address the committee directly, and the full range of American opinion on vaccines showed up. Scientists, advocates, skeptics, the genuinely frightened, the ideologically committed — the whole spectrum. It was at times hard to listen to, and at times genuinely moving. But it was a real and transparent part of the process, and I respected that it existed at all."
+            },
+            {
+              "heading": "How a Committee Decides",
+              "text": "I also learned something procedural that has stayed with me: this is how you get a large group of experts to a clear, decisive outcome. A proposal is put on the table. The committee discusses it. Then they vote — yes or no. No endless iteration, no consensus by exhaustion. The structure forces resolution. It's a technique worth understanding, because the alternative — open-ended deliberation without a forcing function — tends to produce ambiguity rather than clarity."
+            }
+          ],
           "embed": { "type": "link", "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/vaccines-and-related-biological-products-advisory-committee-december-10-2020-meeting-announcement", "label": "View the FDA VRBPAC Meeting Page" }
         },
         {
