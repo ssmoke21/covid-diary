@@ -797,7 +797,27 @@
           "date": "2021-02-09",
           "label": "Bamlanivimab/Etesevimab EUA",
           "content": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity. Variant monitoring becomes essential to treatment decisions.",
-          "embed": { "type": "link", "url": "https://www.fda.gov/media/145801/download", "label": "Read the FDA EUA Letter (PDF)" }
+          "preview": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity. Variant monitoring becomes essential to treatment decisions.",
+          "sections": [
+            {
+              "heading": "A Weekly Ritual",
+              "text": "From this point forward, the CDC nowcast — weekly estimates of variant proportions circulating nationally and regionally — became a standing appointment. Every week, I was checking which variants were dominant, what their resistance profiles looked like against available monoclonals, and what that meant for what we could actually offer patients. It was a level of real-time pharmacoepidemiology that simply hadn't existed before in clinical practice."
+            },
+            {
+              "heading": "Supply vs. Activity: An Ethical Tightrope",
+              "text": "As the variant landscape shifted, so did the choices in front of us — and they weren't always clean ones. At certain points we had one monoclonal with greater supply but a higher likelihood of resistance, and another with stronger activity against circulating variants but limited availability. Was it ethical to give the more accessible drug when it was less likely to work? Was it ethical to reserve the better drug for patients who could wait, when another patient was in front of you now? These weren't hypotheticals. They were real decisions, made in real time, without good precedent."
+            },
+            {
+              "heading": "When There's Only One Option Left",
+              "text": "There were periods when we were down to a single available monoclonal, and resistance to it was likely given the variants circulating. And yet patients and providers still wanted to do something. The desire to act is deeply human — and deeply understandable. But offering a therapy with probable resistance meant weighing a marginal chance of benefit against the signal we were sending: that we had tools when we may not have. These were some of the harder conversations of the entire monoclonal era."
+            },
+            {
+              "heading": "Remarkable, With a Catch",
+              "text": "Stepping back, it was genuinely extraordinary that we had weekly surveillance data at all — that a national infrastructure existed to estimate variant proportions and publish them publicly, in near real time. No prior pandemic had anything like it. But we also knew its limits: the nowcast lagged. It reflected what had been circulating in the weeks prior, not necessarily what was in your hospital, in your county, on the day you were making the decision. You were always navigating with a map drawn slightly in the past."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://www.fda.gov/media/145801/download", "label": "Read the FDA EUA Letter (PDF)" },
+          "secondary_embed": { "url": "https://www.cdc.gov/covid/php/variants/variants-and-genomic-surveillance.html", "label": "View CDC Variant & Genomic Surveillance" }
         },
         {
           "date": "2021-02-09",
