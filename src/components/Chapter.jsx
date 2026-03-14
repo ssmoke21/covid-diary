@@ -316,13 +316,6 @@ export default function Chapter({ chapter, isVisible }) {
           <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">Mood</span>
           <span className="text-xs text-stone-600 font-medium">{chapter.mood}</span>
         </div>
-
-        <p
-          className="mt-4 text-sm text-stone-500 max-w-xl mx-auto leading-relaxed"
-          style={{ animation: isVisible ? "fade-in-up 0.5s ease-out 0.4s both" : "none" }}
-        >
-          {chapter.mood_description}
-        </p>
       </header>
 
       {/* Chapter introduction */}
