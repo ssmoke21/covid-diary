@@ -747,6 +747,21 @@
           "date": "2020-10-02",
           "label": "The President Receives Casirivimab/Imdevimab",
           "content": "The President publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. This brings considerable media attention to the medication.",
+          "preview": "The President publicly discloses he has Covid-19 and receives casirivimab/imdevimab via compassionate use. This brings considerable media attention to the medication.",
+          "sections": [
+            {
+              "heading": "A Question of Access",
+              "text": "The treatment the President received was real — casirivimab/imdevimab was available at that time, but only through compassionate use. That pathway exists for individual patients with serious or life-threatening conditions when no comparable alternatives are available. It is not a broad access program. The public saw a high-profile patient receive a cutting-edge therapy and reasonably asked: why can't we get that?"
+            },
+            {
+              "heading": "What I Knew",
+              "text": "From where I sat, the answer was straightforward: compassionate use is a narrow channel. We had already navigated it ourselves — the first request I worked on for this same drug came just days earlier. It required significant coordination: a physician request, IRB notification, and direct negotiation with the manufacturer. The drug wasn't being withheld. It simply wasn't available at scale yet, and access required going through a process most patients and providers didn't know existed."
+            },
+            {
+              "heading": "The Perception Problem",
+              "text": "But that explanation doesn't land easily when the most powerful person in the country appears to receive preferential treatment during a crisis. The optics amplified existing frustrations about equity and access. For those of us in the field, it was a reminder that scientific accuracy and public trust are not the same thing — and that a single high-profile case can shape perception in ways that months of careful communication cannot undo."
+            }
+          ],
           "embed": { "type": "link", "url": "https://www.statnews.com/2020/10/02/trump-taken-to-walter-reed-received-experimental-regeneron-covid19-treatment/", "label": "Read the Story on STAT News" }
         },
         {
