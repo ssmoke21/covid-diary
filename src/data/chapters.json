@@ -770,7 +770,14 @@
         {
           "date": "2020-04-11",
           "label": "Ivermectin: First and Last (for 8 months)",
-          "content": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months."
+          "content": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
+          "preview": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
+          "sections": [
+            {
+              "heading": "Standing on Others' Work",
+              "text": "To be clear, the pharmacokinetic argument wasn't my own original analysis — I was sharing work that others in the field had already done. Researchers had modeled the concentrations required to achieve antiviral efficacy based on in vitro data and found them to be orders of magnitude above what could safely be achieved in a human being. I read that analysis, understood it, and used it to answer the question. That's how it should work — you don't have to derive everything from scratch, you have to know where to look and be able to evaluate what you find."
+            }
+          ]
         },
         {
           "date": "2020-04-17",
