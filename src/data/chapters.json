@@ -429,6 +429,17 @@
           "date": "2020-03-21",
           "label": "President Tweets About HCQ",
           "content": "The President tweets that hydroxychloroquine and azithromycin could be 'one of the biggest game changers in the history of medicine,' bringing massive public attention and intensifying pressure to prescribe both drugs.",
+          "preview": "The President tweets that hydroxychloroquine and azithromycin could be 'one of the biggest game changers in the history of medicine,' bringing massive public attention and intensifying pressure to prescribe both drugs.",
+          "sections": [
+            {
+              "heading": "The Moment It Left the Hospital",
+              "text": "Up until this point, HCQ had been a clinical conversation — pharmacists, physicians, researchers, and guideline committees debating evidence quality and dosing thresholds. This tweet ended that. Overnight, hydroxychloroquine wasn't a drug being evaluated in a hospital setting. It was a topic at the dinner table, in text message threads, on the news. The pressure to prescribe intensified immediately and came from everywhere at once."
+            },
+            {
+              "heading": "Completely Surreal",
+              "text": "This was the moment my normal, everyday work became the thing that everyone in my family and friend circle suddenly wanted to talk about and debate. People who had never asked me a clinical question in my life were texting to ask about hydroxychloroquine. It was completely surreal — to have spent years building expertise in infectious disease pharmacotherapy and then watch that expertise become a political football in real time. The work hadn't changed. The world around it had."
+            }
+          ],
           "embed": { "type": "tweet", "url": "https://x.com/realDonaldTrump/status/1241367239900778501" }
         },
         {
