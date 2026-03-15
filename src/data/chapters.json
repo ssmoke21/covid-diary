@@ -509,12 +509,6 @@
           ]
         },
         {
-          "date": "2020-04-03",
-          "label": "Oval Office Meeting",
-          "content": "An ID physician meets with the President, a TV host, and the FDA Director to pressure HCQ authorization.",
-          "embed": { "type": "iframe", "url": "https://coronavirus-democrats-oversight.house.gov/sites/evo-subsites/coronavirus-democrats-oversight.house.gov/files/2022.08.24%20The%20Trump%20White%20House%E2%80%99s%20Relentless%20Attacks%20on%20FDA%E2%80%99s%20Coronavirus%20Response.pdf", "label": "View House Oversight Report (PDF)" }
-        },
-        {
           "date": "2020-04-04",
           "label": "Video Call With My Wife",
           "content": "My wife and I sit on our balcony and talk for 30 minutes. We know it's worth documenting, so we record it.",
@@ -1199,6 +1193,23 @@
           "label": "Dr. Smith on Fox News",
           "content": "ID physician Dr. Stephen Smith appears on Fox & Friends stating hydroxychloroquine is \"the beginning of the end of the pandemic.\"",
           "embed": { "type": "link", "url": "https://www.foxnews.com/media/dr-stephen-smith-on-effectiveness-of-hydroxychloroquine-with-coronavirus-symptoms-beginning-of-the-end-of-the-pandemic", "label": "Watch the Segment on Fox News" }
+        },
+        {
+          "date": "2020-04-03",
+          "label": "Oval Office Meeting",
+          "content": "The day after his Fox News appearance, the physician meets with the President, a TV host, and the FDA Director — apparently to pressure authorization of hydroxychloroquine.",
+          "preview": "The day after his Fox News appearance, the physician meets with the President, a TV host, and the FDA Director — apparently to pressure authorization of hydroxychloroquine.",
+          "sections": [
+            {
+              "heading": "I Didn't Know",
+              "text": "I was completely unaware this meeting had happened. It wasn't something I learned about in the moment — or for a long time afterward. I only found out when I stumbled across the House Oversight Committee's report to Congress, published in August 2022, which documented the Trump White House's efforts to pressure the FDA's coronavirus response. The meeting was in there. It was a strange thing to read: an event from early in the pandemic, involving someone I had been dealing with directly, that I had never known about at the time."
+            },
+            {
+              "heading": "How I Think He Got There",
+              "text": "I can't say for certain how this physician ended up in the Oval Office. But the sequence is suggestive. He appeared on Fox & Friends on April 2nd calling hydroxychloroquine 'the beginning of the end of the pandemic.' The President was a regular Fox viewer and had already been promoting HCQ publicly. My best guess is that Trump saw the segment, heard what he wanted to hear, and the invitation followed from there. Whether or not that's exactly what happened, it's the most plausible path from a cable news appearance to a meeting with the FDA Director."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://coronavirus-democrats-oversight.house.gov/sites/evo-subsites/coronavirus-democrats-oversight.house.gov/files/2022.08.24%20The%20Trump%20White%20House%E2%80%99s%20Relentless%20Attacks%20on%20FDA%E2%80%99s%20Coronavirus%20Response.pdf", "label": "View the House Oversight Report (PDF)" }
         },
         {
           "date": "2020-12-10",
