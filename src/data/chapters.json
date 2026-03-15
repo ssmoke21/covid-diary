@@ -553,18 +553,6 @@
           "embed": { "type": "link", "url": "https://www.contagionlive.com/view/how-does-hydroxychloroquine-and-azithromycin-combination-therapy-measure-up-for-covid19-treatment", "label": "Read the Analysis on Contagion Live" }
         },
         {
-          "date": "2020-03-28",
-          "label": "HCQ Dosing Conflict",
-          "preview": "An ID physician emails hospital leadership demanding higher HCQ dosing based on a non-comparative French study. A heated email exchange and phone call follow.",
-          "content": "An ID physician (Smith) emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. He raises supply concerns about the current regimen, makes stronger claims about the data — \"Since patients on this regimen will clear the virus very quickly…\" — and implies he might be blocked from using the French dosing, which was not the case. He also follows up with kind words about the residents, as workload for them had been a prior point of discussion.\n\nI respond by email emphasizing the major limitations: the latest study is non-comparative, only 15% of patients were on oxygen, and significant questions remain about the original study. Given pharmacokinetics, a loading dose with shorter duration makes sense. Better evidence supports our regimen, though all evidence remains limited. Supply is a major concern. I commit to advocating for a shorter duration and close with gratitude for everyone's work.\n\nSmith calls immediately, saying I \"stabbed him in the back.\" As with most conversations with him, he drifts into other topics and the tension dissipates."
-        },
-        {
-          "date": "2020-03-28",
-          "label": "FDA Emergency Use Authorization",
-          "content": "FDA issues EUA for chloroquine and hydroxychloroquine.",
-          "embed": { "type": "link", "url": "https://www.fda.gov/media/136534/download", "label": "Read the FDA EUA Letter (PDF)" }
-        },
-        {
           "date": "2020-03-31",
           "label": "Remdesivir Compassionate Use",
           "content": "Gilead approves compassionate use remdesivir for a pregnant patient in the ICU. An emergency C-section is performed in the ICU before the drug arrives.",
@@ -1386,6 +1374,18 @@
       "mood_description": "A concentrated drama centered on one physician's continued advocacy for hydroxychloroquine after the evidence had turned against it — culminating in a Fox News appearance where I am named by an ID physician, and the COO privately drops f-bombs in my defense.",
       "introduction": "This story runs parallel to much of what came before. It traces a conflict that threaded through the entire pandemic — a physician's continued advocacy for hydroxychloroquine long after the evidence had turned against it. It's a story about what happens when ego meets evidence, and about what it felt like to be named on national television by someone I disagreed with. It's the most personal chapter, and the one I'm least sure how to tell.",
       "clinical_nodes": [
+        {
+          "date": "2020-03-28",
+          "label": "HCQ Dosing Conflict",
+          "preview": "An ID physician emails hospital leadership demanding higher HCQ dosing based on a non-comparative French study. A heated email exchange and phone call follow.",
+          "content": "An ID physician (Smith) emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. He raises supply concerns about the current regimen, makes stronger claims about the data — \"Since patients on this regimen will clear the virus very quickly…\" — and implies he might be blocked from using the French dosing, which was not the case. He also follows up with kind words about the residents, as workload for them had been a prior point of discussion.\n\nI respond by email emphasizing the major limitations: the latest study is non-comparative, only 15% of patients were on oxygen, and significant questions remain about the original study. Given pharmacokinetics, a loading dose with shorter duration makes sense. Better evidence supports our regimen, though all evidence remains limited. Supply is a major concern. I commit to advocating for a shorter duration and close with gratitude for everyone's work.\n\nSmith calls immediately, saying I \"stabbed him in the back.\" As with most conversations with him, he drifts into other topics and the tension dissipates."
+        },
+        {
+          "date": "2020-03-28",
+          "label": "FDA Emergency Use Authorization",
+          "content": "FDA issues EUA for chloroquine and hydroxychloroquine.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/media/136534/download", "label": "Read the FDA EUA Letter (PDF)" }
+        },
         {
           "date": "2020-04-02",
           "label": "Dr. Smith on Fox News",
