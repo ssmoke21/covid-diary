@@ -477,7 +477,14 @@
         {
           "date": "2020-03-23",
           "label": "HCQ Reporting: Wildly Wrong Numbers",
-          "content": "A system-level HCQ report shows just 14 patients across the entire system — meanwhile CBMC alone has 37. Daily manual reconciliation of HCQ numbers is required for corporate reporting throughout most of the first wave."
+          "content": "A system-level HCQ report shows just 14 patients across the entire system — meanwhile CBMC alone has 37. Daily manual reconciliation of HCQ numbers is required for corporate reporting throughout most of the first wave.",
+          "preview": "A system-level HCQ report shows just 14 patients across the entire system — meanwhile CBMC alone has 37. Daily manual reconciliation of HCQ numbers is required for corporate reporting throughout most of the first wave.",
+          "sections": [
+            {
+              "heading": "A Data Infrastructure Problem",
+              "text": "The gap between 14 and 37 wasn't a sign that HCQ was being undercounted everywhere — it was a sign of how data-poor our own system was. The reporting tools couldn't accurately capture what was actually happening at the hospital level. This wasn't necessarily a problem beyond our walls; it was ours. And the consequence was that someone had to manually reconcile the numbers every day just to produce an accurate report. That became part of the routine for most of the first wave."
+            }
+          ]
         },
         {
           "date": "2020-03-23",
