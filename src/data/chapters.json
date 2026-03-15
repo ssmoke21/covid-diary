@@ -539,6 +539,17 @@
           "date": "2020-03-27",
           "label": "Azithromycin Recommendation Challenged",
           "content": "My ID PharmD colleague and I draft an SBAR to pull azithromycin from the protocol citing: no prior evidence, non-equivalent control group, no clinical benefit demonstrated, and potential QTc toxicity.",
+          "preview": "My ID PharmD colleague and I draft an SBAR to pull azithromycin from the protocol citing: no prior evidence, non-equivalent control group, no clinical benefit demonstrated, and potential QTc toxicity.",
+          "sections": [
+            {
+              "heading": "A Shifting Tide",
+              "text": "This SBAR wasn't drafted in isolation. By late March, concern about azithromycin's inclusion in HCQ protocols was building across the country — pharmacists and physicians raising the same questions independently: where was the evidence for the combination? What did the French study actually show? Was the QTc risk being taken seriously enough? We were participating in a shifting tide, not starting one. The critiques we put into the SBAR reflected a growing consensus among people who had looked carefully at the same paper and arrived at the same uncomfortable conclusions."
+            },
+            {
+              "heading": "Saying It Out Loud",
+              "text": "What the SBAR did was formalize the argument in our own institution. Citing the methodological weaknesses — no equivalent control group, no demonstrated clinical benefit, a supply shortage already straining the system — and putting it in writing was a way of forcing the conversation. It was uncomfortable to push back on something that had already been adopted and that physicians were actively using. But the concerns were real, they were shared widely, and they deserved to be on the record."
+            }
+          ],
           "embed": { "type": "link", "url": "https://www.contagionlive.com/view/how-does-hydroxychloroquine-and-azithromycin-combination-therapy-measure-up-for-covid19-treatment", "label": "Read the Analysis on Contagion Live" }
         },
         {
