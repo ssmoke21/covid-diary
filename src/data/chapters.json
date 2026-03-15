@@ -27,6 +27,17 @@
           "date": "Early January 2020",
           "label": "WHO Bulletin",
           "content": "Novel coronavirus (2019-nCoV) outbreak noted on Twitter / WHO.",
+          "preview": "Novel coronavirus (2019-nCoV) outbreak noted on Twitter / WHO.",
+          "sections": [
+            {
+              "heading": "The First I Heard of It",
+              "text": "We had just returned from our honeymoon in Austria. I had been completely off the radar — no clinical news, no alerts. This WHO bulletin was genuinely the first time the outbreak registered for me at all. It didn't set off any alarms. There had been outbreaks before — SARS, MERS, Ebola, Zika — and I was familiar enough with each of them to know they had never really reached us. A novel coronavirus from Wuhan felt like a variation on a familiar pattern."
+            },
+            {
+              "heading": "The Conversation That Felt Obvious",
+              "text": "I remember speaking with colleagues in the pharmacy department about it around this time — going through the prior outbreaks, what they were, how they spread, why they hadn't become a domestic crisis. It felt like a reasonable and informed way to contextualize what we were seeing. In retrospect, it's a little embarrassing. None of those outbreaks had come close to our country, let alone our hospital. I was using the right historical examples to draw exactly the wrong conclusion."
+            }
+          ],
           "embed": { "type": "tweet", "url": "https://x.com/WHO/status/1213523866703814656" },
           "link_group": "who-bulletin-jan-2020"
         },
