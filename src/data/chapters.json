@@ -489,7 +489,18 @@
         {
           "date": "2020-03-23",
           "label": "ACEi/ARB as Solution: Early Misstep",
-          "content": "A forwarded email from a board-certified critical care pharmacist (via ACCP CC PRN) argues that because ACE2 is the SARS-CoV-2 receptor, ACE inhibitors and ARBs could be a therapeutic solution. These medications are later proven not to be effective."
+          "content": "A forwarded email from a board-certified critical care pharmacist (via ACCP CC PRN) argues that because ACE2 is the SARS-CoV-2 receptor, ACE inhibitors and ARBs could be a therapeutic solution. These medications are later proven not to be effective.",
+          "preview": "A forwarded email from a board-certified critical care pharmacist (via ACCP CC PRN) argues that because ACE2 is the SARS-CoV-2 receptor, ACE inhibitors and ARBs could be a therapeutic solution. These medications are later proven not to be effective.",
+          "sections": [
+            {
+              "heading": "Wide-Ranging Theories Among Highly Qualified Experts",
+              "text": "This is worth highlighting not because the reasoning was foolish — it wasn't. ACE2 as the viral entry receptor was established biology, and working forward from that to a potential therapeutic angle was the kind of mechanistic thinking that experts are supposed to do. But it illustrates how wide-ranging the theorizing was, even among deeply credentialed people. A board-certified critical care pharmacist, drawing on real science, arrived at a hypothesis that didn't hold up. That was the environment: everyone reasoning from first principles, in every direction, simultaneously."
+            },
+            {
+              "heading": "Some Proved Correct, Most Did Not",
+              "text": "ACEi and ARBs weren't the only theories circulating at this level. There were hypotheses about anticoagulation, about statins, about famotidine, about vitamin D — some with mechanistic rationale, some with early observational signals, most ultimately going nowhere. A handful proved correct or at least useful. The lesson isn't that experts were wrong to theorize. It's that in a vacuum of evidence, even rigorous thinking produces a lot of noise alongside the signal. Sorting one from the other took time and trials that most institutions weren't running."
+            }
+          ]
         },
         {
           "date": "2020-03-24",
