@@ -388,7 +388,18 @@
         {
           "date": "2020-03-20",
           "label": "Vitamin C and Zinc: Evidence-Free Request",
-          "content": "A corporate pharmacy director asks about including Vitamin C and zinc comments in the guideline. After clarification, the request is not based on any evidence — just questions that have come up. A common theme at this stage of the pandemic."
+          "content": "A corporate pharmacy director asks about including Vitamin C and zinc comments in the guideline. After clarification, the request is not based on any evidence — just questions that have come up. A common theme at this stage of the pandemic.",
+          "preview": "A corporate pharmacy director asks about including Vitamin C and zinc comments in the guideline. After clarification, the request is not based on any evidence — just questions that have come up. A common theme at this stage of the pandemic.",
+          "sections": [
+            {
+              "heading": "The Burden of Proof Flipped",
+              "text": "This request crystallized something that was becoming a pattern. The default logic had quietly inverted. Normally, you need evidence to try something. During this period, you needed evidence not to try it. In the absence of data pointing against something — no known harm, no obvious contraindication — the reasoning was: why not? Questions were coming up, people wanted answers, and 'we don't know' felt inadequate when patients were deteriorating. So the list of things worth considering kept growing."
+            },
+            {
+              "heading": "All Kinds of Things Were Worth Trying",
+              "text": "Vitamin C. Zinc. Melatonin. Famotidine. Colchicine. Some of these would eventually get studied. Most would go nowhere. But in March of 2020, the bar for inclusion in the conversation was low — not because people were being reckless, but because the framework had shifted. With nothing proven, everything unproven looked roughly equivalent. The French HCQ study had already demonstrated that a single small paper was enough to move a field. That lesson cut in every direction."
+            }
+          ]
         },
         {
           "date": "2020-03-20",
