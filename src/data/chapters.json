@@ -345,6 +345,17 @@
           "date": "2020-03-18",
           "label": "NEJM: Lopinavir/r Not Effective",
           "content": "NEJM RCT published: lopinavir/ritonavir not effective for Covid-19. Removed from future protocol versions.",
+          "preview": "NEJM RCT published: lopinavir/ritonavir not effective for Covid-19. Removed from future protocol versions.",
+          "sections": [
+            {
+              "heading": "An Extraordinary Feat of Science",
+              "text": "The result was disappointing — lopinavir/ritonavir was out. But stepping back from the finding itself, what had just happened was remarkable. Researchers in Wuhan had enrolled patients, randomized them, collected outcomes, analyzed the data, written the paper, and gotten it through peer review and into the NEJM in the middle of an active outbreak. The first case in Wuhan had been reported roughly two months earlier. That kind of turnaround, under those conditions, was almost without precedent."
+            },
+            {
+              "heading": "A Negative Result Is Still a Result",
+              "text": "Lopinavir/ritonavir came off the protocol. That's the right outcome — clinicians needed to know it didn't work so they could stop using it. A null result published rigorously is infinitely more valuable than a promising signal that never gets tested. The trial answered the question. That's what trials are for, and the fact that this one was stood up and executed in the middle of a global emergency made it all the more impressive — even if the answer wasn't the one anyone was hoping for."
+            }
+          ],
           "embed": { "type": "link", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2001282", "label": "Read the Study in NEJM" }
         },
         {
