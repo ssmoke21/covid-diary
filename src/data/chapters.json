@@ -562,7 +562,17 @@
           "date": "2020-04-01",
           "label": "\"There Are No Rules Anymore\"",
           "preview": "A day of unproven therapies: ribavirin, zinc, colchicine, cyclosporine. I put it simply: \"There are no rules anymore.\"",
-          "content": "A wide-ranging day of unproven therapies. I add ribavirin to the reported inventory based on a contact of an ID physician in Egypt. Zinc sulfate shortages require active management — not recommended, not proven, but used widely. A conversation with my ID pharmacy colleague covers zinc + HCQ, colchicine, and cyclosporine: the first time I have heard of colchicine for Covid-19, the first time he has heard of cyclosporine. That's how I put it: \"There are no rules anymore.\""
+          "content": "A wide-ranging day of unproven therapies. Ribavirin, zinc, colchicine, cyclosporine — none proven, all in play.",
+          "sections": [
+            {
+              "heading": "Everything Was in Play",
+              "text": "I add ribavirin to the reported inventory based on a contact of an ID physician in Egypt. Zinc sulfate shortages require active management — not recommended, not proven, but used widely. A conversation with my ID pharmacy colleague covers zinc + HCQ, colchicine, and cyclosporine: the first time I have heard of colchicine for Covid-19, the first time he has heard of cyclosporine."
+            },
+            {
+              "heading": "No Rules",
+              "text": "That's how I put it: 'There are no rules anymore.' Every day brought new therapies to evaluate — most with little or no evidence, all with desperate clinical rationale. The normal framework for how drugs make it into practice had collapsed. We weren't recommending these therapies. We were just trying to keep up with them."
+            }
+          ]
         },
         {
           "date": "2020-04-01",
@@ -872,7 +882,17 @@
           "date": "2020-05-05",
           "label": "\"Do We Have Remdesivir? If Not, Why Not?\"",
           "preview": "The US government distributes remdesivir — no RWJBH hospitals are selected. A reporter contacts CBMC on behalf of a patient: \"Do we have remdesivir? If not, why not?\"",
-          "content": "The US government begins distributing remdesivir — and no RWJBH hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution.\n\nA reporter from ABC, working on behalf of a patient, reaches out to CBMC Public Relations. The inquiry is directed to Pharmacy and to me through the IRB Chair: \"Do we have remdesivir? If not, why not?\""
+          "content": "The US government distributes remdesivir — no RWJBH hospitals are selected. A reporter contacts CBMC on behalf of a patient asking why not.",
+          "sections": [
+            {
+              "heading": "Passed Over",
+              "text": "The US government begins distributing remdesivir — and no RWJBH hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution."
+            },
+            {
+              "heading": "A Reporter Calls",
+              "text": "A reporter from ABC, working on behalf of a patient, reaches out to CBMC Public Relations. The inquiry is directed to Pharmacy and to me through the IRB Chair: 'Do we have remdesivir? If not, why not?'"
+            }
+          ]
         },
         {
           "date": "2020-05-08",
@@ -906,7 +926,17 @@
           "date": "2020-05-15",
           "label": "First Remdesivir Shipment",
           "preview": "26 courses arrive at 6–7pm after a day-long delay. Allocation strategy debated, supply falls short of demand, and a Saturday morning CMO call is needed to approve orders.",
-          "content": "We are told to expect the first remdesivir shipment. The CEO emails pharmacy leadership and me to sort out receiving logistics. We ask the CMO how to allocate a limited supply — 4–15 courses expected — against high demand of 25–30 anticipated eligible patients.\n\nThe CMO responds: first come, first served — and this becomes the system-wide strategy. Around this time I hear from colleagues at other institutions that first come, first served is not considered equitable. We did not have the capacity to implement a more equitable allocation process.\n\nMidday, the shipment is reported delayed. The next day, 26 courses of remdesivir arrive around 6–7pm. An ID physician pre-emptively enters roughly 10 orders that evening — after I have left for the day. We never established a clear implementation process. I end up calling the CMO on Saturday morning to review and approve the orders."
+          "content": "26 courses of remdesivir arrive after a day-long delay. Allocation, logistics, and implementation all come together in real time — nothing goes as planned.",
+          "sections": [
+            {
+              "heading": "First Come, First Served",
+              "text": "The CEO emails pharmacy leadership and me to sort out receiving logistics. We ask the CMO how to allocate a limited supply — 4–15 courses expected — against 25–30 anticipated eligible patients. The CMO responds: first come, first served. This becomes the system-wide strategy. I later hear from colleagues at other institutions that first come, first served is not considered equitable. We did not have the capacity to implement a more equitable allocation process."
+            },
+            {
+              "heading": "Nothing Went as Planned",
+              "text": "Midday, the shipment is reported delayed. The next day, 26 courses arrive around 6–7pm. An ID physician pre-emptively enters roughly 10 orders that evening — after I have left for the day. We never established a clear implementation process. I end up calling the CMO on Saturday morning to review and approve the orders."
+            }
+          ]
         },
         {
           "date": "2020-05-22",
@@ -1467,7 +1497,21 @@
           "date": "2020-03-28",
           "label": "HCQ Dosing Conflict",
           "preview": "An ID physician emails hospital leadership demanding higher HCQ dosing based on a non-comparative French study. A heated email exchange and phone call follow.",
-          "content": "An ID physician (Smith) emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a retrospective, non-comparative French follow-up study. He raises supply concerns about the current regimen, makes stronger claims about the data — \"Since patients on this regimen will clear the virus very quickly…\" — and implies he might be blocked from using the French dosing, which was not the case. He also follows up with kind words about the residents, as workload for them had been a prior point of discussion.\n\nI respond by email emphasizing the major limitations: the latest study is non-comparative, only 15% of patients were on oxygen, and significant questions remain about the original study. Given pharmacokinetics, a loading dose with shorter duration makes sense. Better evidence supports our regimen, though all evidence remains limited. Supply is a major concern. I commit to advocating for a shorter duration and close with gratitude for everyone's work.\n\nSmith calls immediately, saying I \"stabbed him in the back.\" As with most conversations with him, he drifts into other topics and the tension dissipates."
+          "content": "An ID physician emails the CEO, CMO, and Chair of Medicine demanding higher HCQ dosing based on a non-comparative French follow-up study. A heated exchange follows.",
+          "sections": [
+            {
+              "heading": "The Demand",
+              "text": "Smith emails the CEO, CMO, and Chair of Medicine pushing for higher HCQ dosing based on a retrospective, non-comparative French follow-up study. He makes strong claims about the data — 'Since patients on this regimen will clear the virus very quickly…' — raises supply concerns about the current regimen, and implies he might be blocked from using the French dosing. He wasn't."
+            },
+            {
+              "heading": "My Response",
+              "text": "I respond by email, emphasizing the major limitations: the study is non-comparative, only 15% of patients were on oxygen, and significant questions remain about the original study. A loading dose with shorter duration makes pharmacokinetic sense. Better evidence supports our regimen, though all evidence remains limited. Supply is a real concern. I commit to advocating for a shorter duration and close with gratitude for everyone's work."
+            },
+            {
+              "heading": "'Stabbed Him in the Back'",
+              "text": "Smith calls immediately after reading my response. He tells me I stabbed him in the back. As with most conversations with him, the tension gives way quickly — he drifts into other topics and the call ends without further conflict."
+            }
+          ]
         },
         {
           "date": "2020-03-28",
