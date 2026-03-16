@@ -782,7 +782,22 @@
         {
           "date": "2020-04-17",
           "label": "Tocilizumab: Earlier May Be Better",
-          "content": "Preliminary tocilizumab results suggest earlier administration may be more effective — consistent with our clinical suspicion."
+          "content": "Preliminary tocilizumab results suggest earlier administration may be more effective — consistent with our clinical suspicion.",
+          "preview": "Preliminary tocilizumab results suggest earlier administration may be more effective — consistent with our clinical suspicion.",
+          "sections": [
+            {
+              "heading": "A Major Focus",
+              "text": "Tocilizumab was one of the things I was most absorbed by during this period. The drug was being used, but we genuinely didn't know how to use it — who benefited, when they should get it, what the right window was. Frontline clinicians were asking for guidance, and there wasn't much to give them. The published data was thin and the clinical picture was murky. So we did what we could: we started analyzing what we had."
+            },
+            {
+              "heading": "Days, Nights, and Weekends",
+              "text": "I worked on this constantly — evenings, weekends, whatever time I could find outside of the regular day. I want to be clear that it was nothing compared to what the clinicians were doing. They were doing the same kind of sustained, exhausting work, except theirs was directly at the bedside with critically ill patients. But this was the most meaningful way I could contribute. If I could get the data together fast enough to actually be useful, it was worth the hours."
+            },
+            {
+              "heading": "Share It As Soon As You Have Something",
+              "text": "As soon as we had preliminary results, we shared them. The finding — that earlier treatment appeared to be more effective — aligned with what some clinicians had already been suspecting based on what they were seeing at the bedside. That clinical intuition was right, and having data to support it mattered. Not because it settled the question definitively, but because it gave people something to work with while the field was still sorting itself out."
+            }
+          ]
         },
         {
           "date": "2020-04-24",
