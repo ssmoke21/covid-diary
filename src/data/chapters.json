@@ -889,8 +889,18 @@
         {
           "date": "2020-05-11",
           "label": "What Is Our Threshold to Act Before National Guidelines?",
-          "preview": "I ask the CPO and AMS physician lead: what is our threshold to act before national guidelines? The answer: we follow national guidelines — a decision shaped by the HCQ experience.",
-          "content": "I email the RWJBH CPO and AMS physician lead: \"What is the threshold for modifying our recommendations before national guidelines?\" The answer: we will follow national guidelines.\n\nThe question anticipates a recurring problem — new data that shifts the treatment landscape days or weeks before guidelines catch up. This will eventually come to a head most visibly with tocilizumab, leaving clinicians wanting to act on emerging evidence with no system guidance to support them.\n\nThe answer, in some ways, is likely a response to the early HCQ experience: a lesson in the dangers of moving fast on unproven therapies, and the institutional cost of having to walk recommendations back once national guidelines catch up."
+          "preview": "I ask the CPO and AMS physician lead: what is our threshold to act before national guidelines? The answer: we follow national guidelines. It was the right call — but colleagues wanted to be more nimble. The leaders chose to stand firm.",
+          "content": "I email the RWJBH CPO and AMS physician lead: \"What is the threshold for modifying our recommendations before national guidelines?\" The answer: we will follow national guidelines.\n\nThe question anticipates a recurring tension — new data that shifts the treatment landscape days or weeks before guidelines catch up. This will eventually come to a head most visibly with tocilizumab, leaving clinicians wanting to act on emerging evidence with no institutional guidance to support them.",
+          "sections": [
+            {
+              "heading": "The Right Call, With a Real Cost",
+              "text": "Following NIH guidelines was the correct institutional response — a higher evidence threshold, less exposure to the risk of recommending something that later proved wrong. I understood that, and I agreed with it. But in practice, it meant that when new data emerged that pointed clearly in a direction, our hands were tied until the national guidelines caught up. That gap — sometimes days, sometimes weeks — became a source of genuine friction. We knew enough to have an opinion. The answer was: wait."
+            },
+            {
+              "heading": "Nimble vs. Accountable",
+              "text": "Colleagues who were deep in the literature, reading the same emerging evidence I was, wanted to act. The impulse was understandable: the data looked promising, patients needed treatment, why wait? The leaders — the CPO, the AMS physician lead — held firm. They chose institutional accountability over clinical nimbleness. They were right to. But for the clinicians managing patients day to day, wanting to offer something they believed in, it was a hard position to be in. The downside of standing firm is that you feel it most acutely at the bedside."
+            }
+          ]
         },
         {
           "date": "2020-05-15",
