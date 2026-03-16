@@ -802,7 +802,18 @@
         {
           "date": "2020-04-24",
           "label": "NIH Guidelines Adopted",
-          "content": "Our AMS decides guidelines will mirror NIH guidelines going forward — requiring a much higher evidence threshold before making recommendations. No recommended therapies at this point."
+          "content": "Our AMS decides guidelines will mirror NIH guidelines going forward — requiring a much higher evidence threshold before making recommendations. No recommended therapies at this point.",
+          "preview": "Our AMS decides guidelines will mirror NIH guidelines going forward — requiring a much higher evidence threshold before making recommendations. No recommended therapies at this point.",
+          "sections": [
+            {
+              "heading": "A Response to the Missteps",
+              "text": "This decision didn't happen in a vacuum. It was shaped, at least in part, by what had happened with HCQ — a case study in what it looks like when guidance gets built on very little evidence and turns out to be wrong. We had recommended a drug, watched the evidence deteriorate, and walked it back. That experience had a cost — to credibility, to trust, to the clinicians who had followed our recommendations in good faith. Adopting NIH guidelines as our standard was, in some ways, a direct response to that."
+            },
+            {
+              "heading": "Humility Over Speed",
+              "text": "The new standard required a much higher evidence threshold before we'd make a recommendation. The practical effect was stark: at the point of adoption, there were no recommended therapies. That was the honest answer, and it was a hard one to give. But it was the right call. Moving fast on weak evidence had produced guidance that ultimately did harm. Being more cautious, more humble about what we actually knew — even when clinicians wanted answers we couldn't give — was the more defensible position. And the more responsible one."
+            }
+          ]
         },
         {
           "date": "2020-04-27",
