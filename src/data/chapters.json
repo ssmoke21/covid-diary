@@ -953,6 +953,12 @@
               "text": "The physician who had been the most vocal and persistent advocate for HCQ continued prescribing it. The policy that was meant to constrain non-evidence-based use had inadvertently given him a permanent workaround. We couldn't coordinate around a trial. We couldn't enforce enrollment. So the memo — however well-intentioned — ended up changing very little about what was actually happening at the bedside."
             }
           ]
+        },
+        {
+          "date": "2020-06-16",
+          "label": "RECOVERY Trial: Dexamethasone Reduces Mortality",
+          "content": "The RECOVERY trial reports dexamethasone reduces mortality — a landmark finding. Questions arise about whether a trial report (not peer-reviewed) is sufficient to change practice. Our system waits for the NIH guideline update but the CPO is pressured by an ID physician to act sooner.",
+          "embed": { "type": "link", "url": "https://www.recoverytrial.net/news/low-cost-dexamethasone-reduces-death-by-up-to-one-third-in-hospitalised-patients-with-severe-respiratory-complications-of-covid-19", "label": "Read the RECOVERY Trial Dexamethasone Results" }
         }
       ],
       "personal_nodes": [
@@ -1609,12 +1615,6 @@
           "label": "HCQ EUA Revoked",
           "content": "FDA officially revokes the emergency use authorization for hydroxychloroquine.",
           "embed": { "type": "link", "url": "https://www.fda.gov/media/138945/download", "label": "Read the FDA Revocation Letter (PDF)" }
-        },
-        {
-          "date": "2020-06-16",
-          "label": "RECOVERY Trial: Dexamethasone Reduces Mortality",
-          "content": "The RECOVERY trial reports dexamethasone reduces mortality — a landmark finding. Questions arise about whether a trial report (not peer-reviewed) is sufficient to change practice. Our system waits for the NIH guideline update but the CPO is pressured by an ID physician to act sooner.",
-          "embed": { "type": "link", "url": "https://www.recoverytrial.net/news/low-cost-dexamethasone-reduces-death-by-up-to-one-third-in-hospitalised-patients-with-severe-respiratory-complications-of-covid-19", "label": "Read the RECOVERY Trial Dexamethasone Results" }
         },
         {
           "date": "2020-12-01",
