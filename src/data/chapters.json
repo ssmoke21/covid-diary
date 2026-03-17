@@ -778,18 +778,6 @@
           ]
         },
         {
-          "date": "2020-04-11",
-          "label": "Ivermectin: First and Last (for 8 months)",
-          "content": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
-          "preview": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
-          "sections": [
-            {
-              "heading": "Standing on Others' Work",
-              "text": "To be clear, the pharmacokinetic argument wasn't my own original analysis — I was sharing work that others in the field had already done. Researchers had modeled the concentrations required to achieve antiviral efficacy based on in vitro data and found them to be orders of magnitude above what could safely be achieved in a human being. I read that analysis, understood it, and used it to answer the question. That's how it should work — you don't have to derive everything from scratch, you have to know where to look and be able to evaluate what you find."
-            }
-          ]
-        },
-        {
           "date": "2020-04-17",
           "label": "Tocilizumab: Earlier May Be Better",
           "content": "Preliminary tocilizumab results suggest earlier administration may be more effective — consistent with our clinical suspicion.",
@@ -1615,6 +1603,18 @@
           "label": "HCQ EUA Revoked",
           "content": "FDA officially revokes the emergency use authorization for hydroxychloroquine.",
           "embed": { "type": "link", "url": "https://www.fda.gov/media/138945/download", "label": "Read the FDA Revocation Letter (PDF)" }
+        },
+        {
+          "date": "2020-04-11",
+          "label": "Ivermectin: First and Last (for 8 months)",
+          "content": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
+          "preview": "Two ID physicians separately ask about ivermectin. I explain that concentrations required for efficacy are orders of magnitude above what can be safely achieved. No more ivermectin questions for eight months.",
+          "sections": [
+            {
+              "heading": "Standing on Others' Work",
+              "text": "To be clear, the pharmacokinetic argument wasn't my own original analysis — I was sharing work that others in the field had already done. Researchers had modeled the concentrations required to achieve antiviral efficacy based on in vitro data and found them to be orders of magnitude above what could safely be achieved in a human being. I read that analysis, understood it, and used it to answer the question. That's how it should work — you don't have to derive everything from scratch, you have to know where to look and be able to evaluate what you find."
+            }
+          ]
         },
         {
           "date": "2020-12-01",
