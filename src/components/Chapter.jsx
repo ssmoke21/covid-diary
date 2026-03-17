@@ -419,6 +419,41 @@ function SpineCell({ row, isFirst, isLast }) {
   );
 }
 
+// ─── Carousel for multi-image interlude sections ──────────────────────────────
+
+function ImageCarousel({ images, alt }) {
+  const [idx, setIdx] = useState(0);
+  if (images.length === 1) {
+    return (
+      <div className="rounded-lg overflow-hidden bg-stone-100 border border-stone-200">
+        <img src={`${import.meta.env.BASE_URL}${images[0]}`} alt={alt || ""} className="w-full h-auto object-contain" loading="lazy" />
+      </div>
+    );
+  }
+  return (
+    <div className="relative">
+      <div className="rounded-lg overflow-hidden bg-stone-100 border border-stone-200">
+        <img src={`${import.meta.env.BASE_URL}${images[idx]}`} alt={alt || ""} className="w-full h-auto object-contain" loading="lazy" />
+      </div>
+      {/* Prev / Next */}
+      <button onClick={() => setIdx((idx - 1 + images.length) % images.length)}
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white border border-stone-200 rounded-full w-7 h-7 flex items-center justify-center text-stone-500 hover:text-stone-800 shadow-sm transition-colors"
+        aria-label="Previous image">‹</button>
+      <button onClick={() => setIdx((idx + 1) % images.length)}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white border border-stone-200 rounded-full w-7 h-7 flex items-center justify-center text-stone-500 hover:text-stone-800 shadow-sm transition-colors"
+        aria-label="Next image">›</button>
+      {/* Dots */}
+      <div className="flex justify-center gap-1.5 mt-2">
+        {images.map((_, j) => (
+          <button key={j} onClick={() => setIdx(j)}
+            className={`w-1.5 h-1.5 rounded-full transition-colors ${j === idx ? "bg-[var(--color-personal)]" : "bg-stone-300 hover:bg-stone-400"}`}
+            aria-label={`Image ${j + 1}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ─── Interlude node (full-width break in the timeline) ────────────────────────
 
 function InterludeNode({ node }) {
@@ -459,17 +494,8 @@ function InterludeNode({ node }) {
             return (
               <div key={i} className={`flex flex-col ${imageOnLeft ? "md:flex-row" : "md:flex-row-reverse"} gap-6 items-start`}
                 style={{ animation: `fade-in-up 0.5s ease-out ${i * 0.06}s both` }}>
-                <div className="w-full md:w-2/5 flex-shrink-0 flex flex-col gap-3">
-                  {images.map((img, j) => (
-                    <div key={j} className="rounded-lg overflow-hidden bg-stone-100 border border-stone-200">
-                      <img
-                        src={`${import.meta.env.BASE_URL}${img}`}
-                        alt={title || ""}
-                        className="w-full h-auto object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
+                <div className="w-full md:w-2/5 flex-shrink-0">
+                  <ImageCarousel images={images} alt={title || ""} />
                 </div>
                 <div className="flex-1 min-w-0">
                   {title && (
@@ -493,18 +519,7 @@ function InterludeNode({ node }) {
                     {title}
                   </p>
                 )}
-                <div className="flex flex-col gap-3">
-                  {images.map((img, j) => (
-                    <div key={j} className="rounded-lg overflow-hidden bg-stone-100 border border-stone-200">
-                      <img
-                        src={`${import.meta.env.BASE_URL}${img}`}
-                        alt={title || ""}
-                        className="w-full h-auto object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
+                <ImageCarousel images={images} alt={title || ""} />
               </div>
             );
           }
