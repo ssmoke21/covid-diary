@@ -1601,7 +1601,18 @@
         {
           "date": "2020-06-05",
           "label": "RECOVERY Trial: HCQ No Benefit",
-          "content": "The RECOVERY trial determines no benefit from hydroxychloroquine in hospitalized Covid-19 patients. I distribute the details and clinical trial contact info to ID physicians.",
+          "content": "The RECOVERY trial reports no benefit from hydroxychloroquine in hospitalized Covid-19 patients. I share it with the ID team the way I would any other new development.",
+          "preview": "The RECOVERY trial reports no benefit from hydroxychloroquine in hospitalized Covid-19 patients. I share it with the ID team the way I would any other new development.",
+          "sections": [
+            {
+              "heading": "The Nail in the Coffin",
+              "text": "For most people in ID, this was it — a large, well-conducted randomized controlled trial with a clear answer. No benefit. The quality of the evidence was exactly what the situation demanded, and it delivered. There had been smaller studies, observational data, and cautionary signals for months. RECOVERY removed whatever remaining uncertainty anyone could credibly claim."
+            },
+            {
+              "heading": "Shared Without Fanfare",
+              "text": "I wasn't looking for a confrontation when I passed it along. I shared it the same way I would share any significant new trial result — here's what came out, here's what it means. It felt like a closing of a chapter. Whether it closed it for everyone was a different question."
+            }
+          ],
           "embed": { "type": "link", "url": "https://www.recoverytrial.net/news/statement-from-the-chief-investigators-of-the-randomised-evaluation-of-covid-19-therapy-recovery-trial-on-hydroxychloroquine-5-june-2020-no-clinical-benefit-from-use-of-hydroxychloroquine-in-hospitalised-patients-with-covid-19", "label": "Read the RECOVERY Trial Statement" }
         },
         {
