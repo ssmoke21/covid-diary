@@ -1651,8 +1651,21 @@
         },
         {
           "date": "2021-04-13",
-          "label": "HCQ Paper Accepted",
-          "content": "My hydroxychloroquine paper is accepted for publication (submitted in February 2021, after rejection from several journals)."
+          "label": "Published: Quantifying the Safety Cost of HCQ",
+          "content": "My hydroxychloroquine paper is accepted for publication — documenting medication safety practices at the peak of HCQ use and the dangers of widespread adoption of an unproven therapy. Submitted in February 2021 after rejection from several journals.",
+          "preview": "My hydroxychloroquine paper is accepted for publication — documenting medication safety practices at the peak of HCQ use and the dangers of widespread adoption of an unproven therapy.",
+          "sections": [
+            {
+              "heading": "What the Paper Measured",
+              "text": "The study quantified medication safety practices right at the height of HCQ use in our institution — a period when the drug was being used broadly and urgently, and when normal safety guardrails were under real pressure. The findings were suboptimal. That was the point: it wasn't just that the therapy was unproven, it was that the widespread use of an unproven therapy created its own patient safety risks, independent of whether the drug worked."
+            },
+            {
+              "heading": "Cited by the WHO",
+              "text": "The paper was later cited in the WHO's report on the impact of the pandemic on patient safety — a recognition that what happened with HCQ wasn't an isolated institutional story but part of a global pattern worth documenting. Putting that on the record felt like the right thing to do."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://pubmed.ncbi.nlm.nih.gov/33959987/", "label": "Read the Published Study on PubMed" },
+          "secondary_embed": { "type": "link", "url": "https://www.who.int/publications/i/item/9789240055094", "label": "Read the WHO Patient Safety Report" }
         },
         {
           "date": "Fall 2020",
