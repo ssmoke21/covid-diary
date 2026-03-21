@@ -163,9 +163,9 @@ export default function App() {
                 <p>
                   Colleagues weathered the storm, carried the weight of impossible duties
                   and decisions, and then, in the aftermath, they left. Burnt out and
-                  underappreciated &mdash; who could blame them? For everyone who went through
-                  this, have you really processed and accepted what happened? Or are you
-                  simply not talking about it?
+                  underappreciated &mdash; who could blame them? I wonder how many of them
+                  have really processed and accepted what happened. And how many are simply
+                  not talking about it.
                 </p>
               </div>
             </div>
