@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background-color: #fafaf9;
+      font-family: 'Inter', sans-serif;
+      color: #1c1917;
+      position: relative;
+    }
+
+    /* Subtle grid */
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(120,113,108,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(120,113,108,0.07) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Warm red gradient top wash */
+    .top-wash {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to bottom, rgba(239,68,68,0.04), transparent);
+      pointer-events: none;
+    }
+
+    /* Content */
+    .card {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 60px 100px;
+      text-align: center;
+    }
+
+    .date-range {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #ef4444;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 88px;
+      font-weight: 700;
+      line-height: 1.05;
+      color: #1c1917;
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 400;
+      color: #78716c;
+      margin-bottom: 36px;
+      line-height: 1.4;
+    }
+
+    .rule {
+      width: 48px;
+      height: 3px;
+      background: #ef4444;
+      margin: 0 auto 32px;
+      border-radius: 2px;
+    }
+
+    .author {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #a8a29e;
+      letter-spacing: 0.02em;
+    }
+
+    /* Bottom border accent */
+    .bottom-bar {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #ef4444 30%, #ef4444 70%, transparent);
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="top-wash"></div>
+  <div class="card">
+    <div class="date-range">Dec 2019 — Jun 2021</div>
+    <h1>A Covid-19 Journal</h1>
+    <div class="subtitle">An Infectious Diseases Pharmacist's Pandemic Chronicle</div>
+    <div class="rule"></div>
+    <div class="author">by Steven Smoke</div>
+  </div>
+  <div class="bottom-bar"></div>
+</body>
+</html>
