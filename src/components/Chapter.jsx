@@ -593,7 +593,7 @@ function TimelineGridSegment({ rows, globalOffset, onOpenOverlay, isFirstSegment
               )}
             </div>
             <SpineCell row={row} isFirst={isFirstSegment && i === 0} isLast={i === rows.length - 1} />
-            <div className="flex flex-col justify-center">
+            <div className={`flex flex-col justify-center ${row.linked ? "hidden lg:flex" : ""}`}>
               {row.personal && (
                 <NodeCard
                   node={row.personal}
