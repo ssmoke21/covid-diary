@@ -765,6 +765,23 @@
           ]
         },
         {
+          "date": "2020-04-03",
+          "label": "CDC Recommends Masks; Trump Won't Wear One",
+          "content": "The CDC recommends Americans wear cloth face coverings. At the same press conference, the President says he won't be wearing one.",
+          "preview": "The CDC recommends Americans wear cloth face coverings. At the same press conference, the President says he won't be wearing one.",
+          "sections": [
+            {
+              "heading": "Demoralizing",
+              "text": "It was demoralizing. We were in the middle of an unfolding disaster — hospitals overwhelmed, healthcare workers reusing PPE, patients dying in isolation — and the President openly admitted he didn't want to wear a mask because of how it made him look. This wasn't a private aside. It was on camera, at the same press conference where public health officials were pleading with the country to take precautions. His words and actions influenced millions of people. The lives that could have been saved if he had simply modeled the behavior his own agencies were recommending — it's impossible to calculate, but impossible to ignore."
+            },
+            {
+              "heading": "The Pattern Begins",
+              "text": "This was the beginning of a pattern of open discrepancies between the President and public health officials — on masks, on treatments, on the trajectory of the virus. It put public health leaders in an impossible position: trying to protect the public while the person with the largest platform in the country was actively undermining their message. Disastrous leadership. And heroic work from the public health officials who did everything they could to protect people anyway."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://www.nbcnews.com/news/us-news/u-s-expected-recommend-masks-americans-coronavirus-hotspots-n1175596", "label": "Read the Story on NBC News" }
+        },
+        {
           "date": "2020-04-04",
           "label": "Video Call With My Wife",
           "content": "My wife and I sit on our balcony and talk for 30 minutes. We know it's worth documenting, so we record it.",
