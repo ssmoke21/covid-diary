@@ -718,6 +718,26 @@
         },
         {
           "date": "2020-03-30",
+          "label": "\"It Will Go Away\"",
+          "content": "The President repeatedly claims the virus will simply disappear. It was obvious this was not correct — public health officials were clearly stating the opposite.",
+          "preview": "The President repeatedly claims the virus will simply disappear. It was obvious this was not correct — public health officials were clearly stating the opposite.",
+          "sections": [
+            {
+              "quote": "Stay calm. It will go away. You know it — you know it is going away, and it will go away. And we're going to have a great victory."
+            },
+            {
+              "heading": "Not Just Once",
+              "text": "This wasn't a one-time comment. The President made versions of this claim repeatedly throughout the pandemic — that the virus would disappear, that it was under control, that it would go away on its own. As CNN documented, these statements continued for months even as case counts and deaths climbed. Every public health official in the country was saying the opposite. The disconnect was impossible to ignore."
+            },
+            {
+              "heading": "The Trust Problem",
+              "text": "I understood the instinct — you don't want people to panic. But people needed to know this was serious. They needed to take precautions, change their behavior, protect vulnerable family members. And once it became clear that the President was willing to say things that were plainly untrue just to make people feel better, the question became: what else couldn't you trust? If he would minimize a pandemic to avoid alarm, how could anything he said about treatments, timelines, or risk be taken at face value? That erosion of trust had real consequences — for public health messaging, for compliance, for everything that followed."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://www.cnn.com/interactive/2020/10/politics/covid-disappearing-trump-comment-tracker/", "label": "CNN: Trump's Claims the Virus Would Disappear" }
+        },
+        {
+          "date": "2020-03-30",
           "label": "Celebrating a Preprint With Amy",
           "content": "A preprint RCT from China suggests benefit with hydroxychloroquine. My first real encounter with preprints — a format I'd become very familiar with.",
           "preview": "A preprint RCT from China suggests benefit with hydroxychloroquine. My first real encounter with preprints — a format I'd become very familiar with.",

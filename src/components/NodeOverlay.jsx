@@ -232,10 +232,12 @@ export default function NodeOverlay({ node, onClose }) {
   const hasSections = !isPaired && !!node.sections?.length;
   const hasPairedPhoto = isPaired && (isPhotoEmbed(clinical?.embed) || isPhotoEmbed(personal?.embed));
   const hasPairedEmbed = isPaired && !hasPairedPhoto && (clinical?.embed || personal?.embed);
+  const hasTweetWithSections = !isPaired && hasSections && node.embed?.type === "tweet";
   const modalWidth =
     hasIframe ? "max-w-4xl"
     : (isPaired && (hasPairedPhoto || hasPairedEmbed)) ? "max-w-4xl"
     : isPaired ? "max-w-2xl"
+    : hasTweetWithSections ? "max-w-4xl"
     : (hasSections || isPhotoEmbed(node.embed)) ? "max-w-3xl"
     : "max-w-md";
 
@@ -426,7 +428,43 @@ export default function NodeOverlay({ node, onClose }) {
             </div>
 
             <div className="overflow-y-auto" style={{ maxHeight: "80vh" }}>
-            {hasSections ? (
+            {hasTweetWithSections ? (
+              /* Tweet on left, text sections on right */
+              <div className="flex" style={{ maxHeight: "75vh" }}>
+                <div className="w-2/5 flex-shrink-0 overflow-y-auto border-r border-stone-100 bg-stone-50/60">
+                  <EmbedSection embedNode={node} />
+                </div>
+                <div className="flex-1 overflow-y-auto min-w-0">
+                  {node.sections.map((section, i) => (
+                    <div key={i} className="px-5 py-4 border-t border-stone-100 first:border-t-0">
+                      {section.quote && (
+                        <blockquote className="border-l-2 border-red-300 pl-4 my-1 italic text-stone-700 text-base font-serif leading-snug">
+                          &ldquo;{section.quote}&rdquo;
+                        </blockquote>
+                      )}
+                      {(section.heading || section.title) && (
+                        <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-1">
+                          {section.heading || section.title}
+                        </p>
+                      )}
+                      {section.text && (
+                        <p className="text-sm text-stone-600 leading-relaxed">{section.text}</p>
+                      )}
+                      {section.links?.length > 0 && (
+                        <div className="mt-3 flex flex-col gap-1.5">
+                          {section.links.map((link, j) => (
+                            <a key={j} href={link.url} target="_blank" rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 text-xs text-stone-500 hover:text-stone-700 underline underline-offset-2">
+                              {link.label}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : hasSections ? (
               <div className="pb-5">
                 {node.sections.map((section, i) => (
                   section.image ? (
@@ -496,7 +534,7 @@ export default function NodeOverlay({ node, onClose }) {
               <p className="px-6 pb-5 text-sm text-stone-600 leading-relaxed">{node.content}</p>
             )}
 
-            <EmbedSection embedNode={node.embed ? node : null} />
+            {!hasTweetWithSections && <EmbedSection embedNode={node.embed ? node : null} />}
             </div>
           </>
         )}
