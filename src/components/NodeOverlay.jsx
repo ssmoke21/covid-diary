@@ -464,6 +464,11 @@ export default function NodeOverlay({ node, onClose }) {
                   ) : (
                     /* Text-only sections: full width */
                     <div key={i} className="px-6 py-4 border-t border-stone-100 first:border-t-0">
+                      {section.quote && (
+                        <blockquote className="border-l-2 border-red-300 pl-4 my-1 italic text-stone-700 text-base font-serif leading-snug">
+                          &ldquo;{section.quote}&rdquo;
+                        </blockquote>
+                      )}
                       {(section.heading || section.title) && (
                         <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-1">
                           {section.heading || section.title}
