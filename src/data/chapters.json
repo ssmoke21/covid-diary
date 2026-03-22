@@ -1124,16 +1124,9 @@
         {
           "date": "2021-02-09",
           "label": "Bamlanivimab/Etesevimab EUA",
-          "content": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity. Variant monitoring becomes essential to treatment decisions.",
-          "preview": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity. Variant monitoring becomes essential to treatment decisions.",
-          "sections": [
-            {
-              "heading": "A Weekly Ritual",
-              "text": "From this point forward, checking the CDC Nowcast became a weekly ritual — estimates of which variants were circulating nationally and regionally, updated each week, cross-referenced against the resistance profiles of whatever monoclonals we had on hand. It was a level of real-time pharmacoepidemiology that hadn't existed before in clinical practice. And it raised familiar but difficult ethical questions that never fully resolved. If one agent appeared more active than another based on variant data, when do you pull the plug on the less active one — especially when inventory is limited? If you only have one option and its activity is dwindling, do you still offer it to a patient when it may not work? There was no clean answer. The surveillance data was genuinely remarkable — a national infrastructure publishing variant proportions in near real time, something no prior pandemic had. But it always lagged. It told you what had been circulating in the weeks prior, not necessarily what was in your hospital today. You were navigating with a map drawn slightly in the past, making real-time decisions with imperfect information."
-            }
-          ],
-          "embed": { "type": "link", "url": "https://www.fda.gov/media/145801/download", "label": "Read the FDA EUA Letter (PDF)" },
-          "secondary_embed": { "type": "link", "url": "https://www.cdc.gov/covid/php/variants/variants-and-genomic-surveillance.html", "label": "View CDC Variant & Genomic Surveillance" }
+          "content": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity.",
+          "preview": "FDA grants EUA for the combination. Rationale: resistance to bamlanivimab suspected in circulating variants; etesevimab intended to restore activity.",
+          "embed": { "type": "link", "url": "https://www.fda.gov/media/145801/download", "label": "Read the FDA EUA Letter (PDF)" }
         },
         {
           "date": "2021-02-09",
@@ -1152,8 +1145,13 @@
             {
               "heading": "Being Wrong",
               "text": "Acknowledging this isn't just an intellectual exercise. My dismissal of mutation concerns had practical consequences — it shaped how I thought about the durability of our monoclonal antibody strategies in the early months. The virus eventually rendered nearly every monoclonal antibody we had clinically obsolete. That is not a failure of science; science updated as evidence emerged. But it is a reminder that reading widely is not the same as reading correctly, and that confident early opinions in a fast-moving situation deserve more humility than I gave them."
+            },
+            {
+              "heading": "A Weekly Ritual",
+              "text": "From this point forward, checking the CDC Nowcast became a weekly ritual — estimates of which variants were circulating nationally and regionally, updated each week, cross-referenced against the resistance profiles of whatever monoclonals we had on hand. It was a level of real-time pharmacoepidemiology that hadn't existed before in clinical practice. And it raised difficult ethical questions that never fully resolved. If one agent appeared more active than another, when do you pull the plug on the less active one — especially when inventory is limited? If you only have one option and its activity is dwindling, do you still offer it to a patient when it may not work? The surveillance data was genuinely remarkable — a national infrastructure publishing variant proportions in near real time. But it always lagged, reflecting what had been circulating in prior weeks, not necessarily what was in your hospital today. You were navigating with a map drawn slightly in the past."
             }
-          ]
+          ],
+          "embed": { "type": "link", "url": "https://www.cdc.gov/covid/php/variants/variants-and-genomic-surveillance.html", "label": "View CDC Variant & Genomic Surveillance" }
         },
         {
           "date": "2021-04-16",
