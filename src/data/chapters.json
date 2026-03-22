@@ -1489,6 +1489,19 @@
           "date": "Late December 2020",
           "label": "The CPO Calls Before a TV Appearance",
           "content": "The Chief Pharmacy Officer calls me 20 minutes before a television appearance asking how to explain how the vaccines work."
+        },
+        {
+          "date": "2021-03-14",
+          "label": "Rutgers Makes the NCAA Tournament",
+          "content": "A year late, Rutgers finally earns its NCAA tournament bid — the first in over thirty years. The pandemic took 2020's chance. Getting it back in 2021 made it all the sweeter.",
+          "preview": "A year late, Rutgers finally earns its NCAA tournament bid — the first in over thirty years. The pandemic took 2020's chance. Getting it back in 2021 made it all the sweeter.",
+          "sections": [
+            {
+              "heading": "A Year Late, but Sweeter for It",
+              "text": "In March 2020, Rutgers was headed to the NCAA tournament for the first time in over thirty years — and then a once-in-a-century pandemic canceled it while the team was warming up on the court. That was classically Rutgers: find a way to lose that no one could have ever scripted. A year later, they made it back. And honestly, the delay made it better. There was something cathartic about it — proof that the thing you were robbed of could come back around, that the pandemic hadn't taken everything permanently. In a year defined by loss, this was a small restoration."
+            }
+          ],
+          "embed": { "type": "link", "url": "https://www.nj.com/rutgers/2021/03/rutgers-march-madness-2021-scarlet-knights-earn-ncaa-tournament-bid-meet-clemson-in-first-round.html", "label": "Read the Story on NJ.com" }
         }
       ],
       "assets_wishlist": [
