@@ -625,7 +625,7 @@
         {
           "date": "2020-04-14",
           "label": "First Baricitinib Question",
-          "content": "A pharmacist at NBI asks about baricitinib — my first encounter with it as a potential immunomodulator for Covid-19. Speculation about its efficacy had appeared in a Lancet study. It is proven effective months later.",
+          "content": "A pharmacist at a sister hospital asks about baricitinib — my first encounter with it as a potential immunomodulator for Covid-19. Speculation about its efficacy had appeared in a Lancet study. It is proven effective months later.",
           "embed": { "type": "link", "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30304-4/fulltext", "label": "Read the Study in The Lancet" }
         },
         {
@@ -908,12 +908,12 @@
         {
           "date": "2020-05-05",
           "label": "\"Do We Have Remdesivir? If Not, Why Not?\"",
-          "preview": "The US government distributes remdesivir — no RWJBH hospitals are selected. A reporter contacts CBMC on behalf of a patient: \"Do we have remdesivir? If not, why not?\"",
-          "content": "The US government distributes remdesivir — no RWJBH hospitals are selected. A reporter contacts CBMC on behalf of a patient asking why not.",
+          "preview": "The US government distributes remdesivir — no system hospitals are selected. A reporter contacts CBMC on behalf of a patient: \"Do we have remdesivir? If not, why not?\"",
+          "content": "The US government distributes remdesivir — no system hospitals are selected. A reporter contacts CBMC on behalf of a patient asking why not.",
           "sections": [
             {
               "heading": "Passed Over",
-              "text": "The US government begins distributing remdesivir — and no RWJBH hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution."
+              "text": "The US government begins distributing remdesivir — and no system hospitals are selected for the initial shipment. We are told it was sent to the hardest-hit areas, but it is unclear how most of New Jersey was passed over. Two NJ sites received it; both returned their allocations to the state, which assembled a committee to determine redistribution."
             },
             {
               "heading": "A Reporter Calls",
@@ -936,8 +936,8 @@
         {
           "date": "2020-05-11",
           "label": "What Is Our Threshold to Act Before National Guidelines?",
-          "preview": "I ask the CPO and AMS physician lead: what is our threshold to act before national guidelines? The answer: we follow national guidelines. It was the right call — but colleagues wanted to be more nimble. The leaders chose to stand firm.",
-          "content": "I email the RWJBH CPO and AMS physician lead: \"What is the threshold for modifying our recommendations before national guidelines?\" The answer: we will follow national guidelines.\n\nThe question anticipates a recurring tension — new data that shifts the treatment landscape days or weeks before guidelines catch up. This will eventually come to a head most visibly with tocilizumab, leaving clinicians wanting to act on emerging evidence with no institutional guidance to support them.",
+          "preview": "I ask the Chief Pharmacy Officer (CPO) and AMS physician lead: what is our threshold to act before national guidelines? The answer: we follow national guidelines. It was the right call — but colleagues wanted to be more nimble. The leaders chose to stand firm.",
+          "content": "I email the system Chief Pharmacy Officer (CPO) and AMS physician lead: \"What is the threshold for modifying our recommendations before national guidelines?\" The answer: we will follow national guidelines.\n\nThe question anticipates a recurring tension — new data that shifts the treatment landscape days or weeks before guidelines catch up. This will eventually come to a head most visibly with tocilizumab, leaving clinicians wanting to act on emerging evidence with no institutional guidance to support them.",
           "sections": [
             {
               "heading": "The Right Call, With a Real Cost",
@@ -952,7 +952,7 @@
         {
           "date": "2020-05-15",
           "label": "First Remdesivir Shipment",
-          "preview": "26 courses arrive at 6–7pm after a day-long delay. Allocation strategy debated, supply falls short of demand, and a Saturday morning CMO call is needed to approve orders.",
+          "preview": "26 courses arrive at 6–7pm after a day-long delay. Allocation strategy debated, supply falls short of demand, and a Saturday morning Chief Medical Officer (CMO) call is needed to approve orders.",
           "content": "26 courses of remdesivir arrive after a day-long delay. Allocation, logistics, and implementation all come together in real time — nothing goes as planned.",
           "sections": [
             {
@@ -1578,8 +1578,8 @@
         {
           "date": "2020-05-22",
           "label": "HCQ Gated to Clinical Trial",
-          "content": "A P&T memo to Medical Staff states: HCQ for Covid-19 must go through a clinical trial. Non-trial use permitted only if a patient is ineligible. The ID physician responds calling it 'Tuskegee type illegal.'",
-          "preview": "A P&T memo to Medical Staff states: HCQ for Covid-19 must go through a clinical trial. Non-trial use permitted only if a patient is ineligible. The ID physician responds calling it 'Tuskegee type illegal.'",
+          "content": "A Pharmacy and Therapeutics (P&T) Committee memo to Medical Staff states: HCQ for Covid-19 must go through a clinical trial. Non-trial use permitted only if a patient is ineligible. The ID physician responds calling it 'Tuskegee type illegal.'",
+          "preview": "A Pharmacy and Therapeutics (P&T) Committee memo to Medical Staff states: HCQ for Covid-19 must go through a clinical trial. Non-trial use permitted only if a patient is ineligible. The ID physician responds calling it 'Tuskegee type illegal.'",
           "sections": [
             {
               "heading": "A Policy With a Built-In Loophole",
