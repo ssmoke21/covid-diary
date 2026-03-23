@@ -995,6 +995,7 @@
             { "title": "Jaw Clenching", "text": "I notice mild, persistent tooth pain — eventually realizing it is from clenching my jaw. It was about trying to keep it together. It was frustrating and depressing to have no answers, but expressing frustration and despair only makes the situation worse for everyone around you. So I tried really hard to project a kind of stoicism — steady, composed, focused on the next problem. My jaw was where the effort went. The body keeps the score even when you won't let your face show it." },
             { "title": "Morning Commute Grief", "text": "'I remember getting emotional a few times. It was always on my morning commute... I remember feeling an overwhelming hopelessness. Not just for myself and all the patients and their families. But for everyone I care about and how isolated and scared they must be.' I think it happened on the commute because that was the one moment I was rested and reset — and almost forced to reflect on what was happening. Once I got to the hospital, it was nonstop work and effort. No time to think. No time to feel. The commute was the gap where everything caught up." },
             { "title": "The City Goes Quiet", "text": "Outside the hospital, the world shut down. Parks, playgrounds, schools — all closed. The streets emptied too. During the morning commute, there were barely any cars on the road.", "image": "images/playground-closed.png" },
+            { "title": "Testing", "text": "Early on, testing was only available through the hospital — nasopharyngeal swabs, limited supply, results that took days. At one point we had access to an experimental saliva-based test, which was easier to administer. Testing at that stage was primarily a clinical tool. As community clinics eventually opened up — drive-through sites, pop-up locations — testing became something families could use to make decisions about seeing each other." },
             { "title": "Hotel Stay", "text": "The hospital offered to cover hotel stays for staff who wanted to isolate from their families. I took them up on it — April 7 to April 18 — to protect my wife. It was a bizarre stretch of time. Mostly holed up in the hotel room: collecting tocilizumab data, using Netflix Party to watch Ozark with my wife from separate screens. Going for runs outside when the walls closed in. Continental breakfast in the morning, trying to keep distance from the few other guests. Strange to be that close to home and that far away at the same time." },
             { "title": "My Wife's Knit Mask", "text": "My wife handknits a mask for me to use outside the hospital, since there weren't enough for non-healthcare workers. 'It probably didn't work that well but it meant a lot to me that she worked on it for me.'" },
             { "title": "My Wife Cuts My Hair", "text": "My wife cuts my hair — three attempts, two hours — and it turns out well. I have jealous coworkers." },
@@ -1019,26 +1020,6 @@
           "secondary_embed": { "type": "link", "url": "https://abc7ny.com/post/procession-of-thanks-for-heroes-at-st-barnabas-medical-center/6102573/", "label": "Watch the Coverage on ABC7" }
         },
         {
-          "date": "2020-05-15",
-          "label": "The Evolution of Testing",
-          "content": "Testing evolved constantly — from hospital-only nasal swabs to experimental saliva tests to community clinics to at-home rapid tests. Each phase changed what was possible.",
-          "preview": "Testing evolved constantly — from hospital-only nasal swabs to experimental saliva tests to community clinics to at-home rapid tests. Each phase changed what was possible.",
-          "sections": [
-            {
-              "heading": "Hospital Testing and the Saliva Experiment",
-              "text": "Early on, testing was only available through the hospital — nasopharyngeal swabs, limited supply, results that took days. At one point, we had access to an experimental saliva-based test, which was easier to administer and didn't require the uncomfortable deep nasal swab. It felt like progress, though the reliability was still being worked out. Testing at that stage was primarily a clinical tool — it told you whether a patient was positive, but the turnaround was too slow to be useful for real-time decision-making about isolation or exposure."
-            },
-            {
-              "heading": "Community Clinics",
-              "text": "During the dark ages, testing clinics became available in the community — drive-through sites, pharmacy-based testing, pop-up locations. This was a meaningful shift. It meant that testing was no longer something that only happened inside a hospital. For my extended family, community testing was what made it possible to feel comfortable enough to go on a vacation together — everyone tested beforehand, results came back, and we made the call."
-            },
-            {
-              "heading": "At-Home Rapid Tests",
-              "text": "At-home nasal rapid tests became available just in time for the second wave at the end of 2020. This was the real game-changer. Suddenly, testing wasn't something you had to schedule days in advance or drive to a clinic for — you could do it in your kitchen, get results in fifteen minutes, and make decisions in real time. It became a fixture of social planning: test before the gathering, test after if someone reports symptoms. The speed and accessibility of home tests changed what was possible in a way that nothing before them had."
-            }
-          ]
-        },
-        {
           "date": "Late Summer 2020",
           "label": "The Slow Fade",
           "display": "interlude",
@@ -1046,7 +1027,7 @@
           "sections": [
             { "title": "No Parade", "text": "At some point early on, I remember thinking there would be a day — a moment — when Covid-19 would be declared defeated. Some kind of parade, a celebration, a national exhale. That never happened. It was defeated the way science often defeats things: in smaller, incremental victories that don't make for good television. A steroid that reduces ICU mortality. A combination therapy that shows benefit. A treatment that keeps patients off ventilators. Vaccines. Each one mattered enormously, and none of them felt like the end." },
             { "title": "The Hospital Returns", "text": "More and more regular operations returned to the hospital. The ordinary problems reappeared — the ones that had never gone away, just been overshadowed. Full staff came back. The hallways filled again. The trailers eventually left the parking lot. Some things didn't go away, though: masks, Zoom meetings, a certain vigilance that hadn't been there before." },
-            { "title": "From Zoom to Hugs", "text": "The Zoom gatherings that had sustained us through the worst of it slowly gave way to something closer to real life. First it was outdoor meetups — distanced, cautious, but in person. Then we dropped the distance. Then smaller groups moved indoors. For a time, testing was an essential part of the planning: who would test, when, and what a positive result meant for everything else that week. It was a gradual return — not a switch that flipped, but a slow recalibration of what felt safe. To be clear, this wasn't how everyone chose to handle things. But many people navigated something similar with their own families and friend groups, each finding their own pace back to the kind of connection that a screen could never fully replace." }
+            { "title": "From Zoom to Hugs", "text": "The Zoom gatherings that had sustained us through the worst of it slowly gave way to something closer to real life. First it was outdoor meetups — distanced, cautious, but in person. Then we dropped the distance. Then smaller groups moved indoors. At-home rapid tests, available by late 2020, became a fixture of social planning — test before the gathering, test after if someone reported symptoms. You could do it in your kitchen and have results in fifteen minutes. That changed what was possible. It was a gradual return — not a switch that flipped, but a slow recalibration of what felt safe. To be clear, this wasn't how everyone chose to handle things. But many people navigated something similar with their own families and friend groups, each finding their own pace back to the kind of connection that a screen could never fully replace." }
           ]
         }
       ],
