@@ -1018,12 +1018,6 @@
           "secondary_embed": { "type": "link", "url": "https://abc7ny.com/post/procession-of-thanks-for-heroes-at-st-barnabas-medical-center/6102573/", "label": "Watch the Coverage on ABC7" }
         },
         {
-          "date": "2020-07-14",
-          "label": "Preparing for the Next Wave",
-          "content": "Our pharmacy is featured in a Wall Street Journal article on hospitals stocking up on Covid-19 drugs ahead of a feared second wave in the fall.",
-          "embed": { "type": "link", "url": "https://www.wsj.com/articles/hospitals-stock-up-on-covid-19-drugs-to-prepare-for-second-wave-in-fall-11594719000", "label": "Read the Article in the Wall Street Journal" }
-        },
-        {
           "date": "2020-05-15",
           "label": "The Evolution of Testing",
           "content": "Testing evolved constantly — from hospital-only nasal swabs to experimental saliva tests to community clinics to at-home rapid tests. Each phase changed what was possible.",
@@ -1076,6 +1070,12 @@
       "mood_description": "A two-year arc of approved monoclonal antibodies — each arriving with promise, each eventually rendered obsolete by viral mutation. A clinical arms race the virus ultimately wins.",
       "introduction": "Over two years, we operationalized a succession of monoclonal antibodies — each one arriving with promise, each one eventually rendered obsolete by a virus that kept evolving. I was wrong about that. Early in the pandemic, I had dismissed concerns about meaningful viral mutation. The virus proved otherwise, and this chapter is in many ways a record of that reckoning.",
       "clinical_nodes": [
+        {
+          "date": "2020-07-14",
+          "label": "Preparing for the Next Wave",
+          "content": "Our pharmacy is featured in a Wall Street Journal article on hospitals stocking up on Covid-19 drugs ahead of a feared second wave in the fall.",
+          "embed": { "type": "link", "url": "https://www.wsj.com/articles/hospitals-stock-up-on-covid-19-drugs-to-prepare-for-second-wave-in-fall-11594719000", "label": "Read the Article in the Wall Street Journal" }
+        },
         {
           "date": "2020-07-02",
           "label": "Sarilumab Fails Primary Endpoint",
