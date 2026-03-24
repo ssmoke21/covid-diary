@@ -613,12 +613,18 @@ function TimelineGridSegment({ rows, globalOffset, onOpenOverlay, isFirstSegment
 
 function SplitLayout({ chapter, onOpenOverlay }) {
   // Separate interlude nodes from regular personal nodes
-  const interludeNodes = chapter.personal_nodes.filter((n) => n.display === "interlude");
+  const allInterludes = chapter.personal_nodes.filter((n) => n.display === "interlude");
   const regularPersonal = chapter.personal_nodes.filter((n) => n.display !== "interlude");
   const rows = buildChronologicalRows(chapter.clinical_nodes, regularPersonal);
 
-  // If no interludes, render the simple grid
-  if (interludeNodes.length === 0) {
+  // Split interludes into mid-chapter (chronological) and epilogue (always last)
+  // The last interlude in the array is treated as the epilogue if there are regular nodes after it chronologically,
+  // or if it's the only interlude that would sort to the end
+  const epilogueNode = allInterludes.length > 0 ? allInterludes[allInterludes.length - 1] : null;
+  const interludeNodes = allInterludes.slice(0, -1);
+
+  // If no interludes at all, render the simple grid
+  if (allInterludes.length === 0) {
     return (
       <div className="max-w-7xl mx-auto">
         <TimelineGridSegment rows={rows} globalOffset={0} onOpenOverlay={onOpenOverlay} isFirstSegment />
@@ -626,7 +632,7 @@ function SplitLayout({ chapter, onOpenOverlay }) {
     );
   }
 
-  // Split rows into segments around interlude insertion points
+  // Split rows into segments around mid-chapter interlude insertion points
   const segments = [];
   let currentRows = [];
   let globalIdx = 0;
@@ -646,7 +652,7 @@ function SplitLayout({ chapter, onOpenOverlay }) {
     currentRows.push(row);
     globalIdx++;
   }
-  // Push any remaining interludes after all rows
+  // Push any remaining mid-chapter interludes after all rows
   while (interludeIdx < interludeTs.length) {
     segments.push({ type: "grid", rows: currentRows, offset: globalIdx - currentRows.length });
     segments.push({ type: "interlude", node: interludeTs[interludeIdx].node });
@@ -656,6 +662,10 @@ function SplitLayout({ chapter, onOpenOverlay }) {
   // Push remaining rows
   if (currentRows.length > 0) {
     segments.push({ type: "grid", rows: currentRows, offset: globalIdx - currentRows.length });
+  }
+  // Always push epilogue interlude last
+  if (epilogueNode) {
+    segments.push({ type: "interlude", node: epilogueNode });
   }
 
   return (
@@ -680,9 +690,14 @@ function SplitLayout({ chapter, onOpenOverlay }) {
 // ─── Full layout (chapters 5 & 7) ────────────────────────────────────────────
 
 function FullLayout({ chapter, onOpenOverlay }) {
+  // Separate epilogue interlude (last interlude in personal_nodes) from regular nodes
+  const personalInterludes = chapter.personal_nodes.filter((n) => n.display === "interlude");
+  const epilogueNode = personalInterludes.length > 0 ? personalInterludes[personalInterludes.length - 1] : null;
+  const regularPersonal = chapter.personal_nodes.filter((n) => n !== epilogueNode);
+
   const allNodes = [
     ...chapter.clinical_nodes.map((n) => ({ ...n, type: "clinical" })),
-    ...chapter.personal_nodes.map((n) => ({ ...n, type: "personal" })),
+    ...regularPersonal.map((n) => ({ ...n, type: "personal" })),
   ].sort((a, b) => parseNodeDate(a.date) - parseNodeDate(b.date));
 
   return (
@@ -715,6 +730,7 @@ function FullLayout({ chapter, onOpenOverlay }) {
           ))}
         </div>
       </div>
+      {epilogueNode && <InterludeNode node={epilogueNode} />}
     </div>
   );
 }
