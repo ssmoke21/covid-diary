@@ -249,7 +249,7 @@ export default function App() {
         {/* Footer */}
         <footer className="py-16 text-center border-t border-stone-200">
           <p className="text-xs text-stone-300">
-            {chaptersData.meta.title} &middot; {chaptersData.meta.author}
+            {chaptersData.meta.title} &middot; <a href="https://ssmoke21.github.io/professional-site/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-stone-500 transition-colors">{chaptersData.meta.author}</a>
           </p>
         </footer>
       </main>
