@@ -546,7 +546,14 @@
         {
           "date": "2020-03-25",
           "label": "HCQ Duration Curtailed",
-          "content": "Greater than 5-day HCQ duration discouraged due to limited evidence and supply constraints."
+          "content": "Greater than 5-day HCQ duration discouraged due to limited evidence and supply constraints.",
+          "preview": "Greater than 5-day HCQ duration discouraged due to limited evidence and supply constraints.",
+          "sections": [
+            {
+              "heading": "The Patient on Chronic HCQ",
+              "text": "That same day, a conversation came up among the ID pharmacists across sites. A patient had been admitted for Covid-19 who was already taking hydroxychloroquine at home — chronically, for a rheumatologic condition. The question was straightforward: do we give them more? A higher dose? The same dose they're already on? A colleague cut through it: we don't actually know if it works at all. It was a small moment, but it captured where we were. We were writing protocols and adjusting durations for a drug whose benefit was still entirely unproven."
+            }
+          ]
         },
         {
           "date": "2020-03-27",
