@@ -556,6 +556,11 @@
           ]
         },
         {
+          "date": "2020-03-26",
+          "label": "I Need Help",
+          "content": "I reach out to my boss — there are over a hundred patients on HCQ and I can't monitor them alone. I'm also fielding compassionate use requests for remdesivir. The volume has outpaced what one person can manage."
+        },
+        {
           "date": "2020-03-27",
           "label": "Azithromycin Recommendation Challenged",
           "content": "My ID PharmD colleague and I draft an SBAR to pull azithromycin from the protocol citing: no prior evidence, non-equivalent control group, no clinical benefit demonstrated, and potential QTc toxicity.",
