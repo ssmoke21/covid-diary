@@ -193,15 +193,15 @@ export default function App() {
               </div>
             </div>
 
-            {/* Remembrance, Recognition, and Reflection */}
+            {/* Remember, Recognize, and Reflect */}
             <div>
               <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-red-400 mb-3">
-                Remembrance, Recognition, and Reflection
+                Remember, Recognize, and Reflect
               </p>
               <div className="space-y-4 font-serif text-base text-stone-600 leading-relaxed">
                 <p>
                   I don&rsquo;t know that I&rsquo;ll ever be completely at peace with my Covid-19
-                  experience. But there is a path forward: remembrance, recognition, and reflection.
+                  experience. But there is a path forward: remember, recognize, and reflect.
                 </p>
                 <p>
                   We were tested in a way that none of our predecessors were. No colleague,
@@ -230,7 +230,7 @@ export default function App() {
                 <p>
                   Efforts are underway at both the state and national levels to designate a
                   Covid-19 Memorial Day in March. The goal is to create a formal space for
-                  remembrance, recognition of healthcare efforts, and reflection on future
+                  remembering, recognizing healthcare efforts, and reflecting on future
                   preparedness. Whether or not these formal resolutions pass, the need for
                   the day remains.
                 </p>
