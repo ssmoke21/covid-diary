@@ -734,6 +734,15 @@
           ]
         },
         {
+          "date": "2020-03-20",
+          "label": "An Empty New York City",
+          "content": "My uncle who lives in NYC sends me pictures of an empty city — something no one has ever seen before.",
+          "embed": { "type": "gallery", "photos": [
+            { "url": "images/Looking Down Sixth Avenue to the WTC.jpg", "caption": "Looking Down Sixth Avenue to the World Trade Center" },
+            { "url": "images/Looking Up Broadway to the Chrysler Building.jpg", "caption": "Looking Up Broadway to the Chrysler Building" }
+          ]}
+        },
+        {
           "date": "2020-03-21",
           "label": "NJ Closes Nonessential Businesses",
           "content": "New Jersey closes nonessential businesses.",
